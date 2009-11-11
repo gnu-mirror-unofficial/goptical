@@ -1,0 +1,147 @@
+
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: black; background: white;
+}
+
+a:link {
+  text-decoration: none;
+  color: #203080;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #203080;
+}
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+table {
+ width : 95%;
+ background-color : #ffffff;
+ border-collapse: separate;
+ border-spacing: 2px;
+ margin: 15px 0px;
+}
+
+td {
+  padding: 2px 10px;
+}
+
+th {
+  padding : 2px 10px;
+  background: #d8e0ef;
+  text-align: left;
+}
+
+hr {
+  margin: 20px 0px;
+}
+
+h3 {
+  margin: 0px;
+}
+
+.subtitle {
+  font-size: smaller;
+}
+
+.tr0 {
+  background-color : #e8f0ff;
+}
+
+.tr1 {
+  background-color : #f0f0ff;
+}
+
+.center {
+  text-align: center;
+}
+
+.warning {
+  font-weight: bold;
+  color: red;
+}
+
+.codebox {
+  border: solid;
+  border-width: 1px;
+  border-color: #c0d0ff;
+  background: #ecf0f8;
+  padding: 15px;
+}
+
+.headlogo {
+  float: left;
+  vertical-align: middle;
+  padding: 0px 20px 0px 0px;
+}
+
+.nodoc {
+  color: gray;
+  font-style: italic;
+}
+
+.docnode {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  margin-left: 30px;
+}
+
+.divpublicmember {
+  border-top: solid;
+  border-top-width: 2px;
+  border-top-color: #c0d0ff;
+  background: #e8f0ff;
+  padding: 2px;
+}
+
+.divprotectedmember {
+  border-top: solid;
+  border-top-width: 2px;
+  border-top-color: #c0b080;
+  background: #ffffd0;
+  padding: 2px;
+}
+
+.divprivatemember {
+  border-top: solid;
+  border-top-width: 2px;
+  border-top-color: #c08080;
+  background: #ffe8e8;
+  padding: 2px;
+}
+
+.codecmt {
+  display: inline;
+  color: #c00000;
+}
+
+.codekw {
+  color: #00d0d0;
+}
+
+.codestr {
+  color: #00d000;
+}
+
+.codedir {
+  color: #0000d0;
+}
+
+.divtextcontent {
+  padding: 0px 30px;
+  margin-bottom: 30px;
+}
+
+.tt {
+  font-family: monospace;
+  font-weight: bold;
+}
+
