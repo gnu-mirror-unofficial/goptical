@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head> <title>GNU Goptical manual </title> <link rel="stylesheet" href="mkdoc.css" /> <meta name="Generator" content="MKDOC 1.0" /></head><body>
+<div><a href="index.html" accesskey="top">Top</a> - <a href="node0.html#ref0">Table of contents</a>
+ - <a href="node1.html#ref1">Introduction</a>
+ - <a href="node2.html#ref2">API documentation</a>
+ - <a href="node3.html#ref6">Main classes</a>
+<div style="float: right"><a href="node42.html" accesskey="p">Previous </a> - <a href="node2.html" accesskey="u"> Up </a> - <a href="node44.html" accesskey="n"> Next</a></div></div><div style="clear: both; height:20px;"></div>
+<h1><span class="tt">Goptical::Io::RendererDxf3d</span> class reference<br /><span class="subtitle">
+[Core module]</span>
+</h1>
+<div style="clear: both; height:20px;"></div>
+<h2>Declaration<a href="#ref795" id="ref795" class="hover_link">&nbsp;&nbsp;</a></h2>
+<div class="divtextcontent"><div class="codebox"><code><span class="codedir">#include</span> &lt;Goptical/IoRendererDxf3d&gt;<br /><br /><span class="codekw">class</span> RendererDxf3d;<br /></code></div></div><h2>Description<a href="#ref796" id="ref796" class="hover_link">&nbsp;&nbsp;</a></h2>
+<div class="divtextcontent"><p>This class implements a 3d dxf file graphic output driver. It needs the dime library to compile.</p></div><h2>Members list<a href="#ref797" id="ref797" class="hover_link">&nbsp;&nbsp;</a></h2>
+<h3>Inherits<a href="#ref798" id="ref798" class="hover_link">&nbsp;&nbsp;</a></h3>
+<ul><li><span class="tt"><a href="node51.html">RendererDxf</a></span> (public inheritance)</li>
+</ul>
+<h3>Public functions<a href="#ref799" id="ref799" class="hover_link">&nbsp;&nbsp;</a></h3>
+<ul><li><span class="tt">RendererDxf3d()</span></li>
+<li><span class="tt">~RendererDxf3d()</span></li>
+<li><span class="tt">void&nbsp; <a href="node43.html#ref806">draw_circle</a>(const Math::Vector&lt;3&gt; &amp;c, double r, const Rgb &amp;rgb)</span></li>
+<li><span class="tt">void&nbsp; <a href="node43.html#ref805">draw_line</a>(const Math::VectorPair&lt;3&gt; &amp;l, const Rgb &amp;rgb)</span></li>
+<li><span class="tt">void&nbsp; <a href="node43.html#ref804">draw_point</a>(const Math::Vector&lt;3&gt; &amp;p, const Rgb &amp;rgb, Renderer::PointStyle s)</span></li>
+<li><span class="tt">void&nbsp; <a href="node43.html#ref808">draw_polygon</a>(const Math::Vector&lt;3&gt; *array, unsigned int count, const Rgb &amp;rgb, bool filled, bool closed)</span></li>
+<li><span class="tt">void&nbsp; <a href="node43.html#ref807">draw_text</a>(const Math::Vector&lt;3&gt; &amp;c, const std::string &amp;str, TextAlignMask a, int size, const Rgb &amp;rgb)</span></li>
+</ul>
+<h3>Inherited members<a href="#ref800" id="ref800" class="hover_link">&nbsp;&nbsp;</a></h3>
+<ul><li>22 members inherited from <a href="node51.html">RendererDxf</a></li>
+</ul>
+<h2>Members detail<a href="#ref801" id="ref801" class="hover_link">&nbsp;&nbsp;</a></h2>
+<div class="divpublicmember"><h3><span class="tt">void&nbsp; draw_point(const Math::<a href="node81.html">Vector</a>&lt;3&gt; &amp;p, const <a href="node85.html">Rgb</a> &amp;rgb, Renderer::<a href="node41.html#ref736">PointStyle</a> s)</span><a href="#ref804" id="ref804" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>This function implements the <a href="node41.html#ref737">draw_point</a> pure function declared in the <a href="node41.html">Renderer</a> base class.</p><p><span class="nodoc">Documentation inherited from base class:</span></p><p>draw a point</p></div><div class="divpublicmember"><h3><span class="tt">void&nbsp; draw_line(const Math::<a href="node84.html">VectorPair</a>&lt;3&gt; &amp;l, const <a href="node85.html">Rgb</a> &amp;rgb)</span><a href="#ref805" id="ref805" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>This function implements the <a href="node41.html#ref738">draw_line</a> pure function declared in the <a href="node41.html">Renderer</a> base class.</p><p><span class="nodoc">Documentation inherited from base class:</span></p><p>draw a line</p></div><div class="divpublicmember"><h3><span class="tt">void&nbsp; draw_circle(const Math::<a href="node81.html">Vector</a>&lt;3&gt; &amp;c, double r, const <a href="node85.html">Rgb</a> &amp;rgb)</span><a href="#ref806" id="ref806" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>This function implements the <a href="node41.html#ref739">draw_circle</a> pure function declared in the <a href="node41.html">Renderer</a> base class.</p><p><span class="nodoc">Documentation inherited from base class:</span></p><p>draw a circle or sphere</p></div><div class="divpublicmember"><h3><span class="tt">void&nbsp; draw_text(const Math::<a href="node81.html">Vector</a>&lt;3&gt; &amp;c, const std::<a href="http://gcc.gnu.org/onlinedocs/libstdc++/libstdc++-html-USERS-4.3/a01697.html#a431813f68fa8a80ea10ea2ad21066a2">string</a> &amp;str, <a href="node136.html#ref2412">TextAlignMask</a> a, int size, const <a href="node85.html">Rgb</a> &amp;rgb)</span><a href="#ref807" id="ref807" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>This function implements the <a href="node41.html#ref740">draw_text</a> pure function declared in the <a href="node41.html">Renderer</a> base class.</p><p><span class="nodoc">Documentation inherited from base class:</span></p><p>draw text</p></div><div class="divpublicmember"><h3><span class="tt">void&nbsp; draw_polygon(const Math::<a href="node81.html">Vector</a>&lt;3&gt; *array, unsigned int count, const <a href="node85.html">Rgb</a> &amp;rgb, bool filled, bool closed)</span><a href="#ref808" id="ref808" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>This function reimplements the <a href="node41.html#ref741">draw_polygon</a> virtual function defined in the <a href="node41.html">Renderer</a> base class.</p><p><span class="nodoc">Documentation inherited from base class:</span></p><p>draw polygon</p></div><hr /><p class="generated"><a style="float: right;" href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10-blue" alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a>Generated by diaxen on Wed Nov 11 21:50:26 2009 using <a href="https://savannah.nongnu.org/projects/mkdoc/">MkDoc</a></p></body></html>

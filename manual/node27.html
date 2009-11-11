@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head> <title>GNU Goptical manual </title> <link rel="stylesheet" href="mkdoc.css" /> <meta name="Generator" content="MKDOC 1.0" /></head><body>
+<div><a href="index.html" accesskey="top">Top</a> - <a href="node0.html#ref0">Table of contents</a>
+ - <a href="node1.html#ref1">Introduction</a>
+ - <a href="node2.html#ref2">API documentation</a>
+ - <a href="node3.html#ref6">Main classes</a>
+<div style="float: right"><a href="node26.html" accesskey="p">Previous </a> - <a href="node2.html" accesskey="u"> Up </a> - <a href="node28.html" accesskey="n"> Next</a></div></div><div style="clear: both; height:20px;"></div>
+<h1><span class="tt">Goptical::Data::Plot</span> class reference<br /><span class="subtitle">
+[Core module]</span>
+</h1>
+<div style="clear: both; height:20px;"></div>
+<h2>Declaration<a href="#ref405" id="ref405" class="hover_link">&nbsp;&nbsp;</a></h2>
+<div class="divtextcontent"><div class="codebox"><code><span class="codedir">#include</span> &lt;Goptical/DataPlot&gt;<br /><br /><span class="codekw">class</span> Plot;<br /></code></div></div><h2>Description<a href="#ref406" id="ref406" class="hover_link">&nbsp;&nbsp;</a></h2>
+<div class="divtextcontent"><p>This class is used to describe a data plot. It is used as a list of plot data and basic plot properties (title, range, ...).</p></div><h2>Members list<a href="#ref407" id="ref407" class="hover_link">&nbsp;&nbsp;</a></h2>
+<h3>Inherits<a href="#ref408" id="ref408" class="hover_link">&nbsp;&nbsp;</a></h3>
+<ul><li><span class="tt"><a href="node129.html">RefObj</a>&lt;<a href="node27.html">Plot</a>&gt;</span> (public inheritance)</li>
+</ul>
+<h3>Public functions<a href="#ref409" id="ref409" class="hover_link">&nbsp;&nbsp;</a></h3>
+<ul><li><span class="tt"><a href="node27.html#ref413">Plot</a>()</span></li>
+<li><span class="tt">PlotData &amp; <a href="node27.html#ref414">add_plot_data</a>(RefObj&lt;Set&gt;::const_ref data)</span></li>
+<li><span class="tt">void&nbsp; <a href="node27.html#ref415">add_plot_data</a>(PlotData &amp;data)</span></li>
+<li><span class="tt">void&nbsp; <a href="node27.html#ref416">erase_plot_data</a>()</span></li>
+<li><span class="tt">Io::RendererAxes &amp; <a href="node27.html#ref434">get_axes</a>()</span></li>
+<li><span class="tt">const Io::RendererAxes &amp; <a href="node27.html#ref435">get_axes</a>() const</span></li>
+<li><span class="tt">const std::string &amp; <a href="node27.html#ref423">get_axis_label</a>(unsigned int axis) const</span></li>
+<li><span class="tt">Math::range_t&nbsp; <a href="node27.html#ref427">get_axis_range</a>(unsigned int axis) const</span></li>
+<li><span class="tt">const std::string &amp; <a href="node27.html#ref424">get_axis_unit</a>(unsigned int axis) const</span></li>
+<li><span class="tt">double&nbsp; <a href="node27.html#ref425">get_axis_unit_scale</a>(unsigned int axis) const</span></li>
+<li><span class="tt">unsigned int&nbsp; <a href="node27.html#ref436">get_dimensions</a>() const</span></li>
+<li><span class="tt">unsigned int&nbsp; <a href="node27.html#ref417">get_plot_count</a>() const</span></li>
+<li><span class="tt">PlotData &amp; <a href="node27.html#ref418">get_plot_data</a>(unsigned int index)</span></li>
+<li><span class="tt">const PlotData &amp; <a href="node27.html#ref419">get_plot_data</a>(unsigned int index) const</span></li>
+<li><span class="tt">const std::string &amp; <a href="node27.html#ref421">get_title</a>() const</span></li>
+<li><span class="tt">Math::range_t&nbsp; <a href="node27.html#ref437">get_x_data_range</a>(unsigned int dimension) const</span></li>
+<li><span class="tt">bool&nbsp; <a href="node27.html#ref432">get_xy_swap</a>() const</span></li>
+<li><span class="tt">Math::range_t&nbsp; <a href="node27.html#ref438">get_y_data_range</a>() const</span></li>
+<li><span class="tt">void&nbsp; <a href="node27.html#ref433">set_auto_axes_position</a>(bool autoset)</span></li>
+<li><span class="tt">void&nbsp; <a href="node27.html#ref422">set_axis_label</a>(unsigned int axis, const std::string &amp;label, const std::string &amp;unit, double unit_scale)</span></li>
+<li><span class="tt">void&nbsp; <a href="node27.html#ref426">set_axis_range</a>(unsigned int axis, double min, double max)</span></li>
+<li><span class="tt">void&nbsp; <a href="node27.html#ref428">set_color</a>(const Rgb &amp;color)</span></li>
+<li><span class="tt">void&nbsp; <a href="node27.html#ref429">set_different_colors</a>()</span></li>
+<li><span class="tt">void&nbsp; <a href="node27.html#ref430">set_style</a>(PlotStyleMask style)</span></li>
+<li><span class="tt">void&nbsp; <a href="node27.html#ref420">set_title</a>(const std::string &amp;title)</span></li>
+<li><span class="tt">void&nbsp; <a href="node27.html#ref431">set_xy_swap</a>(bool doswap)</span></li>
+</ul>
+<h3>Public static functions<a href="#ref410" id="ref410" class="hover_link">&nbsp;&nbsp;</a></h3>
+<ul><li><span class="tt">static std::pair&lt;const char*, double&gt;&nbsp; <a href="node27.html#ref439">get_unit_factor</a>(double value)</span></li>
+</ul>
+<h3>Inherited members<a href="#ref411" id="ref411" class="hover_link">&nbsp;&nbsp;</a></h3>
+<ul><li>12 members inherited from <a href="node129.html">RefObj</a></li>
+</ul>
+<h2>Members detail<a href="#ref412" id="ref412" class="hover_link">&nbsp;&nbsp;</a></h2>
+<div class="divpublicmember"><h3><span class="tt">Plot()</span><a href="#ref413" id="ref413" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>Create a new empty plot</p></div><div class="divpublicmember"><h3><span class="tt"><a href="node28.html">PlotData</a> &amp; add_plot_data(RefObj&lt;Set&gt;::const_ref data)</span><a href="#ref414" id="ref414" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>Create and add plot data from specified data set.</p></div><div class="divpublicmember"><h3><span class="tt">void&nbsp; add_plot_data(<a href="node28.html">PlotData</a> &amp;data)</span><a href="#ref415" id="ref415" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>Add plot data</p></div><div class="divpublicmember"><h3><span class="tt">void&nbsp; erase_plot_data()</span><a href="#ref416" id="ref416" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>Discard all plot data set</p></div><div class="divpublicmember"><h3><span class="tt">unsigned int&nbsp; get_plot_count() const</span><a href="#ref417" id="ref417" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>Get plot data set count</p></div><div class="divpublicmember"><h3><span class="tt"><a href="node28.html">PlotData</a> &amp; get_plot_data(unsigned int index)</span><a href="#ref418" id="ref418" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>Get plot data set at given index</p></div><div class="divpublicmember"><h3><span class="tt">const <a href="node28.html">PlotData</a> &amp; get_plot_data(unsigned int index) const</span><a href="#ref419" id="ref419" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>Get plot data set at given index</p></div><div class="divpublicmember"><h3><span class="tt">void&nbsp; set_title(const std::<a href="http://gcc.gnu.org/onlinedocs/libstdc++/libstdc++-html-USERS-4.3/a01697.html#a431813f68fa8a80ea10ea2ad21066a2">string</a> &amp;title)</span><a href="#ref420" id="ref420" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>Set plot main title</p></div><div class="divpublicmember"><h3><span class="tt">const std::<a href="http://gcc.gnu.org/onlinedocs/libstdc++/libstdc++-html-USERS-4.3/a01697.html#a431813f68fa8a80ea10ea2ad21066a2">string</a> &amp; get_title() const</span><a href="#ref421" id="ref421" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>Get plot main title</p></div><div class="divpublicmember"><h3><span class="tt">void&nbsp; set_axis_label(unsigned int axis, const std::<a href="http://gcc.gnu.org/onlinedocs/libstdc++/libstdc++-html-USERS-4.3/a01697.html#a431813f68fa8a80ea10ea2ad21066a2">string</a> &amp;label, const std::<a href="http://gcc.gnu.org/onlinedocs/libstdc++/libstdc++-html-USERS-4.3/a01697.html#a431813f68fa8a80ea10ea2ad21066a2">string</a> &amp;unit = std::string(), double unit_scale = 1.0 f)</span><a href="#ref422" id="ref422" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>Set axis label and unit</p></div><div class="divpublicmember"><h3><span class="tt">const std::<a href="http://gcc.gnu.org/onlinedocs/libstdc++/libstdc++-html-USERS-4.3/a01697.html#a431813f68fa8a80ea10ea2ad21066a2">string</a> &amp; get_axis_label(unsigned int axis) const</span><a href="#ref423" id="ref423" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>Get axis label</p></div><div class="divpublicmember"><h3><span class="tt">const std::<a href="http://gcc.gnu.org/onlinedocs/libstdc++/libstdc++-html-USERS-4.3/a01697.html#a431813f68fa8a80ea10ea2ad21066a2">string</a> &amp; get_axis_unit(unsigned int axis) const</span><a href="#ref424" id="ref424" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>Get axis unit</p></div><div class="divpublicmember"><h3><span class="tt">double&nbsp; get_axis_unit_scale(unsigned int axis) const</span><a href="#ref425" id="ref425" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>Get axis unit scale</p></div><div class="divpublicmember"><h3><span class="tt">void&nbsp; set_axis_range(unsigned int axis, double min = 0.0 f, double max = 0.0 f)</span><a href="#ref426" id="ref426" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>Set axis value range, default = auto</p></div><div class="divpublicmember"><h3><span class="tt">Math::range_t&nbsp; get_axis_range(unsigned int axis) const</span><a href="#ref427" id="ref427" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>Get axis range, empty range mean automatic range</p></div><div class="divpublicmember"><h3><span class="tt">void&nbsp; set_color(const <a href="node85.html">Rgb</a> &amp;color)</span><a href="#ref428" id="ref428" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>Set color for all plots</p></div><div class="divpublicmember"><h3><span class="tt">void&nbsp; set_different_colors()</span><a href="#ref429" id="ref429" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>Automatically choose different colors for each plot</p></div><div class="divpublicmember"><h3><span class="tt">void&nbsp; set_style(<a href="node134.html#ref2395">PlotStyleMask</a> style)</span><a href="#ref430" id="ref430" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>Set plot style for all plot</p></div><div class="divpublicmember"><h3><span class="tt">void&nbsp; set_xy_swap(bool doswap)</span><a href="#ref431" id="ref431" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>Swap x and y axis for 2d plots</p></div><div class="divpublicmember"><h3><span class="tt">bool&nbsp; get_xy_swap() const</span><a href="#ref432" id="ref432" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>Get x and y axis swap state for 2d plots</p></div><div class="divpublicmember"><h3><span class="tt">void&nbsp; set_auto_axes_position(bool autoset)</span><a href="#ref433" id="ref433" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>Set axis position to lower x, y range values on plot.</p></div><div class="divpublicmember"><h3><span class="tt">Io::<a href="node50.html">RendererAxes</a> &amp; get_axes()</span><a href="#ref434" id="ref434" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>Get plot axes object</p></div><div class="divpublicmember"><h3><span class="tt">const Io::<a href="node50.html">RendererAxes</a> &amp; get_axes() const</span><a href="#ref435" id="ref435" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>Get plot axes object</p></div><div class="divpublicmember"><h3><span class="tt">unsigned int&nbsp; get_dimensions() const</span><a href="#ref436" id="ref436" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>Get data sets dimensions, return 0 if inconsistent</p></div><div class="divpublicmember"><h3><span class="tt">Math::range_t&nbsp; get_x_data_range(unsigned int dimension = 0) const</span><a href="#ref437" id="ref437" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>Get range of x data in sets</p></div><div class="divpublicmember"><h3><span class="tt">Math::range_t&nbsp; get_y_data_range() const</span><a href="#ref438" id="ref438" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>Get range of y data in sets</p></div><div class="divpublicmember"><h3><span class="tt">static std::<a href="http://gcc.gnu.org/onlinedocs/libstdc++/libstdc++-html-USERS-4.3/a01149.html">pair</a>&lt;const char*, double&gt;&nbsp; get_unit_factor(double value)</span><a href="#ref439" id="ref439" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>unit scale factor letter and value from numeric value</p></div><hr /><p class="generated"><a style="float: right;" href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10-blue" alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a>Generated by diaxen on Wed Nov 11 21:50:25 2009 using <a href="https://savannah.nongnu.org/projects/mkdoc/">MkDoc</a></p></body></html>

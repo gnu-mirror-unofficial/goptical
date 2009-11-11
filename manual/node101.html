@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head> <title>GNU Goptical manual </title> <link rel="stylesheet" href="mkdoc.css" /> <meta name="Generator" content="MKDOC 1.0" /></head><body>
+<div><a href="index.html" accesskey="top">Top</a> - <a href="node0.html#ref0">Table of contents</a>
+ - <a href="node1.html#ref1">Introduction</a>
+ - <a href="node2.html#ref2">API documentation</a>
+ - <a href="node3.html#ref6">Main classes</a>
+<div style="float: right"><a href="node100.html" accesskey="p">Previous </a> - <a href="node2.html" accesskey="u"> Up </a> - <a href="node102.html" accesskey="n"> Next</a></div></div><div style="clear: both; height:20px;"></div>
+<h1><span class="tt">Goptical::Shape::RingBase</span> class reference<br /><span class="subtitle">
+[Core module]</span>
+</h1>
+<div style="clear: both; height:20px;"></div>
+<h2>Declaration<a href="#ref1795" id="ref1795" class="hover_link">&nbsp;&nbsp;</a></h2>
+<div class="divtextcontent"><div class="codebox"><code><span class="codedir">#include</span> &lt;Goptical/ShapeRing&gt;<br /><br /><span class="codekw">class</span> RingBase;<br /></code></div></div><h2>Description<a href="#ref1796" id="ref1796" class="hover_link">&nbsp;&nbsp;</a></h2>
+<div class="divtextcontent"><p><span class="warning">This class is for internal use only !</span></p><p>Ring shape base class</p></div><h2>Members list<a href="#ref1797" id="ref1797" class="hover_link">&nbsp;&nbsp;</a></h2>
+<h3>Inherits<a href="#ref1798" id="ref1798" class="hover_link">&nbsp;&nbsp;</a></h3>
+<ul><li><span class="tt"><a href="node97.html">Shape</a></span> (public inheritance)</li>
+</ul>
+<h3>Public functions<a href="#ref1799" id="ref1799" class="hover_link">&nbsp;&nbsp;</a></h3>
+<ul><li><span class="tt">Math::VectorPair&lt;2&gt;&nbsp; <a href="node101.html#ref1808">get_bounding_box</a>() const</span></li>
+<li><span class="tt">double&nbsp; <a href="node101.html#ref1806">get_hole_radius</a>() const</span></li>
+<li><span class="tt">double&nbsp; <a href="node101.html#ref1805">get_radius</a>() const</span></li>
+<li><span class="tt">bool&nbsp; <a href="node101.html#ref1809">inside</a>(const Math::Vector&lt;2&gt; &amp;point) const</span></li>
+<li><span class="tt">double&nbsp; <a href="node101.html#ref1807">max_radius</a>() const</span></li>
+<li><span class="tt">void&nbsp; <a href="node101.html#ref1804">set_radius</a>(double radius, double hole_radius)</span></li>
+</ul>
+<h3>Protected functions<a href="#ref1800" id="ref1800" class="hover_link">&nbsp;&nbsp;</a></h3>
+<ul><li><span class="tt">double&nbsp; <a href="node101.html#ref1810">get_external_xradius</a>() const</span></li>
+<li><span class="tt">double&nbsp; <a href="node101.html#ref1811">get_internal_xradius</a>() const</span></li>
+<li><span class="tt">double&nbsp; <a href="node101.html#ref1812">get_xy_ratio</a>() const</span></li>
+</ul>
+<h3>Protected fields<a href="#ref1801" id="ref1801" class="hover_link">&nbsp;&nbsp;</a></h3>
+<ul><li><span class="tt">double <a href="node101.html#ref1814">_hole_radius</a></span></li>
+<li><span class="tt">double <a href="node101.html#ref1813">_radius</a></span></li>
+</ul>
+<h3>Inherited members<a href="#ref1802" id="ref1802" class="hover_link">&nbsp;&nbsp;</a></h3>
+<ul><li>13 members inherited from <a href="node97.html">Shape</a></li>
+</ul>
+<h2>Members detail<a href="#ref1803" id="ref1803" class="hover_link">&nbsp;&nbsp;</a></h2>
+<div class="divpublicmember"><h3><span class="tt">void&nbsp; set_radius(double radius, double hole_radius)</span><a href="#ref1804" id="ref1804" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>Set ring external radius and hole radius</p></div><div class="divpublicmember"><h3><span class="tt">double&nbsp; get_radius() const</span><a href="#ref1805" id="ref1805" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>Get ring external radius</p></div><div class="divpublicmember"><h3><span class="tt">double&nbsp; get_hole_radius() const</span><a href="#ref1806" id="ref1806" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>Get hole radius</p></div><div class="divpublicmember"><h3><span class="tt">double&nbsp; max_radius() const</span><a href="#ref1807" id="ref1807" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>This function implements the <a href="node97.html#ref1720">max_radius</a> pure function declared in the <a href="node97.html">Shape</a> base class.</p><p><span class="nodoc">Documentation inherited from base class:</span></p><p>Get distance between (0,0) and farthest shape point</p></div><div class="divpublicmember"><h3><span class="tt">Math::<a href="node84.html">VectorPair</a>&lt;2&gt;&nbsp; get_bounding_box() const</span><a href="#ref1808" id="ref1808" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>This function implements the <a href="node97.html#ref1721">get_bounding_box</a> pure function declared in the <a href="node97.html">Shape</a> base class.</p><p><span class="nodoc">Documentation inherited from base class:</span></p><p>Get bounding box</p></div><div class="divpublicmember"><h3><span class="tt">bool&nbsp; inside(const Math::<a href="node82.html">Vector</a>&lt;2&gt; &amp;point) const</span><a href="#ref1809" id="ref1809" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>This function implements the <a href="node97.html#ref1718">inside</a> pure function declared in the <a href="node97.html">Shape</a> base class.</p><p><span class="nodoc">Documentation inherited from base class:</span></p><p>Check if the (x,y) 2d point is inside 2d shape area</p></div><div class="divprotectedmember"><h3><span class="tt">double&nbsp; get_external_xradius() const</span><a href="#ref1810" id="ref1810" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>This function access is protected.</p></div><div class="divprotectedmember"><h3><span class="tt">double&nbsp; get_internal_xradius() const</span><a href="#ref1811" id="ref1811" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>This function access is protected.</p></div><div class="divprotectedmember"><h3><span class="tt">double&nbsp; get_xy_ratio() const</span><a href="#ref1812" id="ref1812" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>This function access is protected.</p></div><div class="divprotectedmember"><h3><span class="tt">double _radius</span><a href="#ref1813" id="ref1813" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>This field access is protected.</p></div><div class="divprotectedmember"><h3><span class="tt">double _hole_radius</span><a href="#ref1814" id="ref1814" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>This field access is protected.</p></div><hr /><p class="generated"><a style="float: right;" href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10-blue" alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a>Generated by diaxen on Wed Nov 11 21:50:26 2009 using <a href="https://savannah.nongnu.org/projects/mkdoc/">MkDoc</a></p></body></html>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head> <title>GNU Goptical manual </title> <link rel="stylesheet" href="mkdoc.css" /> <meta name="Generator" content="MKDOC 1.0" /></head><body>
+<div><a href="index.html" accesskey="top">Top</a> - <a href="node0.html#ref0">Table of contents</a>
+ - <a href="node1.html#ref1">Introduction</a>
+ - <a href="node2.html#ref2">API documentation</a>
+ - <a href="node3.html#ref6">Main classes</a>
+<div style="float: right"><a href="node141.html" accesskey="p">Previous </a> - <a href="node2.html" accesskey="u"> Up </a></div></div><div style="clear: both; height:20px;"></div>
+<h1><span class="tt">Goptical::Trace</span> namespace reference</h1>
+<div style="clear: both; height:20px;"></div>
+<h2>Description<a href="#ref2483" id="ref2483" class="hover_link">&nbsp;&nbsp;</a></h2>
+<div class="divtextcontent"><p>Ray tracer and light propagation</p></div><h2>Members list<a href="#ref2484" id="ref2484" class="hover_link">&nbsp;&nbsp;</a></h2>
+<h3>Types<a href="#ref2485" id="ref2485" class="hover_link">&nbsp;&nbsp;</a></h3>
+<ul><li><span class="tt">class <a href="node114.html">Distribution</a></span></li>
+<li><span class="tt">class <a href="node115.html">Params</a></span></li>
+<li><span class="tt">class <a href="node116.html">Result</a></span></li>
+<li><span class="tt">class <a href="node117.html">Sequence</a></span></li>
+<li><span class="tt">class <a href="node118.html">Tracer</a></span></li>
+<li><span class="tt">enum <a href="node142.html#ref2490">IntensityMode</a></span></li>
+<li><span class="tt">enum <a href="node142.html#ref2489">Pattern</a></span></li>
+<li><span class="tt">enum <a href="node142.html#ref2492">PropagationMode</a></span></li>
+<li><span class="tt">class <a href="node119.html">Ray</a></span></li>
+<li><span class="tt">enum <a href="node142.html#ref2491">SequentialMode</a></span></li>
+<li><span class="tt">typedef std::deque&lt;Ray*&gt; rays_list_t</span></li>
+<li><span class="tt">typedef std::vector&lt;Sys::Element*&gt; sequence_list_t</span></li>
+</ul>
+<h2>Members detail<a href="#ref2486" id="ref2486" class="hover_link">&nbsp;&nbsp;</a></h2>
+<div class="divpublicmember"><h3><span class="tt">enum Pattern</span><a href="#ref2489" id="ref2489" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>Specifies point distribution patterns over a shape delimited surface</p><table><tr><th style="width:20%;">Identifier</th><th style="width:80%;">Description</th></tr>
+<tr class="tr1"><td><span class="tt">DefaultDist</span></td><td>Preferred distribution pattern for a given shape<br /></td></tr>
+<tr class="tr0"><td><span class="tt">SagittalDist</span></td><td>Sagittal plane distribution (along the X axis, X/Z plane)<br /></td></tr>
+<tr class="tr1"><td><span class="tt">MeridionalDist</span></td><td>Meridional plane distribution (along the Y axis, Y/Z plane)<br /></td></tr>
+<tr class="tr0"><td><span class="tt">TangentialDist</span></td><td>Tangential plane distribution (along the Y axis, Y/Z plane)<br /></td></tr>
+<tr class="tr1"><td><span class="tt">SquareDist</span></td><td>Square pattern distribution<br /></td></tr>
+<tr class="tr0"><td><span class="tt">TriangularDist</span></td><td>Triangular pattern distribution<br /></td></tr>
+<tr class="tr1"><td><span class="tt">HexaPolarDist</span></td><td>Hexapolar pattern, suitable for circular shapes<br /></td></tr>
+<tr class="tr0"><td><span class="tt">CrossDist</span></td><td>Sagittal and Meridional distribution combined<br /></td></tr>
+<tr class="tr1"><td><span class="tt">RandomDist</span></td><td>Random distribution<br /></td></tr></table>
+</div><div class="divpublicmember"><h3><span class="tt">enum IntensityMode</span><a href="#ref2490" id="ref2490" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>Specifies light intensity calculation mode to use by light propagation algorithms.</p><table><tr><th style="width:20%;">Identifier</th><th style="width:80%;">Description</th></tr>
+<tr class="tr1"><td><span class="tt">SimpleTrace</span></td><td>No Intensity calculation is performed<br /></td></tr>
+<tr class="tr0"><td><span class="tt">IntensityTrace</span></td><td>Light intensity computation is performed without taking polarization into account<br /></td></tr>
+<tr class="tr1"><td><span class="tt">PolarizedTrace</span></td><td>Light intensity with polarization computation is performed<br /></td></tr></table>
+</div><div class="divpublicmember"><h3><span class="tt">enum SequentialMode</span><a href="#ref2491" id="ref2491" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>Specifies light propagation order mode</p><table><tr><th style="width:20%;">Identifier</th><th style="width:80%;">Description</th></tr>
+<tr class="tr1"><td><span class="tt">NonSequentialTrace</span></td><td>Use non sequential free space light propagation<br /></td></tr>
+<tr class="tr0"><td><span class="tt">SequentialTrace</span></td><td>Follow user defined elements sequence to propagate light in the system<br /></td></tr></table>
+</div><div class="divpublicmember"><h3><span class="tt">enum PropagationMode</span><a href="#ref2492" id="ref2492" class="hover_link">&nbsp;&nbsp;</a></h3>
+</div><div class="divtextcontent"><p>Specifies physical light propagation algorithm/model</p><table><tr><th style="width:20%;">Identifier</th><th style="width:80%;">Description</th></tr>
+<tr class="tr1"><td><span class="tt">RayPropagation</span></td><td>Use classical ray tracing algorithm to propagate light.<br /></td></tr>
+<tr class="tr0"><td><span class="tt">DiffractPropagation</span></td><td>Use Diffraction based light propagation<br /></td></tr>
+<tr class="tr1"><td><span class="tt">MixedPropagation</span></td><td>Used mixed ray tracing/diffraction propagation<br /></td></tr></table>
+</div><hr /><p class="generated"><a style="float: right;" href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10-blue" alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a>Generated by diaxen on Wed Nov 11 21:50:27 2009 using <a href="https://savannah.nongnu.org/projects/mkdoc/">MkDoc</a></p></body></html>
