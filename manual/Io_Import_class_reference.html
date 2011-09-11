@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta name="Generator" content="MKDOC " />
+ <title>GNU Goptical manual </title>
+ <link rel="stylesheet" href="mkdoc.css" />
+ <style type="text/css">
+
+  .sec_hidden { display: none; }
+  .sec_shown {}
+ </style>
+</head><body>
+<div class="page"><div class="head"><div class="headlinks"><a href="Table_of_contents.html">Table of contents</a>
+ &nbsp; <a href="Introduction.html">Introduction</a>
+ &nbsp; <a href="Tutorial.html">Tutorial</a>
+ &nbsp; <a href="Main_classes.html">Main classes</a>
+</div><div class="navlinks"><a href="index.html" accesskey="t">Top</a> &nbsp; <a href="Io_Export_class_full_member_list.html"  accesskey="p" id="nav_prev">Previous </a> &nbsp; <a href="API_documentation.html"  accesskey="u" id="nav_up"> Up </a> &nbsp; <a href="Io_Import_class_full_member_list.html"  accesskey="n" id="nav_next"> Next</a></div>
+</div><div class="content"><div style="clear: both; height:20px;"></div>
+<h1>Io::Import class reference<br /><span class="subtitle">
+[<a href="_Core_module_reference.html">Core</a> module]</span>
+</h1><div class="sec_content1">
+<div style="clear: both; height:20px;"></div>
+</div><h2>Declaration<a href="#_Declaration41" id="_Declaration41" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<div class="codebox"><code><span class="codedir">#include</span> &lt;Goptical/Io/Import&gt;<br /><br /><span class="codekw">namespace</span> Goptical {<br />  <span class="codekw">namespace</span> Io {<br />    <span class="codekw">class</span> Import;<br />  };<br />};<br /></code></div><p> This class is a member of the <span class="codedecl"><a href="Io_namespace_reference.html">Io</a></span> namespace.</p>
+<p>This abstract class contains pure virtuals.</p>
+</div><h2>Description<a href="#_Description50" id="_Description50" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+File import class interface</div><h2>Members<a href="#_Members50" id="_Members50" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<p> See also the <a href="Io_Import_class_full_member_list.html">full member list</a> section for this class.</p>
+</div><h3>Functions<a href="#_Functions81" id="_Functions81" class="hover_link">&nbsp;&nbsp;</a></h3><div class="sec_content3">
+<ul><li><span class="listitem"><span class="codedecl"><span class="member_prefix">virtual Material::Catalog &amp; </span><span class="member_signature"><span class="member_name"><a href="Io_Import_class_reference.html#__421">import_catalog</a></span>(<span class="member_params"><span class="member_param">const std::string &amp;filename</span>) = 0;</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">virtual Set &amp; </span><span class="member_signature"><span class="member_name"><a href="Io_Import_class_reference.html#__422">import_dataset</a></span>(<span class="member_params"><span class="member_param">const std::string &amp;filename</span>) = 0;</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">virtual Sys::System &amp; </span><span class="member_signature"><span class="member_name"><a href="Io_Import_class_reference.html#__423">import_design</a></span>(<span class="member_params"><span class="member_param">const std::string &amp;filename</span>) = 0;</span></span></span></span></li>
+</ul>
+</div><h2>Members detail<a href="#_Members_detail48" id="_Members_detail48" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">virtual Material::<a href="Material_Catalog_class_reference.html">Catalog</a> &amp; </span><span class="member_signature"><span class="member_name">import_catalog</span>(<span class="member_params"><span class="member_param">const std::<span class="ext_link"><a href="http://gcc.gnu.org/onlinedocs/libstdc++/libstdc++-html-USERS-4.3/a01697.html#a431813f68fa8a80ea10ea2ad21066a2">string</a></span> &amp;filename</span>) = 0;</span></span></span><a href="#__421" id="__421" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Import material catalog from file</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">virtual Set &amp; </span><span class="member_signature"><span class="member_name">import_dataset</span>(<span class="member_params"><span class="member_param">const std::<span class="ext_link"><a href="http://gcc.gnu.org/onlinedocs/libstdc++/libstdc++-html-USERS-4.3/a01697.html#a431813f68fa8a80ea10ea2ad21066a2">string</a></span> &amp;filename</span>) = 0;</span></span></span><a href="#__422" id="__422" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Import dataset from file</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">virtual Sys::<a href="Sys_System_class_reference.html">System</a> &amp; </span><span class="member_signature"><span class="member_name">import_design</span>(<span class="member_params"><span class="member_param">const std::<span class="ext_link"><a href="http://gcc.gnu.org/onlinedocs/libstdc++/libstdc++-html-USERS-4.3/a01697.html#a431813f68fa8a80ea10ea2ad21066a2">string</a></span> &amp;filename</span>) = 0;</span></span></span><a href="#__423" id="__423" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Import optical design from file</p>
+</div></div></div><div class="foot"><p class="generated"><a style="float: right;" href="http://validator.w3.org/check?uri=referer">Valid XHTML 1.0 Strict</a>Generated by diaxen on Sun Sep 11 20:21:29 2011 using <a href="http://www.nongnu.org/mkdoc/">MkDoc</a></p></div></body></html>

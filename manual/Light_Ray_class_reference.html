@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta name="Generator" content="MKDOC " />
+ <title>GNU Goptical manual </title>
+ <link rel="stylesheet" href="mkdoc.css" />
+ <style type="text/css">
+
+  .sec_hidden { display: none; }
+  .sec_shown {}
+ </style>
+</head><body>
+<div class="page"><div class="head"><div class="headlinks"><a href="Table_of_contents.html">Table of contents</a>
+ &nbsp; <a href="Introduction.html">Introduction</a>
+ &nbsp; <a href="Tutorial.html">Tutorial</a>
+ &nbsp; <a href="Main_classes.html">Main classes</a>
+</div><div class="navlinks"><a href="index.html" accesskey="t">Top</a> &nbsp; <a href="Light_namespace_reference.html"  accesskey="p" id="nav_prev">Previous </a> &nbsp; <a href="API_documentation.html"  accesskey="u" id="nav_up"> Up </a> &nbsp; <a href="Light_Ray_class_full_member_list.html"  accesskey="n" id="nav_next"> Next</a></div>
+</div><div class="content"><div style="clear: both; height:20px;"></div>
+<h1>Light::Ray class reference<br /><span class="subtitle">
+[<a href="_Core_module_reference.html">Core</a> module]</span>
+</h1><div class="sec_content1">
+<div style="clear: both; height:20px;"></div>
+</div><h2>Declaration<a href="#_Declaration45" id="_Declaration45" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<div class="codebox"><code><span class="codedir">#include</span> &lt;Goptical/Light/Ray&gt;<br /><br /><span class="codekw">namespace</span> Goptical {<br />  <span class="codekw">namespace</span> Light {<br />    <span class="codekw">class</span> Ray;<br />  };<br />};<br /></code></div><p> This class is a member of the <span class="codedecl"><a href="Light_namespace_reference.html">Light</a></span> namespace.</p>
+</div><h2>Inheritance<a href="#_Inheritance45" id="_Inheritance45" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<div class="tree_frame" style="width:230px;"><div class="tree_row"><div style="width:10px;" class="tree_pad"></div><div style="width:210px;" class="tree_public"><span class="codedecl">Math::<a href="Math_VectorPair_3_struct_reference.html">VectorPair</a>&lt;3&gt;</span></div
+></div><br/><div style="width:115px;" class="tree_connect_1">&nbsp;</div
+><div style="width:115px;" class="tree_connect_4">&nbsp;</div><br/><div style="width:115px;" class="tree_connect_1">&nbsp;</div
+><div style="width:115px;" class="tree_connect_4">&nbsp;</div><br/><div class="tree_row"><div style="width:65px;" class="tree_pad"></div><div style="width:100px;" class="tree_this"><span class="codedecl"><a href="Light_Ray_class_reference.html">Ray</a></span></div
+></div><br/><div style="width:115px;" class="tree_connect_1">&nbsp;</div
+><div style="width:115px;" class="tree_connect_4">&nbsp;</div><br/><div style="width:115px;" class="tree_connect_1">&nbsp;</div
+><div style="width:115px;" class="tree_connect_4">&nbsp;</div><br/><div class="tree_row"><div style="width:55px;" class="tree_pad"></div><div style="width:120px;" class="tree_derived"><span class="codedecl">Trace::<a href="Trace_Ray_class_reference.html">Ray</a></span></div
+></div><br/></div>
+</div><h2>Description<a href="#_Description55" id="_Description55" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<p>This class is used to describe a ray of light. It contains geometrical and physical informations about a light ray.</p>
+</div><h2>Members<a href="#_Members55" id="_Members55" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<p> See also the <a href="Light_Ray_class_full_member_list.html">full member list</a> section for this class.</p>
+</div><h3>Inherited members<a href="#_Inherited_members28" id="_Inherited_members28" class="hover_link">&nbsp;&nbsp;</a></h3><div class="sec_content3">
+<ul><li>34 members inherited from <span class="codedecl">Math::<a href="Math_VectorPair_3_struct_reference.html">VectorPair</a>&lt;3&gt;</span></li>
+</ul>
+</div><h3>Functions<a href="#_Functions89" id="_Functions89" class="hover_link">&nbsp;&nbsp;</a></h3><div class="sec_content3">
+<ul><li><span class="listitem"><span class="codedecl"><span class="member_prefix"></span><span class="member_signature"><span class="member_name"><a href="Light_Ray_class_reference.html#__492">Ray</a></span>(<span class="member_params">)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix"></span><span class="member_signature"><span class="member_name"><a href="Light_Ray_class_reference.html#__493">Ray</a></span>(<span class="member_params"><span class="member_param">const Math::VectorPair3 &amp;ray, </span><span class="member_param">double intensity = <em>[...]</em>, </span><span class="member_param">double wavelen = <em>[...]</em></span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">double </span><span class="member_signature"><span class="member_name"><a href="Light_Ray_class_reference.html#__494">get_intensity</a></span>(<span class="member_params">) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">double </span><span class="member_signature"><span class="member_name"><a href="Light_Ray_class_reference.html#__495">get_wavelen</a></span>(<span class="member_params">) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name"><a href="Light_Ray_class_reference.html#__496">set_intensity</a></span>(<span class="member_params"><span class="member_param">double intensity</span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name"><a href="Light_Ray_class_reference.html#__497">set_wavelen</a></span>(<span class="member_params"><span class="member_param">double wavelen</span>)</span></span></span></span></li>
+</ul>
+</div><h2>Members detail<a href="#_Members_detail53" id="_Members_detail53" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix"></span><span class="member_signature"><span class="member_name">Ray</span>(<span class="member_params">)</span></span></span><a href="#__492" id="__492" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p><span class="nodoc">No documentation available</span></p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix"></span><span class="member_signature"><span class="member_name">Ray</span>(<span class="member_params"><span class="member_param">const Math::<a href="Math_namespace_reference.html#__657">VectorPair3</a> &amp;ray, </span><span class="member_param">double intensity = 1, </span><span class="member_param">double wavelen = 550</span>)</span></span></span><a href="#__493" id="__493" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Create a ray of light with specified properties</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">double </span><span class="member_signature"><span class="member_name">get_intensity</span>(<span class="member_params">) const</span></span></span><a href="#__494" id="__494" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Get light ray intensity</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">double </span><span class="member_signature"><span class="member_name">get_wavelen</span>(<span class="member_params">) const</span></span></span><a href="#__495" id="__495" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Set light ray wavelen</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name">set_intensity</span>(<span class="member_params"><span class="member_param">double intensity</span>)</span></span></span><a href="#__496" id="__496" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Set light ray intensity</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name">set_wavelen</span>(<span class="member_params"><span class="member_param">double wavelen</span>)</span></span></span><a href="#__497" id="__497" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Get light ray wavelen</p>
+</div></div></div><div class="foot"><p class="generated"><a style="float: right;" href="http://validator.w3.org/check?uri=referer">Valid XHTML 1.0 Strict</a>Generated by diaxen on Sun Sep 11 20:21:29 2011 using <a href="http://www.nongnu.org/mkdoc/">MkDoc</a></p></div></body></html>

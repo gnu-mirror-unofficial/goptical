@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta name="Generator" content="MKDOC " />
+ <title>GNU Goptical manual </title>
+ <link rel="stylesheet" href="mkdoc.css" />
+ <style type="text/css">
+
+  .sec_hidden { display: none; }
+  .sec_shown {}
+ </style>
+</head><body>
+<div class="page"><div class="head"><div class="headlinks"><a href="Table_of_contents.html">Table of contents</a>
+ &nbsp; <a href="Introduction.html">Introduction</a>
+ &nbsp; <a href="Tutorial.html">Tutorial</a>
+ &nbsp; <a href="Main_classes.html">Main classes</a>
+</div><div class="navlinks"><a href="index.html" accesskey="t">Top</a> &nbsp; <a href="Curve_Flat_class_full_member_list.html"  accesskey="p" id="nav_prev">Previous </a> &nbsp; <a href="API_documentation.html"  accesskey="u" id="nav_up"> Up </a> &nbsp; <a href="Curve_Foucault_class_full_member_list.html"  accesskey="n" id="nav_next"> Next</a></div>
+</div><div class="content"><div style="clear: both; height:20px;"></div>
+<h1>Curve::Foucault class reference<br /><span class="subtitle">
+[<a href="_Core_module_reference.html">Core</a> module]</span>
+</h1><div class="sec_content1">
+<div style="clear: both; height:20px;"></div>
+</div><h2>Declaration<a href="#_Declaration9" id="_Declaration9" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<div class="codebox"><code><span class="codedir">#include</span> &lt;Goptical/Curve/Foucault&gt;<br /><br /><span class="codekw">namespace</span> Goptical {<br />  <span class="codekw">namespace</span> Curve {<br />    <span class="codekw">class</span> Foucault;<br />  };<br />};<br /></code></div><p> This class is a member of the <span class="codedecl"><a href="Curve_namespace_reference.html">Curve</a></span> namespace.</p>
+</div><h2>Inheritance<a href="#_Inheritance9" id="_Inheritance9" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<div class="tree_frame" style="width:295px;"><div class="tree_row"><div style="width:105px;" class="tree_pad"></div><div style="width:170px;" class="tree_public"><span class="codedecl"><span class="ext_link"><a href="http://diaxen.ssji.net/dpp/dpp_ref_base_class_reference.html">ref_base</a></span>&lt;<a href="Curve_Curve_class_reference.html">Curve</a>&gt;</span></div
+></div><br/><div style="width:190px;" class="tree_connect_1">&nbsp;</div
+><div style="width:105px;" class="tree_connect_4">&nbsp;</div><br/><div style="width:190px;" class="tree_connect_1">&nbsp;</div
+><div style="width:105px;" class="tree_connect_4">&nbsp;</div><br/><div class="tree_row"><div style="width:140px;" class="tree_pad"></div><div style="width:100px;" class="tree_public"><span class="codedecl"><a href="Curve_Curve_class_reference.html">Curve</a></span></div
+></div><br/><div style="width:190px;" class="tree_connect_1">&nbsp;</div
+><div style="width:105px;" class="tree_connect_4">&nbsp;</div><br/><div style="width:190px;" class="tree_connect_1">&nbsp;</div
+><div style="width:105px;" class="tree_connect_4">&nbsp;</div><br/><div class="tree_row"><div style="width:10px;" class="tree_pad"></div><div style="width:100px;" class="tree_public"><span class="codedecl"><a href="Curve_CurveRoc_class_reference.html">CurveRoc</a></span></div
+><div style="width:20px;" class="tree_pad"></div><div style="width:120px;" class="tree_public"><span class="codedecl"><a href="Curve_Rotational_class_reference.html">Rotational</a></span></div
+></div><br/><div style="width:60px;" class="tree_connect_1">&nbsp;</div
+><div style="width:130px;" class="tree_connect_3">&nbsp;</div
+><div style="width:105px;" class="tree_connect_4">&nbsp;</div><br/><div style="width:125px;" class="tree_connect_1">&nbsp;</div
+><div style="width:170px;" class="tree_connect_4">&nbsp;</div><br/><div class="tree_row"><div style="width:75px;" class="tree_pad"></div><div style="width:100px;" class="tree_this"><span class="codedecl"><a href="Curve_Foucault_class_reference.html">Foucault</a></span></div
+></div><br/></div>
+</div><h2>Description<a href="#_Description14" id="_Description14" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<p>This class allows definition of a rotationally symmetric curve from a set of Foucault test data. Fixed and moving light sources are supported.</p>
+<p>Curve fitting can be used to find Foucault test readings from any other rotationally symmetric curve.</p>
+<p>Foucault test data are reduced using numerical integration of a differential equation to compute sagitta from slopes.</p>
+<p>Foucault data reduction algorithm based on &quot;ATM Mirror Mathematics&quot; <span class="ext_link"><a href="http://home.earthlink.net/~burrjaw/atm/atm_math.lwp/atm_math.htm">http://home.earthlink.net/~burrjaw/atm/atm_math.lwp/atm_math.htm</a></span></p>
+<p>Couder mask theory and formulas developed by Nils Olof Carlin <span class="ext_link"><a href="http://www.atmsite.org/contrib/Carlin/couder/">http://www.atmsite.org/contrib/Carlin/couder/</a></span></p>
+</div><h2>Members<a href="#_Members14" id="_Members14" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<p> See also the <a href="Curve_Foucault_class_full_member_list.html">full member list</a> section for this class.</p>
+</div><h3>Inherited members<a href="#_Inherited_members4" id="_Inherited_members4" class="hover_link">&nbsp;&nbsp;</a></h3><div class="sec_content3">
+<ul><li>2 members inherited from <span class="codedecl"><a href="Curve_CurveRoc_class_reference.html">CurveRoc</a></span></li>
+<li>9 members inherited from <span class="codedecl"><a href="Curve_Rotational_class_reference.html">Rotational</a></span></li>
+</ul>
+</div><h3>Functions<a href="#_Functions19" id="_Functions19" class="hover_link">&nbsp;&nbsp;</a></h3><div class="sec_content3">
+<ul><li><span class="listitem"><span class="codedecl"><span class="member_prefix"></span><span class="member_signature"><span class="member_name"><a href="Curve_Foucault_class_reference.html#__67">Foucault</a></span>(<span class="member_params"><span class="member_param">double roc</span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix"></span><span class="member_signature"><span class="member_name"><a href="Curve_Foucault_class_reference.html#__68">~Foucault</a></span>(<span class="member_params">)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">unsigned int </span><span class="member_signature"><span class="member_name"><a href="Curve_Foucault_class_reference.html#__69">add_couder_zones</a></span>(<span class="member_params"><span class="member_param">double hole_radius, </span><span class="member_param">unsigned int count = <em>[...]</em>, </span><span class="member_param">std::vector&lt;double&gt; *edge = <em>[...]</em></span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name"><a href="Curve_Foucault_class_reference.html#__70">add_reading</a></span>(<span class="member_params"><span class="member_param">double zone_radius, </span><span class="member_param">double knife_offset = <em>[...]</em></span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">unsigned int </span><span class="member_signature"><span class="member_name"><a href="Curve_Foucault_class_reference.html#__71">add_uniform_zones</a></span>(<span class="member_params"><span class="member_param">double hole_radius, </span><span class="member_param">unsigned int count</span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name"><a href="Curve_Foucault_class_reference.html#__72">clear</a></span>(<span class="member_params">)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">virtual double </span><span class="member_signature"><span class="member_name"><a href="Curve_Foucault_class_reference.html#__73">derivative</a></span>(<span class="member_params"><span class="member_param">double r</span>) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name"><a href="Curve_Foucault_class_reference.html#__74">fit</a></span>(<span class="member_params"><span class="member_param">const Rotational &amp;c</span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">double </span><span class="member_signature"><span class="member_name"><a href="Curve_Foucault_class_reference.html#__75">get_radius</a></span>(<span class="member_params">) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">const std::pair&lt;double, double&gt; </span><span class="member_signature"><span class="member_name"><a href="Curve_Foucault_class_reference.html#__76">get_reading</a></span>(<span class="member_params"><span class="member_param">unsigned int zone_number</span>) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">unsigned int </span><span class="member_signature"><span class="member_name"><a href="Curve_Foucault_class_reference.html#__77">get_zones_count</a></span>(<span class="member_params">) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">virtual double </span><span class="member_signature"><span class="member_name"><a href="Curve_Foucault_class_reference.html#__78">sagitta</a></span>(<span class="member_params"><span class="member_param">double r</span>) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name"><a href="Curve_Foucault_class_reference.html#__79">set_fixed_source</a></span>(<span class="member_params"><span class="member_param">double source_to_surface</span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name"><a href="Curve_Foucault_class_reference.html#__80">set_knife_offset</a></span>(<span class="member_params"><span class="member_param">unsigned int zone_number, </span><span class="member_param">double knife_offset</span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name"><a href="Curve_Foucault_class_reference.html#__81">set_moving_source</a></span>(<span class="member_params"><span class="member_param">double source_offset = <em>[...]</em></span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name"><a href="Curve_Foucault_class_reference.html#__82">set_ode_stepsize</a></span>(<span class="member_params"><span class="member_param">double step</span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name"><a href="Curve_Foucault_class_reference.html#__83">set_radius</a></span>(<span class="member_params"><span class="member_param">double radius</span>)</span></span></span></span></li>
+</ul>
+</div><h2>Members detail<a href="#_Members_detail12" id="_Members_detail12" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix"></span><span class="member_signature"><span class="member_name">Foucault</span>(<span class="member_params"><span class="member_param">double roc</span>)</span></span></span><a href="#__67" id="__67" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Create an empty foucault curve with no reading with the given radius of curvature</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix"></span><span class="member_signature"><span class="member_name">~Foucault</span>(<span class="member_params">)</span></span></span><a href="#__68" id="__68" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p><span class="nodoc">No documentation available</span></p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">unsigned int </span><span class="member_signature"><span class="member_name">add_couder_zones</span>(<span class="member_params"><span class="member_param">double hole_radius, </span><span class="member_param">unsigned int count = 0, </span><span class="member_param">std::<span class="ext_link"><a href="http://gcc.gnu.org/onlinedocs/libstdc++/libstdc++-html-USERS-4.3/a01318.html">vector</a></span>&lt;double&gt; *edge = 0</span>)</span></span></span><a href="#__69" id="__69" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Clear current zones and add zones readings to locations suited for testing with a couder mask (as described on Nils Olof Carlin page). Zone count may be guessed if zero, provided that radius has been properly set before. Knife edge reading (offset from radius of curvature) is set to 0 for all zones. </p>
+<ul><li><span class="codedecl">edge</span>: Couder zones edges will be saved here if != NULL. </li>
+</ul>
+<p>The return value is Zone count</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name">add_reading</span>(<span class="member_params"><span class="member_param">double zone_radius, </span><span class="member_param">double knife_offset = 0.0</span>)</span></span></span><a href="#__70" id="__70" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Define a new zone at given zone radius and update knife edge reading (offset from radius of curvature)</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">unsigned int </span><span class="member_signature"><span class="member_name">add_uniform_zones</span>(<span class="member_params"><span class="member_param">double hole_radius, </span><span class="member_param">unsigned int count</span>)</span></span></span><a href="#__71" id="__71" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Clear current zones and add equally spaced zones readings. Knife edge reading (offset from radius of curvature) is set to 0 for all zones. </p>
+<p>The return value is New zones count</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name">clear</span>(<span class="member_params">)</span></span></span><a href="#__72" id="__72" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Clear all readings and zones</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">virtual double </span><span class="member_signature"><span class="member_name">derivative</span>(<span class="member_params"><span class="member_param">double r</span>) const</span></span></span><a href="#__73" id="__73" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>This virtual function overrides the <code><a href="Curve_Rotational_class_reference.html#__142">derivative</a></code> virtual function defined in the <code><a href="Curve_Rotational_class_reference.html">Rotational</a></code> base abstract class.</p>
+<p><span class="nodoc">Documentation inherited from base class:</span></p>
+<p>Get curve derivative at specified distance from origin. </p>
+<ul><li><span class="codedecl">r</span>: distance from curve origin (0, 0)</li>
+</ul>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name">fit</span>(<span class="member_params"><span class="member_param">const <a href="Curve_Rotational_class_reference.html">Rotational</a> &amp;c</span>)</span></span></span><a href="#__74" id="__74" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Switch to moving source test and update knife edge readings of previously defined zone to fit provided rotationally symmetric curve. This means simulating a foucault test of the given curve using existing zones.</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">double </span><span class="member_signature"><span class="member_name">get_radius</span>(<span class="member_params">) const</span></span></span><a href="#__75" id="__75" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Get surface radius.</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">const std::<span class="ext_link"><a href="http://gcc.gnu.org/onlinedocs/libstdc++/libstdc++-html-USERS-4.3/a01149.html">pair</a></span>&lt;double, double&gt; </span><span class="member_signature"><span class="member_name">get_reading</span>(<span class="member_params"><span class="member_param">unsigned int zone_number</span>) const</span></span></span><a href="#__76" id="__76" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Get reading data for a given zone number. </p>
+<p>The return value is std::pair with zone radius and knife offset</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">unsigned int </span><span class="member_signature"><span class="member_name">get_zones_count</span>(<span class="member_params">) const</span></span></span><a href="#__77" id="__77" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Get currently defined zones/readings count</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">virtual double </span><span class="member_signature"><span class="member_name">sagitta</span>(<span class="member_params"><span class="member_param">double r</span>) const</span></span></span><a href="#__78" id="__78" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>This virtual function implements the <code><a href="Curve_Rotational_class_reference.html#__147">sagitta</a></code> pure function declared in the <code><a href="Curve_Rotational_class_reference.html">Rotational</a></code> base abstract class.</p>
+<p><span class="nodoc">Documentation inherited from base class:</span></p>
+<p>Get curve sagitta at specified distance from origin. </p>
+<ul><li><span class="codedecl">r</span>: distance from curve origin (0, 0)</li>
+</ul>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name">set_fixed_source</span>(<span class="member_params"><span class="member_param">double source_to_surface</span>)</span></span></span><a href="#__79" id="__79" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Set fixed light source foucault test. This clear all readings and zones. </p>
+<ul><li><span class="codedecl">source_to_surface</span>: Distance between surface and light source along the optical axis.</li>
+</ul>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name">set_knife_offset</span>(<span class="member_params"><span class="member_param">unsigned int zone_number, </span><span class="member_param">double knife_offset</span>)</span></span></span><a href="#__80" id="__80" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Set knife edge reading of a previously defined zone</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name">set_moving_source</span>(<span class="member_params"><span class="member_param">double source_offset = 0.0</span>)</span></span></span><a href="#__81" id="__81" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Set moving light source foucault test. This clear all readings and zones. </p>
+<ul><li><span class="codedecl">source_offset</span>: Distance between knife edge and light source along optical axis.</li>
+</ul>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name">set_ode_stepsize</span>(<span class="member_params"><span class="member_param">double step</span>)</span></span></span><a href="#__82" id="__82" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Set surface integration (ODE) algorithm step size, default is 1mm</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name">set_radius</span>(<span class="member_params"><span class="member_param">double radius</span>)</span></span></span><a href="#__83" id="__83" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Set surface radius. Effective surface radius must be known to let the surface integration algorithm run up to a given limit. Sagitta and gradient values above the define radius won't be accurate.</p>
+<p>Radius is adjusted to max zone radius + 10% when adding readings.</p>
+</div></div></div><div class="foot"><p class="generated"><a style="float: right;" href="http://validator.w3.org/check?uri=referer">Valid XHTML 1.0 Strict</a>Generated by diaxen on Sun Sep 11 20:21:29 2011 using <a href="http://www.nongnu.org/mkdoc/">MkDoc</a></p></div></body></html>

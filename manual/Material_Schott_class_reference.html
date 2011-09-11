@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta name="Generator" content="MKDOC " />
+ <title>GNU Goptical manual </title>
+ <link rel="stylesheet" href="mkdoc.css" />
+ <style type="text/css">
+
+  .sec_hidden { display: none; }
+  .sec_shown {}
+ </style>
+</head><body>
+<div class="page"><div class="head"><div class="headlinks"><a href="Table_of_contents.html">Table of contents</a>
+ &nbsp; <a href="Introduction.html">Introduction</a>
+ &nbsp; <a href="Tutorial.html">Tutorial</a>
+ &nbsp; <a href="Main_classes.html">Main classes</a>
+</div><div class="navlinks"><a href="index.html" accesskey="t">Top</a> &nbsp; <a href="Material_Mirror_class_full_member_list.html"  accesskey="p" id="nav_prev">Previous </a> &nbsp; <a href="API_documentation.html"  accesskey="u" id="nav_up"> Up </a> &nbsp; <a href="Material_Schott_class_full_member_list.html"  accesskey="n" id="nav_next"> Next</a></div>
+</div><div class="content"><div style="clear: both; height:20px;"></div>
+<h1>Material::Schott class reference<br /><span class="subtitle">
+[<a href="_Core_module_reference.html">Core</a> module]</span>
+</h1><div class="sec_content1">
+<div style="clear: both; height:20px;"></div>
+</div><h2>Declaration<a href="#_Declaration57" id="_Declaration57" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<div class="codebox"><code><span class="codedir">#include</span> &lt;Goptical/Material/Schott&gt;<br /><br /><span class="codekw">namespace</span> Goptical {<br />  <span class="codekw">namespace</span> Material {<br />    <span class="codekw">class</span> Schott;<br />  };<br />};<br /></code></div><p> This class is a member of the <span class="codedecl"><a href="Material_namespace_reference.html">Material</a></span> namespace.</p>
+</div><h2>Inheritance<a href="#_Inheritance57" id="_Inheritance57" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<div class="tree_frame" style="width:220px;"><div class="tree_row"><div style="width:10px;" class="tree_pad"></div><div style="width:200px;" class="tree_public"><span class="codedecl"><span class="ext_link"><a href="http://diaxen.ssji.net/dpp/dpp_ref_base_class_reference.html">ref_base</a></span>&lt;<a href="Material_Material_class_reference.html">Material</a>&gt;</span></div
+></div><br/><div style="width:110px;" class="tree_connect_1">&nbsp;</div
+><div style="width:110px;" class="tree_connect_4">&nbsp;</div><br/><div style="width:110px;" class="tree_connect_1">&nbsp;</div
+><div style="width:110px;" class="tree_connect_4">&nbsp;</div><br/><div class="tree_row"><div style="width:60px;" class="tree_pad"></div><div style="width:100px;" class="tree_public"><span class="codedecl"><a href="Material_Material_class_reference.html">Material</a></span></div
+></div><br/><div style="width:110px;" class="tree_connect_1">&nbsp;</div
+><div style="width:110px;" class="tree_connect_4">&nbsp;</div><br/><div style="width:110px;" class="tree_connect_1">&nbsp;</div
+><div style="width:110px;" class="tree_connect_4">&nbsp;</div><br/><div class="tree_row"><div style="width:60px;" class="tree_pad"></div><div style="width:100px;" class="tree_public"><span class="codedecl"><a href="Material_Solid_class_reference.html">Solid</a></span></div
+></div><br/><div style="width:110px;" class="tree_connect_1">&nbsp;</div
+><div style="width:110px;" class="tree_connect_4">&nbsp;</div><br/><div style="width:110px;" class="tree_connect_1">&nbsp;</div
+><div style="width:110px;" class="tree_connect_4">&nbsp;</div><br/><div class="tree_row"><div style="width:50px;" class="tree_pad"></div><div style="width:120px;" class="tree_public"><span class="codedecl"><a href="Material_Dielectric_class_reference.html">Dielectric</a></span></div
+></div><br/><div style="width:110px;" class="tree_connect_1">&nbsp;</div
+><div style="width:110px;" class="tree_connect_4">&nbsp;</div><br/><div style="width:110px;" class="tree_connect_1">&nbsp;</div
+><div style="width:110px;" class="tree_connect_4">&nbsp;</div><br/><div class="tree_row"><div style="width:60px;" class="tree_pad"></div><div style="width:100px;" class="tree_this"><span class="codedecl"><a href="Material_Schott_class_reference.html">Schott</a></span></div
+></div><br/></div>
+</div><h2>Description<a href="#_Description68" id="_Description68" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<p>This class models optical properties of dielectric materials with Schott refractive index dispersion formula:</p>
+<p><img style="vertical-align: middle;" src="4f2dec2722a7ec4026486e40c5ade00c.png" alt="n_\lambda = \sqrt{ \sum\limits_{i} A_{i}\times\lambda^{2i}}" /></p>
+<p>with <img style="vertical-align: middle;" src="fcad076041f70ef8082523e42db0a6b4.png" alt="\lambda" /> the micrometer wavelength.</p>
+</div><h2>Members<a href="#_Members68" id="_Members68" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<p> See also the <a href="Material_Schott_class_full_member_list.html">full member list</a> section for this class.</p>
+</div><h3>Inherited members<a href="#_Inherited_members37" id="_Inherited_members37" class="hover_link">&nbsp;&nbsp;</a></h3><div class="sec_content3">
+<ul><li>36 members inherited from <span class="codedecl"><a href="Material_Dielectric_class_reference.html">Dielectric</a></span></li>
+</ul>
+</div><h3>Functions<a href="#_Functions112" id="_Functions112" class="hover_link">&nbsp;&nbsp;</a></h3><div class="sec_content3">
+<ul><li><span class="listitem"><span class="codedecl"><span class="member_prefix"></span><span class="member_signature"><span class="member_name"><a href="Material_Schott_class_reference.html#__593">Schott</a></span>(<span class="member_params">)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix"></span><span class="member_signature"><span class="member_name"><a href="Material_Schott_class_reference.html#__594">Schott</a></span>(<span class="member_params"><span class="member_param">double A, </span><span class="member_param">double B, </span><span class="member_param">double C, </span><span class="member_param">double D, </span><span class="member_param">double E, </span><span class="member_param">double F</span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name"><a href="Material_Schott_class_reference.html#__595">set_term</a></span>(<span class="member_params"><span class="member_param">int term, </span><span class="member_param">double K</span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name"><a href="Material_Schott_class_reference.html#__596">set_terms_range</a></span>(<span class="member_params"><span class="member_param">int first, </span><span class="member_param">int last</span>)</span></span></span></span></li>
+</ul>
+</div><h2>Members detail<a href="#_Members_detail66" id="_Members_detail66" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix"></span><span class="member_signature"><span class="member_name">Schott</span>(<span class="member_params">)</span></span></span><a href="#__593" id="__593" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Create an empty schott model</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix"></span><span class="member_signature"><span class="member_name">Schott</span>(<span class="member_params"><span class="member_param">double A, </span><span class="member_param">double B, </span><span class="member_param">double C, </span><span class="member_param">double D, </span><span class="member_param">double E, </span><span class="member_param">double F</span>)</span></span></span><a href="#__594" id="__594" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Create a schott model with [-8,2] exponents range:</p>
+<p><img style="vertical-align: middle;" src="8683f22046c10cf64436ffb83c223e81.png" alt="n_\lambda = \sqrt{ A + B\times\lambda^2 + \frac{C}{\lambda^2}<br />                  + \frac{D}{\lambda^4} + \frac{E}{\lambda^6} + \frac{F}{\lambda^8}}" /></p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name">set_term</span>(<span class="member_params"><span class="member_param">int term, </span><span class="member_param">double K</span>)</span></span></span><a href="#__595" id="__595" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Set term coefficient, <span class="tt">term</span> must be a multiple of 2.</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name">set_terms_range</span>(<span class="member_params"><span class="member_param">int first, </span><span class="member_param">int last</span>)</span></span></span><a href="#__596" id="__596" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Set exponents range, must be multiples of 2</p>
+</div></div></div><div class="foot"><p class="generated"><a style="float: right;" href="http://validator.w3.org/check?uri=referer">Valid XHTML 1.0 Strict</a>Generated by diaxen on Sun Sep 11 20:21:33 2011 using <a href="http://www.nongnu.org/mkdoc/">MkDoc</a></p></div></body></html>

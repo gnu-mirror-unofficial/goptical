@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta name="Generator" content="MKDOC " />
+ <title>GNU Goptical manual </title>
+ <link rel="stylesheet" href="mkdoc.css" />
+ <style type="text/css">
+
+  .sec_hidden { display: none; }
+  .sec_shown {}
+ </style>
+</head><body>
+<div class="page"><div class="head"><div class="headlinks"><a href="Table_of_contents.html">Table of contents</a>
+ &nbsp; <a href="Introduction.html">Introduction</a>
+ &nbsp; <a href="Tutorial.html">Tutorial</a>
+ &nbsp; <a href="Main_classes.html">Main classes</a>
+</div><div class="navlinks"><a href="index.html" accesskey="t">Top</a> &nbsp; <a href="Trace_Result_class_full_member_list.html"  accesskey="p" id="nav_prev">Previous </a> &nbsp; <a href="API_documentation.html"  accesskey="u" id="nav_up"> Up </a> &nbsp; <a href="Trace_Sequence_class_full_member_list.html"  accesskey="n" id="nav_next"> Next</a></div>
+</div><div class="content"><div style="clear: both; height:20px;"></div>
+<h1>Trace::Sequence class reference<br /><span class="subtitle">
+[<a href="_Core_module_reference.html">Core</a> module]</span>
+</h1><div class="sec_content1">
+<div style="clear: both; height:20px;"></div>
+</div><h2>Declaration<a href="#_Declaration103" id="_Declaration103" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<div class="codebox"><code><span class="codedir">#include</span> &lt;Goptical/Trace/Sequence&gt;<br /><br /><span class="codekw">namespace</span> Goptical {<br />  <span class="codekw">namespace</span> Trace {<br />    <span class="codekw">class</span> Sequence;<br />  };<br />};<br /></code></div><p> This class is a member of the <span class="codedecl"><a href="Trace_namespace_reference.html">Trace</a></span> namespace.</p>
+</div><h2>Inheritance<a href="#_Inheritance103" id="_Inheritance103" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<div class="tree_frame" style="width:220px;"><div class="tree_row"><div style="width:10px;" class="tree_pad"></div><div style="width:200px;" class="tree_public"><span class="codedecl"><span class="ext_link"><a href="http://diaxen.ssji.net/dpp/dpp_ref_base_class_reference.html">ref_base</a></span>&lt;<a href="Trace_Sequence_class_reference.html">Sequence</a>&gt;</span></div
+></div><br/><div style="width:110px;" class="tree_connect_1">&nbsp;</div
+><div style="width:110px;" class="tree_connect_4">&nbsp;</div><br/><div style="width:110px;" class="tree_connect_1">&nbsp;</div
+><div style="width:110px;" class="tree_connect_4">&nbsp;</div><br/><div class="tree_row"><div style="width:60px;" class="tree_pad"></div><div style="width:100px;" class="tree_this"><span class="codedecl"><a href="Trace_Sequence_class_reference.html">Sequence</a></span></div
+></div><br/></div>
+</div><h2>Description<a href="#_Description118" id="_Description118" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<p>There are two light propagation modes in common use: sequential and non sequential. When using the sequential mode, light only interacts with sequence elements in given sequence order.</p>
+<p>This class will hold the user defined ordered list of elements used by sequential light propagation algorithm implemented in the <span class="codedecl"><a href="Trace_Tracer_class_reference.html">Tracer</a></span> class.</p>
+</div><h2>Members<a href="#_Members118" id="_Members118" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<p> See also the <a href="Trace_Sequence_class_full_member_list.html">full member list</a> section for this class.</p>
+</div><h3>Functions<a href="#_Functions206" id="_Functions206" class="hover_link">&nbsp;&nbsp;</a></h3><div class="sec_content3">
+<ul><li><span class="listitem"><span class="codedecl"><span class="member_prefix"></span><span class="member_signature"><span class="member_name"><a href="Trace_Sequence_class_reference.html#__1411">Sequence</a></span>(<span class="member_params">)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix"></span><span class="member_signature"><span class="member_name"><a href="Trace_Sequence_class_reference.html#__1412">Sequence</a></span>(<span class="member_params"><span class="member_param">const Sys::System &amp;system</span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name"><a href="Trace_Sequence_class_reference.html#__1413">add</a></span>(<span class="member_params"><span class="member_param">const Sys::System &amp;system</span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">unsigned int </span><span class="member_signature"><span class="member_name"><a href="Trace_Sequence_class_reference.html#__1414">append</a></span>(<span class="member_params"><span class="member_param">const Sys::Element &amp;element</span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name"><a href="Trace_Sequence_class_reference.html#__1415">clear</a></span>(<span class="member_params">)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">const Sys::Element &amp; </span><span class="member_signature"><span class="member_name"><a href="Trace_Sequence_class_reference.html#__1416">get_element</a></span>(<span class="member_params"><span class="member_param">unsigned int index</span>) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name"><a href="Trace_Sequence_class_reference.html#__1417">insert</a></span>(<span class="member_params"><span class="member_param">unsigned int index, </span><span class="member_param">const Sys::Element &amp;element</span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name"><a href="Trace_Sequence_class_reference.html#__1418">remove</a></span>(<span class="member_params"><span class="member_param">unsigned int index</span>)</span></span></span></span></li>
+</ul>
+</div><h2>Members detail<a href="#_Members_detail116" id="_Members_detail116" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix"></span><span class="member_signature"><span class="member_name">Sequence</span>(<span class="member_params">)</span></span></span><a href="#__1411" id="__1411" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Create a new empty sequence</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix"></span><span class="member_signature"><span class="member_name">Sequence</span>(<span class="member_params"><span class="member_param">const Sys::<a href="Sys_System_class_reference.html">System</a> &amp;system</span>)</span></span></span><a href="#__1412" id="__1412" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Create a new sequence and insert all elements present in the system. This is equivalent to calling add() on empty sequence.</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name">add</span>(<span class="member_params"><span class="member_param">const Sys::<a href="Sys_System_class_reference.html">System</a> &amp;system</span>)</span></span></span><a href="#__1413" id="__1413" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Add all elements from the given system. Element are sorted in axis order starting from left; reflecting elements do reverse direction.</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">unsigned int </span><span class="member_signature"><span class="member_name">append</span>(<span class="member_params"><span class="member_param">const Sys::<a href="Sys_Element_class_reference.html">Element</a> &amp;element</span>)</span></span></span><a href="#__1414" id="__1414" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Insert an element at end of sequence. </p>
+<p>The return value is position of the element in the sequence</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name">clear</span>(<span class="member_params">)</span></span></span><a href="#__1415" id="__1415" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Remove all elements from sequence</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">const Sys::<a href="Sys_Element_class_reference.html">Element</a> &amp; </span><span class="member_signature"><span class="member_name">get_element</span>(<span class="member_params"><span class="member_param">unsigned int index</span>) const</span></span></span><a href="#__1416" id="__1416" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Get a reference to an element in sequence</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name">insert</span>(<span class="member_params"><span class="member_param">unsigned int index, </span><span class="member_param">const Sys::<a href="Sys_Element_class_reference.html">Element</a> &amp;element</span>)</span></span></span><a href="#__1417" id="__1417" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Insert an element in sequence at given position</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name">remove</span>(<span class="member_params"><span class="member_param">unsigned int index</span>)</span></span></span><a href="#__1418" id="__1418" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Remove an element from sequence</p>
+</div></div></div><div class="foot"><p class="generated"><a style="float: right;" href="http://validator.w3.org/check?uri=referer">Valid XHTML 1.0 Strict</a>Generated by diaxen on Sun Sep 11 20:21:36 2011 using <a href="http://www.nongnu.org/mkdoc/">MkDoc</a></p></div></body></html>

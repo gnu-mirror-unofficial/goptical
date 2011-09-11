@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta name="Generator" content="MKDOC " />
+ <title>GNU Goptical manual </title>
+ <link rel="stylesheet" href="mkdoc.css" />
+ <style type="text/css">
+
+  .sec_hidden { display: none; }
+  .sec_shown {}
+ </style>
+</head><body>
+<div class="page"><div class="head"><div class="headlinks"><a href="Table_of_contents.html">Table of contents</a>
+ &nbsp; <a href="Introduction.html">Introduction</a>
+ &nbsp; <a href="Tutorial.html">Tutorial</a>
+ &nbsp; <a href="Main_classes.html">Main classes</a>
+</div><div class="navlinks"><a href="index.html" accesskey="t">Top</a> &nbsp; <a href="Material_Mil_class_full_member_list.html"  accesskey="p" id="nav_prev">Previous </a> &nbsp; <a href="API_documentation.html"  accesskey="u" id="nav_up"> Up </a> &nbsp; <a href="Material_Mirror_class_full_member_list.html"  accesskey="n" id="nav_next"> Next</a></div>
+</div><div class="content"><div style="clear: both; height:20px;"></div>
+<h1>Material::Mirror class reference<br /><span class="subtitle">
+[<a href="_Core_module_reference.html">Core</a> module]</span>
+</h1><div class="sec_content1">
+<div style="clear: both; height:20px;"></div>
+</div><h2>Declaration<a href="#_Declaration56" id="_Declaration56" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<div class="codebox"><code><span class="codedir">#include</span> &lt;Goptical/Material/Mirror&gt;<br /><br /><span class="codekw">namespace</span> Goptical {<br />  <span class="codekw">namespace</span> Material {<br />    <span class="codekw">class</span> Mirror;<br />  };<br />};<br /></code></div><p> This class is a member of the <span class="codedecl"><a href="Material_namespace_reference.html">Material</a></span> namespace.</p>
+</div><h2>Inheritance<a href="#_Inheritance56" id="_Inheritance56" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<div class="tree_frame" style="width:220px;"><div class="tree_row"><div style="width:10px;" class="tree_pad"></div><div style="width:200px;" class="tree_public"><span class="codedecl"><span class="ext_link"><a href="http://diaxen.ssji.net/dpp/dpp_ref_base_class_reference.html">ref_base</a></span>&lt;<a href="Material_Material_class_reference.html">Material</a>&gt;</span></div
+></div><br/><div style="width:110px;" class="tree_connect_1">&nbsp;</div
+><div style="width:110px;" class="tree_connect_4">&nbsp;</div><br/><div style="width:110px;" class="tree_connect_1">&nbsp;</div
+><div style="width:110px;" class="tree_connect_4">&nbsp;</div><br/><div class="tree_row"><div style="width:60px;" class="tree_pad"></div><div style="width:100px;" class="tree_public"><span class="codedecl"><a href="Material_Material_class_reference.html">Material</a></span></div
+></div><br/><div style="width:110px;" class="tree_connect_1">&nbsp;</div
+><div style="width:110px;" class="tree_connect_4">&nbsp;</div><br/><div style="width:110px;" class="tree_connect_1">&nbsp;</div
+><div style="width:110px;" class="tree_connect_4">&nbsp;</div><br/><div class="tree_row"><div style="width:60px;" class="tree_pad"></div><div style="width:100px;" class="tree_this"><span class="codedecl"><a href="Material_Mirror_class_reference.html">Mirror</a></span></div
+></div><br/></div>
+</div><h2>Description<a href="#_Description67" id="_Description67" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<p>This class models optical properties of a perfect reflecting material.</p>
+<p>A global <span class="codedecl"><a href="Material_namespace_reference.html#__530">mirror</a></span> variable is available.</p>
+</div><h2>Members<a href="#_Members67" id="_Members67" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<p> See also the <a href="Material_Mirror_class_full_member_list.html">full member list</a> section for this class.</p>
+</div><h3>Inherited members<a href="#_Inherited_members36" id="_Inherited_members36" class="hover_link">&nbsp;&nbsp;</a></h3><div class="sec_content3">
+<ul><li>14 members inherited from <span class="codedecl"><a href="Material_Material_class_reference.html">Material</a></span></li>
+</ul>
+</div><h3>Functions<a href="#_Functions110" id="_Functions110" class="hover_link">&nbsp;&nbsp;</a></h3><div class="sec_content3">
+<ul><li><span class="listitem"><span class="codedecl"><span class="member_prefix"></span><span class="member_signature"><span class="member_name"><a href="Material_Mirror_class_reference.html#__587">Mirror</a></span>(<span class="member_params">)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">virtual double </span><span class="member_signature"><span class="member_name"><a href="Material_Mirror_class_reference.html#__588">get_extinction_coef</a></span>(<span class="member_params"><span class="member_param">double wavelen</span>) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">virtual double </span><span class="member_signature"><span class="member_name"><a href="Material_Mirror_class_reference.html#__589">get_internal_transmittance</a></span>(<span class="member_params"><span class="member_param">double wavelen, </span><span class="member_param">double thickness</span>) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">virtual double </span><span class="member_signature"><span class="member_name"><a href="Material_Mirror_class_reference.html#__590">get_refractive_index</a></span>(<span class="member_params"><span class="member_param">double wavelen</span>) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">virtual bool </span><span class="member_signature"><span class="member_name"><a href="Material_Mirror_class_reference.html#__591">is_opaque</a></span>(<span class="member_params">) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">virtual bool </span><span class="member_signature"><span class="member_name"><a href="Material_Mirror_class_reference.html#__592">is_reflecting</a></span>(<span class="member_params">) const</span></span></span></span></li>
+</ul>
+</div><h2>Members detail<a href="#_Members_detail65" id="_Members_detail65" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix"></span><span class="member_signature"><span class="member_name">Mirror</span>(<span class="member_params">)</span></span></span><a href="#__587" id="__587" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p><span class="nodoc">No documentation available</span></p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">virtual double </span><span class="member_signature"><span class="member_name">get_extinction_coef</span>(<span class="member_params"><span class="member_param">double wavelen</span>) const</span></span></span><a href="#__588" id="__588" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>This virtual function overrides the <code><a href="Material_Material_class_reference.html#__567">get_extinction_coef</a></code> virtual function defined in the <code><a href="Material_Material_class_reference.html">Material</a></code> base abstract class.</p>
+<p><span class="nodoc">Documentation inherited from base class:</span></p>
+<p>Get extinction coefficient. Subclasses _must_ provide this function or the get_internal_transmittance() function.</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">virtual double </span><span class="member_signature"><span class="member_name">get_internal_transmittance</span>(<span class="member_params"><span class="member_param">double wavelen, </span><span class="member_param">double thickness</span>) const</span></span></span><a href="#__589" id="__589" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>This virtual function overrides the <code><a href="Material_Material_class_reference.html#__568">get_internal_transmittance</a></code> virtual function defined in the <code><a href="Material_Material_class_reference.html">Material</a></code> base abstract class.</p>
+<p><span class="nodoc">Documentation inherited from base class:</span></p>
+<p>Get material internal transmittance for thickness in mm. Subclasses _must_ provide this function or the get_extinction_coef() function.</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">virtual double </span><span class="member_signature"><span class="member_name">get_refractive_index</span>(<span class="member_params"><span class="member_param">double wavelen</span>) const</span></span></span><a href="#__590" id="__590" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>This virtual function implements the <code><a href="Material_Material_class_reference.html#__572">get_refractive_index</a></code> pure function declared in the <code><a href="Material_Material_class_reference.html">Material</a></code> base abstract class.</p>
+<p><span class="nodoc">Documentation inherited from base class:</span></p>
+<p>Get material absolute refractive index at specified wavelen in <em>nm.</em></p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">virtual bool </span><span class="member_signature"><span class="member_name">is_opaque</span>(<span class="member_params">) const</span></span></span><a href="#__591" id="__591" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>This virtual function implements the <code><a href="Material_Material_class_reference.html#__575">is_opaque</a></code> pure function declared in the <code><a href="Material_Material_class_reference.html">Material</a></code> base abstract class.</p>
+<p><span class="nodoc">Documentation inherited from base class:</span></p>
+<p>Return true if material must be considered opaque for ray tracing</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">virtual bool </span><span class="member_signature"><span class="member_name">is_reflecting</span>(<span class="member_params">) const</span></span></span><a href="#__592" id="__592" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>This virtual function implements the <code><a href="Material_Material_class_reference.html#__576">is_reflecting</a></code> pure function declared in the <code><a href="Material_Material_class_reference.html">Material</a></code> base abstract class.</p>
+<p><span class="nodoc">Documentation inherited from base class:</span></p>
+<p>Return true if material may reflect most of the light and must be considered as a mirror when ignoring ray intensity computation during ray tracing.</p>
+</div></div></div><div class="foot"><p class="generated"><a style="float: right;" href="http://validator.w3.org/check?uri=referer">Valid XHTML 1.0 Strict</a>Generated by diaxen on Sun Sep 11 20:21:32 2011 using <a href="http://www.nongnu.org/mkdoc/">MkDoc</a></p></div></body></html>

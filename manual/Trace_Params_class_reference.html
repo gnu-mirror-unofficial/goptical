@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta name="Generator" content="MKDOC " />
+ <title>GNU Goptical manual </title>
+ <link rel="stylesheet" href="mkdoc.css" />
+ <style type="text/css">
+
+  .sec_hidden { display: none; }
+  .sec_shown {}
+ </style>
+</head><body>
+<div class="page"><div class="head"><div class="headlinks"><a href="Table_of_contents.html">Table of contents</a>
+ &nbsp; <a href="Introduction.html">Introduction</a>
+ &nbsp; <a href="Tutorial.html">Tutorial</a>
+ &nbsp; <a href="Main_classes.html">Main classes</a>
+</div><div class="navlinks"><a href="index.html" accesskey="t">Top</a> &nbsp; <a href="Trace_Distribution_class_full_member_list.html"  accesskey="p" id="nav_prev">Previous </a> &nbsp; <a href="API_documentation.html"  accesskey="u" id="nav_up"> Up </a> &nbsp; <a href="Trace_Params_class_full_member_list.html"  accesskey="n" id="nav_next"> Next</a></div>
+</div><div class="content"><div style="clear: both; height:20px;"></div>
+<h1>Trace::Params class reference<br /><span class="subtitle">
+[<a href="_Core_module_reference.html">Core</a> module]</span>
+</h1><div class="sec_content1">
+<div style="clear: both; height:20px;"></div>
+</div><h2>Declaration<a href="#_Declaration101" id="_Declaration101" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<div class="codebox"><code><span class="codedir">#include</span> &lt;Goptical/Trace/Params&gt;<br /><br /><span class="codekw">namespace</span> Goptical {<br />  <span class="codekw">namespace</span> Trace {<br />    <span class="codekw">class</span> Params;<br />  };<br />};<br /></code></div><p> This class is a member of the <span class="codedecl"><a href="Trace_namespace_reference.html">Trace</a></span> namespace.</p>
+</div><h2>Description<a href="#_Description116" id="_Description116" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<p>This class is used to store light progation parameters. This includes sequential / non-sequential mode, light intensity computation mode and propagation mode (raytracing, diffraction, ...).</p>
+<p>See also <a href="A_simple_refractor_design.html#_Performing_light_propagation">Performing light propagation</a> section.</p>
+</div><h2>Members<a href="#_Members116" id="_Members116" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<p> See also the <a href="Trace_Params_class_full_member_list.html">full member list</a> section for this class.</p>
+</div><h3>Functions<a href="#_Functions202" id="_Functions202" class="hover_link">&nbsp;&nbsp;</a></h3><div class="sec_content3">
+<ul><li><span class="listitem"><span class="codedecl"><span class="member_prefix"></span><span class="member_signature"><span class="member_name"><a href="Trace_Params_class_reference.html#__1368">Params</a></span>(<span class="member_params">)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">const Distribution &amp; </span><span class="member_signature"><span class="member_name"><a href="Trace_Params_class_reference.html#__1369">get_default_distribution</a></span>(<span class="member_params">) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">Distribution &amp; </span><span class="member_signature"><span class="member_name"><a href="Trace_Params_class_reference.html#__1370">get_default_distribution</a></span>(<span class="member_params">)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">const Distribution &amp; </span><span class="member_signature"><span class="member_name"><a href="Trace_Params_class_reference.html#__1371">get_distribution</a></span>(<span class="member_params"><span class="member_param">const Sys::Surface &amp;s</span>) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">IntensityMode </span><span class="member_signature"><span class="member_name"><a href="Trace_Params_class_reference.html#__1372">get_intensity_mode</a></span>(<span class="member_params">) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">double </span><span class="member_signature"><span class="member_name"><a href="Trace_Params_class_reference.html#__1373">get_lost_ray_length</a></span>(<span class="member_params">) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">unsigned int </span><span class="member_signature"><span class="member_name"><a href="Trace_Params_class_reference.html#__1374">get_max_bounce</a></span>(<span class="member_params">) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">bool </span><span class="member_signature"><span class="member_name"><a href="Trace_Params_class_reference.html#__1375">get_unobstructed</a></span>(<span class="member_params">) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">bool </span><span class="member_signature"><span class="member_name"><a href="Trace_Params_class_reference.html#__1376">is_sequential</a></span>(<span class="member_params">) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name"><a href="Trace_Params_class_reference.html#__1377">reset_distribution</a></span>(<span class="member_params">)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name"><a href="Trace_Params_class_reference.html#__1378">set_default_distribution</a></span>(<span class="member_params"><span class="member_param">const Distribution &amp;default_distribution</span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name"><a href="Trace_Params_class_reference.html#__1379">set_distribution</a></span>(<span class="member_params"><span class="member_param">const Sys::Surface &amp;s, </span><span class="member_param">const Distribution &amp;dist</span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name"><a href="Trace_Params_class_reference.html#__1380">set_intensity_mode</a></span>(<span class="member_params"><span class="member_param">IntensityMode intensity_mode</span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name"><a href="Trace_Params_class_reference.html#__1381">set_lost_ray_length</a></span>(<span class="member_params"><span class="member_param">double lost_ray_length</span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name"><a href="Trace_Params_class_reference.html#__1382">set_max_bounce</a></span>(<span class="member_params"><span class="member_param">unsigned int max_bounce</span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name"><a href="Trace_Params_class_reference.html#__1383">set_nonsequential_mode</a></span>(<span class="member_params">)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name"><a href="Trace_Params_class_reference.html#__1384">set_sequential_mode</a></span>(<span class="member_params"><span class="member_param">const const_ref&lt;Sequence&gt; &amp;seq</span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name"><a href="Trace_Params_class_reference.html#__1385">set_unobstructed</a></span>(<span class="member_params"><span class="member_param">bool unobstructed</span>)</span></span></span></span></li>
+</ul>
+</div><h2>Members detail<a href="#_Members_detail114" id="_Members_detail114" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix"></span><span class="member_signature"><span class="member_name">Params</span>(<span class="member_params">)</span></span></span><a href="#__1368" id="__1368" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p><span class="nodoc">No documentation available</span></p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">const <a href="Trace_Distribution_class_reference.html">Distribution</a> &amp; </span><span class="member_signature"><span class="member_name">get_default_distribution</span>(<span class="member_params">) const</span></span></span><a href="#__1369" id="__1369" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p> Get default rays distribution pattern.</p>
+<p>See also <span class="codedecl"><a href="Trace_Params_class_reference.html#__1378">set_default_distribution</a></span> function.</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix"><a href="Trace_Distribution_class_reference.html">Distribution</a> &amp; </span><span class="member_signature"><span class="member_name">get_default_distribution</span>(<span class="member_params">)</span></span></span><a href="#__1370" id="__1370" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p> Get default rays distribution pattern.</p>
+<p>See also <span class="codedecl"><a href="Trace_Params_class_reference.html#__1378">set_default_distribution</a></span> function.</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">const <a href="Trace_Distribution_class_reference.html">Distribution</a> &amp; </span><span class="member_signature"><span class="member_name">get_distribution</span>(<span class="member_params"><span class="member_param">const Sys::<a href="Sys_Surface_class_reference.html">Surface</a> &amp;s</span>) const</span></span></span><a href="#__1371" id="__1371" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Get distribution pattern for a given surface</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix"><a href="Trace_namespace_reference.html#__1356">IntensityMode</a> </span><span class="member_signature"><span class="member_name">get_intensity_mode</span>(<span class="member_params">) const</span></span></span><a href="#__1372" id="__1372" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p> Get raytracing intensity mode.</p>
+<p>See also <span class="codedecl"><a href="Trace_Params_class_reference.html#__1380">set_intensity_mode</a></span> function.</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">double </span><span class="member_signature"><span class="member_name">get_lost_ray_length</span>(<span class="member_params">) const</span></span></span><a href="#__1373" id="__1373" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p> Get lost ray length.</p>
+<p>See also <span class="codedecl"><a href="Trace_Params_class_reference.html#__1381">set_lost_ray_length</a></span> function.</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">unsigned int </span><span class="member_signature"><span class="member_name">get_max_bounce</span>(<span class="member_params">) const</span></span></span><a href="#__1374" id="__1374" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p> Get maximum ray bounce count, default is 50.</p>
+<p>See also <span class="codedecl"><a href="Trace_Params_class_reference.html#__1382">set_max_bounce</a></span> function.</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">bool </span><span class="member_signature"><span class="member_name">get_unobstructed</span>(<span class="member_params">) const</span></span></span><a href="#__1375" id="__1375" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p> Get unobstructed raytracing mode. Surface shapes are ignored, no rays are stopped.</p>
+<p>See also <span class="codedecl"><a href="Trace_Params_class_reference.html#__1385">set_unobstructed</a></span> function.</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">bool </span><span class="member_signature"><span class="member_name">is_sequential</span>(<span class="member_params">) const</span></span></span><a href="#__1376" id="__1376" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Test if in sequential ray tracing mode</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name">reset_distribution</span>(<span class="member_params">)</span></span></span><a href="#__1377" id="__1377" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Reset all surface specific distribution settings to default</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name">set_default_distribution</span>(<span class="member_params"><span class="member_param">const <a href="Trace_Distribution_class_reference.html">Distribution</a> &amp;default_distribution</span>)</span></span></span><a href="#__1378" id="__1378" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p> Set default rays distribution pattern.</p>
+<p>See also <span class="codedecl"><a href="Trace_Params_class_reference.html#__1369">get_default_distribution</a></span> function.</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name">set_distribution</span>(<span class="member_params"><span class="member_param">const Sys::<a href="Sys_Surface_class_reference.html">Surface</a> &amp;s, </span><span class="member_param">const <a href="Trace_Distribution_class_reference.html">Distribution</a> &amp;dist</span>)</span></span></span><a href="#__1379" id="__1379" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Set distribution pattern for a given surface</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name">set_intensity_mode</span>(<span class="member_params"><span class="member_param"><a href="Trace_namespace_reference.html#__1356">IntensityMode</a> intensity_mode</span>)</span></span></span><a href="#__1380" id="__1380" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p> Set raytracing intensity mode.</p>
+<p>See also <span class="codedecl"><a href="Trace_Params_class_reference.html#__1372">get_intensity_mode</a></span> function.</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name">set_lost_ray_length</span>(<span class="member_params"><span class="member_param">double lost_ray_length</span>)</span></span></span><a href="#__1381" id="__1381" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p> Set lost ray length.</p>
+<p>See also <span class="codedecl"><a href="Trace_Params_class_reference.html#__1373">get_lost_ray_length</a></span> function.</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name">set_max_bounce</span>(<span class="member_params"><span class="member_param">unsigned int max_bounce</span>)</span></span></span><a href="#__1382" id="__1382" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p> Set maximum ray bounce count, default is 50.</p>
+<p>See also <span class="codedecl"><a href="Trace_Params_class_reference.html#__1374">get_max_bounce</a></span> function.</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name">set_nonsequential_mode</span>(<span class="member_params">)</span></span></span><a href="#__1383" id="__1383" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Set non sequential ray tracing mode (default)</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name">set_sequential_mode</span>(<span class="member_params"><span class="member_param">const <span class="ext_link"><a href="http://diaxen.ssji.net/dpp/dpp_const_ref_class_reference.html">const_ref</a></span>&lt;<a href="Trace_Sequence_class_reference.html">Sequence</a>&gt; &amp;seq</span>)</span></span></span><a href="#__1384" id="__1384" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Set sequential ray tracing mode</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name">set_unobstructed</span>(<span class="member_params"><span class="member_param">bool unobstructed</span>)</span></span></span><a href="#__1385" id="__1385" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p> Set unobstructed raytracing mode. Surface shapes are ignored, no rays are stopped.</p>
+<p>See also <span class="codedecl"><a href="Trace_Params_class_reference.html#__1375">get_unobstructed</a></span> function.</p>
+</div></div></div><div class="foot"><p class="generated"><a style="float: right;" href="http://validator.w3.org/check?uri=referer">Valid XHTML 1.0 Strict</a>Generated by diaxen on Sun Sep 11 20:21:36 2011 using <a href="http://www.nongnu.org/mkdoc/">MkDoc</a></p></div></body></html>

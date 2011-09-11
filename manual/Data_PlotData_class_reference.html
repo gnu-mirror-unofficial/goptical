@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta name="Generator" content="MKDOC " />
+ <title>GNU Goptical manual </title>
+ <link rel="stylesheet" href="mkdoc.css" />
+ <style type="text/css">
+
+  .sec_hidden { display: none; }
+  .sec_shown {}
+ </style>
+</head><body>
+<div class="page"><div class="head"><div class="headlinks"><a href="Table_of_contents.html">Table of contents</a>
+ &nbsp; <a href="Introduction.html">Introduction</a>
+ &nbsp; <a href="Tutorial.html">Tutorial</a>
+ &nbsp; <a href="Main_classes.html">Main classes</a>
+</div><div class="navlinks"><a href="index.html" accesskey="t">Top</a> &nbsp; <a href="Data_Plot_class_full_member_list.html"  accesskey="p" id="nav_prev">Previous </a> &nbsp; <a href="API_documentation.html"  accesskey="u" id="nav_up"> Up </a> &nbsp; <a href="Data_PlotData_class_full_member_list.html"  accesskey="n" id="nav_next"> Next</a></div>
+</div><div class="content"><div style="clear: both; height:20px;"></div>
+<h1>Data::PlotData class reference<br /><span class="subtitle">
+[<a href="_Core_module_reference.html">Core</a> module]</span>
+</h1><div class="sec_content1">
+<div style="clear: both; height:20px;"></div>
+</div><h2>Declaration<a href="#_Declaration22" id="_Declaration22" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<div class="codebox"><code><span class="codedir">#include</span> &lt;Goptical/Data/PlotData&gt;<br /><br /><span class="codekw">namespace</span> Goptical {<br />  <span class="codekw">namespace</span> Data {<br />    <span class="codekw">class</span> PlotData;<br />  };<br />};<br /></code></div><p> This class is a member of the <span class="codedecl"><a href="Data_namespace_reference.html">Data</a></span> namespace.</p>
+</div><h2>Description<a href="#_Description28" id="_Description28" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<p>This class is used to describe a data set as part of a data plot. It contains a pointer to the data set and plotting informations (title, color, ...)</p>
+</div><h2>Members<a href="#_Members28" id="_Members28" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<p> See also the <a href="Data_PlotData_class_full_member_list.html">full member list</a> section for this class.</p>
+</div><h3>Functions<a href="#_Functions46" id="_Functions46" class="hover_link">&nbsp;&nbsp;</a></h3><div class="sec_content3">
+<ul><li><span class="listitem"><span class="codedecl"><span class="member_prefix"></span><span class="member_signature"><span class="member_name"><a href="Data_PlotData_class_reference.html#__204">PlotData</a></span>(<span class="member_params"><span class="member_param">const const_ref&lt;Set&gt; &amp;s</span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name"><a href="Data_PlotData_class_reference.html#__205">disable_style</a></span>(<span class="member_params"><span class="member_param">PlotStyleMask style</span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name"><a href="Data_PlotData_class_reference.html#__206">enable_style</a></span>(<span class="member_params"><span class="member_param">PlotStyleMask style</span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">const Io::Rgb &amp; </span><span class="member_signature"><span class="member_name"><a href="Data_PlotData_class_reference.html#__207">get_color</a></span>(<span class="member_params">) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">const std::string &amp; </span><span class="member_signature"><span class="member_name"><a href="Data_PlotData_class_reference.html#__208">get_label</a></span>(<span class="member_params">) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">const Set &amp; </span><span class="member_signature"><span class="member_name"><a href="Data_PlotData_class_reference.html#__209">get_set</a></span>(<span class="member_params">) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">PlotStyleMask </span><span class="member_signature"><span class="member_name"><a href="Data_PlotData_class_reference.html#__210">get_style</a></span>(<span class="member_params">) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name"><a href="Data_PlotData_class_reference.html#__211">set_color</a></span>(<span class="member_params"><span class="member_param">const Io::Rgb &amp;color</span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name"><a href="Data_PlotData_class_reference.html#__212">set_label</a></span>(<span class="member_params"><span class="member_param">const std::string &amp;title</span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name"><a href="Data_PlotData_class_reference.html#__213">set_style</a></span>(<span class="member_params"><span class="member_param">PlotStyleMask style</span>)</span></span></span></span></li>
+</ul>
+</div><h2>Members detail<a href="#_Members_detail26" id="_Members_detail26" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix"></span><span class="member_signature"><span class="member_name">PlotData</span>(<span class="member_params"><span class="member_param">const <span class="ext_link"><a href="http://diaxen.ssji.net/dpp/dpp_const_ref_class_reference.html">const_ref</a></span>&lt;<a href="Data_Set_class_reference.html">Set</a>&gt; &amp;s</span>)</span></span></span><a href="#__204" id="__204" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Create a new data plot descriptor which describe the specified dataset.</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name">disable_style</span>(<span class="member_params"><span class="member_param"><a href="Data_namespace_reference.html#__150">PlotStyleMask</a> style</span>)</span></span></span><a href="#__205" id="__205" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Disable a plotting style</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name">enable_style</span>(<span class="member_params"><span class="member_param"><a href="Data_namespace_reference.html#__150">PlotStyleMask</a> style</span>)</span></span></span><a href="#__206" id="__206" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Enable a plotting style</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">const Io::<a href="Io_Rgb_struct_reference.html">Rgb</a> &amp; </span><span class="member_signature"><span class="member_name">get_color</span>(<span class="member_params">) const</span></span></span><a href="#__207" id="__207" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Set data set plotting color</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">const std::<span class="ext_link"><a href="http://gcc.gnu.org/onlinedocs/libstdc++/libstdc++-html-USERS-4.3/a01697.html#a431813f68fa8a80ea10ea2ad21066a2">string</a></span> &amp; </span><span class="member_signature"><span class="member_name">get_label</span>(<span class="member_params">) const</span></span></span><a href="#__208" id="__208" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Get data set plotting label</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">const <a href="Data_Set_class_reference.html">Set</a> &amp; </span><span class="member_signature"><span class="member_name">get_set</span>(<span class="member_params">) const</span></span></span><a href="#__209" id="__209" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Get the described data set</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix"><a href="Data_namespace_reference.html#__150">PlotStyleMask</a> </span><span class="member_signature"><span class="member_name">get_style</span>(<span class="member_params">) const</span></span></span><a href="#__210" id="__210" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Get the plotting style mask</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name">set_color</span>(<span class="member_params"><span class="member_param">const Io::<a href="Io_Rgb_struct_reference.html">Rgb</a> &amp;color</span>)</span></span></span><a href="#__211" id="__211" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Set data set plotting color</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name">set_label</span>(<span class="member_params"><span class="member_param">const std::<span class="ext_link"><a href="http://gcc.gnu.org/onlinedocs/libstdc++/libstdc++-html-USERS-4.3/a01697.html#a431813f68fa8a80ea10ea2ad21066a2">string</a></span> &amp;title</span>)</span></span></span><a href="#__212" id="__212" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Set data set plotting label</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name">set_style</span>(<span class="member_params"><span class="member_param"><a href="Data_namespace_reference.html#__150">PlotStyleMask</a> style</span>)</span></span></span><a href="#__213" id="__213" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Set the plotting style mask</p>
+</div></div></div><div class="foot"><p class="generated"><a style="float: right;" href="http://validator.w3.org/check?uri=referer">Valid XHTML 1.0 Strict</a>Generated by diaxen on Sun Sep 11 20:21:29 2011 using <a href="http://www.nongnu.org/mkdoc/">MkDoc</a></p></div></body></html>

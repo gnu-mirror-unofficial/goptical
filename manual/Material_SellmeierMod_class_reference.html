@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta name="Generator" content="MKDOC " />
+ <title>GNU Goptical manual </title>
+ <link rel="stylesheet" href="mkdoc.css" />
+ <style type="text/css">
+
+  .sec_hidden { display: none; }
+  .sec_shown {}
+ </style>
+</head><body>
+<div class="page"><div class="head"><div class="headlinks"><a href="Table_of_contents.html">Table of contents</a>
+ &nbsp; <a href="Introduction.html">Introduction</a>
+ &nbsp; <a href="Tutorial.html">Tutorial</a>
+ &nbsp; <a href="Main_classes.html">Main classes</a>
+</div><div class="navlinks"><a href="index.html" accesskey="t">Top</a> &nbsp; <a href="Material_Sellmeier_class_full_member_list.html"  accesskey="p" id="nav_prev">Previous </a> &nbsp; <a href="API_documentation.html"  accesskey="u" id="nav_up"> Up </a> &nbsp; <a href="Material_SellmeierMod_class_full_member_list.html"  accesskey="n" id="nav_next"> Next</a></div>
+</div><div class="content"><div style="clear: both; height:20px;"></div>
+<h1>Material::SellmeierMod class reference<br /><span class="subtitle">
+[<a href="_Core_module_reference.html">Core</a> module]</span>
+</h1><div class="sec_content1">
+<div style="clear: both; height:20px;"></div>
+</div><h2>Declaration<a href="#_Declaration59" id="_Declaration59" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<div class="codebox"><code><span class="codedir">#include</span> &lt;Goptical/Material/SellmeierMod&gt;<br /><br /><span class="codekw">namespace</span> Goptical {<br />  <span class="codekw">namespace</span> Material {<br />    <span class="codekw">template</span> &lt;<span class="codekw">enum</span> SellmeierModFormula m&gt; <span class="codekw">class</span> SellmeierMod;<br />  };<br />};<br /></code></div><p> This class is a member of the <span class="codedecl"><a href="Material_namespace_reference.html">Material</a></span> namespace.</p>
+</div><h2>Inheritance<a href="#_Inheritance59" id="_Inheritance59" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<div class="tree_frame" style="width:220px;"><div class="tree_row"><div style="width:10px;" class="tree_pad"></div><div style="width:200px;" class="tree_public"><span class="codedecl"><span class="ext_link"><a href="http://diaxen.ssji.net/dpp/dpp_ref_base_class_reference.html">ref_base</a></span>&lt;<a href="Material_Material_class_reference.html">Material</a>&gt;</span></div
+></div><br/><div style="width:110px;" class="tree_connect_1">&nbsp;</div
+><div style="width:110px;" class="tree_connect_4">&nbsp;</div><br/><div style="width:110px;" class="tree_connect_1">&nbsp;</div
+><div style="width:110px;" class="tree_connect_4">&nbsp;</div><br/><div class="tree_row"><div style="width:60px;" class="tree_pad"></div><div style="width:100px;" class="tree_public"><span class="codedecl"><a href="Material_Material_class_reference.html">Material</a></span></div
+></div><br/><div style="width:110px;" class="tree_connect_1">&nbsp;</div
+><div style="width:110px;" class="tree_connect_4">&nbsp;</div><br/><div style="width:110px;" class="tree_connect_1">&nbsp;</div
+><div style="width:110px;" class="tree_connect_4">&nbsp;</div><br/><div class="tree_row"><div style="width:60px;" class="tree_pad"></div><div style="width:100px;" class="tree_public"><span class="codedecl"><a href="Material_Solid_class_reference.html">Solid</a></span></div
+></div><br/><div style="width:110px;" class="tree_connect_1">&nbsp;</div
+><div style="width:110px;" class="tree_connect_4">&nbsp;</div><br/><div style="width:110px;" class="tree_connect_1">&nbsp;</div
+><div style="width:110px;" class="tree_connect_4">&nbsp;</div><br/><div class="tree_row"><div style="width:50px;" class="tree_pad"></div><div style="width:120px;" class="tree_public"><span class="codedecl"><a href="Material_Dielectric_class_reference.html">Dielectric</a></span></div
+></div><br/><div style="width:110px;" class="tree_connect_1">&nbsp;</div
+><div style="width:110px;" class="tree_connect_4">&nbsp;</div><br/><div style="width:110px;" class="tree_connect_1">&nbsp;</div
+><div style="width:110px;" class="tree_connect_4">&nbsp;</div><br/><div class="tree_row"><div style="width:40px;" class="tree_pad"></div><div style="width:140px;" class="tree_this"><span class="codedecl"><a href="Material_SellmeierMod_class_reference.html">SellmeierMod</a></span></div
+></div><br/></div>
+</div><h2>Description<a href="#_Description70" id="_Description70" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<p>This class models optical properties of dielectric materials with various modified Sellmeier formulas:</p>
+<ul><li><p><span class="codedecl"><a href="Material_namespace_reference.html#__527">SellmeierMod2</a></span> : <img style="vertical-align: middle;" src="6857b990240913879a97ceeb1a925ffb.png" alt="n_\lambda = \sqrt{A + \frac{B\times\lambda^2}{\lambda^2 - C^2} <br />                                 + \frac{D}{\lambda^2 - E^2}}" /></p>
+</li>
+<li><p><span class="codedecl"><a href="Material_namespace_reference.html#__525">Handbook1</a></span> : <img style="vertical-align: middle;" src="356c7cc7acea06100a1825560fa2550b.png" alt="n_\lambda = \sqrt{A + B\times\lambda^2 + \frac{C}{\lambda^2-D}}" /></p>
+</li>
+<li><p><span class="codedecl"><a href="Material_namespace_reference.html#__526">Handbook2</a></span> : <img style="vertical-align: middle;" src="1c3bc16cf88fdfd2b97dfc49eca32b6e.png" alt="n_\lambda = \sqrt{A + B\times\lambda^2 + \frac{C\times\lambda^2}{\lambda^2-D}}" /></p>
+</li>
+</ul>
+<p>with <img style="vertical-align: middle;" src="fcad076041f70ef8082523e42db0a6b4.png" alt="\lambda" /> the micrometer wavelength.</p>
+<p>See also <span class="codedecl"><a href="Material_Sellmeier_class_reference.html">Sellmeier</a></span> class.</p>
+</div><h2>Members<a href="#_Members70" id="_Members70" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<p> See also the <a href="Material_SellmeierMod_class_full_member_list.html">full member list</a> section for this class.</p>
+</div><h3>Inherited members<a href="#_Inherited_members39" id="_Inherited_members39" class="hover_link">&nbsp;&nbsp;</a></h3><div class="sec_content3">
+<ul><li>36 members inherited from <span class="codedecl"><a href="Material_Dielectric_class_reference.html">Dielectric</a></span></li>
+</ul>
+</div><h3>Functions<a href="#_Functions116" id="_Functions116" class="hover_link">&nbsp;&nbsp;</a></h3><div class="sec_content3">
+<ul><li><span class="listitem"><span class="codedecl"><span class="member_prefix"></span><span class="member_signature"><span class="member_name"><a href="Material_SellmeierMod_class_reference.html#__603">SellmeierMod</a></span>(<span class="member_params">)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix"></span><span class="member_signature"><span class="member_name"><a href="Material_SellmeierMod_class_reference.html#__604">SellmeierMod</a></span>(<span class="member_params"><span class="member_param">double A, </span><span class="member_param">double B, </span><span class="member_param">double C, </span><span class="member_param">double D, </span><span class="member_param">double E = <em>[...]</em></span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">virtual double </span><span class="member_signature"><span class="member_name"><a href="Material_SellmeierMod_class_reference.html#__605">get_measurement_index</a></span>(<span class="member_params"><span class="member_param">double wavelen</span>) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name"><a href="Material_SellmeierMod_class_reference.html#__606">set_coefficients</a></span>(<span class="member_params"><span class="member_param">double A, </span><span class="member_param">double B, </span><span class="member_param">double C, </span><span class="member_param">double D, </span><span class="member_param">double E = <em>[...]</em></span>)</span></span></span></span></li>
+</ul>
+</div><h2>Members detail<a href="#_Members_detail68" id="_Members_detail68" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix"></span><span class="member_signature"><span class="member_name">SellmeierMod</span>(<span class="member_params">)</span></span></span><a href="#__603" id="__603" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Create an empty modified sellmeier model</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix"></span><span class="member_signature"><span class="member_name">SellmeierMod</span>(<span class="member_params"><span class="member_param">double A, </span><span class="member_param">double B, </span><span class="member_param">double C, </span><span class="member_param">double D, </span><span class="member_param">double E = 0.0</span>)</span></span></span><a href="#__604" id="__604" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Create a modified sellmeier model with given coefficients</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">virtual double </span><span class="member_signature"><span class="member_name">get_measurement_index</span>(<span class="member_params"><span class="member_param">double wavelen</span>) const</span></span></span><a href="#__605" id="__605" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>This virtual function implements the <code><a href="Material_Dielectric_class_reference.html#__620">get_measurement_index</a></code> pure function declared in the <code><a href="Material_Dielectric_class_reference.html">Dielectric</a></code> base abstract class.</p>
+<p><span class="nodoc">Documentation inherited from base class:</span></p>
+<p>Get material relative refractive index in measurment medium at specified wavelen in <em>nm.</em></p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name">set_coefficients</span>(<span class="member_params"><span class="member_param">double A, </span><span class="member_param">double B, </span><span class="member_param">double C, </span><span class="member_param">double D, </span><span class="member_param">double E = 0.0</span>)</span></span></span><a href="#__606" id="__606" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Change coefficients</p>
+</div></div></div><div class="foot"><p class="generated"><a style="float: right;" href="http://validator.w3.org/check?uri=referer">Valid XHTML 1.0 Strict</a>Generated by diaxen on Sun Sep 11 20:21:34 2011 using <a href="http://www.nongnu.org/mkdoc/">MkDoc</a></p></div></body></html>

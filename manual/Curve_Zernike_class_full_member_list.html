@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta name="Generator" content="MKDOC " />
+ <title>GNU Goptical manual </title>
+ <link rel="stylesheet" href="mkdoc.css" />
+ <style type="text/css">
+
+  .sec_hidden { display: none; }
+  .sec_shown {}
+ </style>
+</head><body>
+<div class="page"><div class="head"><div class="headlinks"><a href="Table_of_contents.html">Table of contents</a>
+ &nbsp; <a href="Introduction.html">Introduction</a>
+ &nbsp; <a href="Tutorial.html">Tutorial</a>
+ &nbsp; <a href="Main_classes.html">Main classes</a>
+</div><div class="navlinks"><a href="index.html" accesskey="t">Top</a> &nbsp; <a href="Curve_Zernike_class_reference.html"  accesskey="p" id="nav_prev">Previous </a> &nbsp; <a href="API_documentation.html"  accesskey="u" id="nav_up"> Up </a> &nbsp; <a href="Curve_ConicBase_class_reference.html"  accesskey="n" id="nav_next"> Next</a></div>
+</div><div class="content"><div style="clear: both; height:20px;"></div>
+<h1>Curve::Zernike class full member list</h1><div class="sec_content1">
+<div style="clear: both; height:20px;"></div>
+</div><h2>Functions<a href="#_Functions32" id="_Functions32" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<ul><li><span class="listitem"><span class="codedecl"><span class="member_prefix"></span><span class="member_signature"><span class="member_name"><a href="Curve_Zernike_class_reference.html#__117">Zernike</a></span>(<span class="member_params"><span class="member_param">double radius, </span><span class="member_param">double unit_scale = <em>[...]</em></span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix"></span><span class="member_signature"><span class="member_name"><a href="Curve_Zernike_class_reference.html#__118">Zernike</a></span>(<span class="member_params"><span class="member_param">double radius, </span><span class="member_param">double coefs[], </span><span class="member_param">unsigned int coefs_count, </span><span class="member_param">double unit_scale = <em>[...]</em></span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">virtual void </span><span class="member_signature"><span class="member_name"><a href="Curve_Zernike_class_reference.html#__119">derivative</a></span>(<span class="member_params"><span class="member_param">const Math::Vector2 &amp;xy, </span><span class="member_param">Math::Vector2 &amp;dxdy</span>) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">double </span><span class="member_signature"><span class="member_name"><a href="Curve_Zernike_class_reference.html#__120">fit</a></span>(<span class="member_params"><span class="member_param">const Curve &amp;c, </span><span class="member_param">const Trace::Distribution &amp;d = <em>[...]</em></span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">double </span><span class="member_signature"><span class="member_name"><a href="Curve_Zernike_class_reference.html#__121">get_coefficient</a></span>(<span class="member_params"><span class="member_param">unsigned int n</span>) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">double </span><span class="member_signature"><span class="member_name"><a href="Curve_Zernike_class_reference.html#__122">get_radius</a></span>(<span class="member_params">) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">bool </span><span class="member_signature"><span class="member_name"><a href="Curve_Zernike_class_reference.html#__123">get_term_state</a></span>(<span class="member_params"><span class="member_param">unsigned int n</span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">virtual bool </span><span class="member_signature"><span class="member_name"><a href="Curve_Curve_class_reference.html#__57">intersect</a></span>(<span class="member_params"><span class="member_param">Math::Vector3 &amp;point, </span><span class="member_param">const Math::VectorPair3 &amp;ray</span>) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">virtual void </span><span class="member_signature"><span class="member_name"><a href="Curve_Curve_class_reference.html#__58">normal</a></span>(<span class="member_params"><span class="member_param">Math::Vector3 &amp;normal, </span><span class="member_param">const Math::Vector3 &amp;point</span>) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">virtual double </span><span class="member_signature"><span class="member_name"><a href="Curve_Zernike_class_reference.html#__124">sagitta</a></span>(<span class="member_params"><span class="member_param">const Math::Vector2 &amp;xy</span>) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name"><a href="Curve_Zernike_class_reference.html#__125">set_coefficient</a></span>(<span class="member_params"><span class="member_param">unsigned int n, </span><span class="member_param">double c</span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name"><a href="Curve_Zernike_class_reference.html#__126">set_coefficients_scale</a></span>(<span class="member_params"><span class="member_param">double s</span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name"><a href="Curve_Zernike_class_reference.html#__127">set_coefficients_threshold</a></span>(<span class="member_params"><span class="member_param">double t</span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name"><a href="Curve_Zernike_class_reference.html#__128">set_radius</a></span>(<span class="member_params"><span class="member_param">double radius</span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name"><a href="Curve_Zernike_class_reference.html#__129">set_term_state</a></span>(<span class="member_params"><span class="member_param">unsigned int n, </span><span class="member_param">bool enabled</span>)</span></span></span></span></li>
+</ul>
+</div><h2>Static functions<a href="#_Static_functions1" id="_Static_functions1" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<ul><li><span class="listitem"><span class="codedecl"><span class="member_prefix">static double </span><span class="member_signature"><span class="member_name"><a href="Curve_Zernike_class_reference.html#__131">zernike_poly</a></span>(<span class="member_params"><span class="member_param">unsigned int n, </span><span class="member_param">const Math::Vector2 &amp;xy</span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">static void </span><span class="member_signature"><span class="member_name"><a href="Curve_Zernike_class_reference.html#__132">zernike_poly_d</a></span>(<span class="member_params"><span class="member_param">unsigned int n, </span><span class="member_param">const Math::Vector2 &amp;xy, </span><span class="member_param">Math::Vector2 &amp;dxdy</span>)</span></span></span></span></li>
+</ul>
+</div><h2>Constant<a href="#_Constant1" id="_Constant1" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<ul><li><span class="listitem"><span class="codedecl"><span class="member_prefix">static const unsigned int </span><span class="member_signature"><span class="member_name"><a href="Curve_Zernike_class_reference.html#__130">term_count</a></span></span></span></span></li>
+</ul>
+</div></div></div><div class="foot"><p class="generated"><a style="float: right;" href="http://validator.w3.org/check?uri=referer">Valid XHTML 1.0 Strict</a>Generated by diaxen on Sun Sep 11 20:21:29 2011 using <a href="http://www.nongnu.org/mkdoc/">MkDoc</a></p></div></body></html>

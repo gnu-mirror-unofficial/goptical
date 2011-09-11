@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta name="Generator" content="MKDOC " />
+ <title>GNU Goptical manual </title>
+ <link rel="stylesheet" href="mkdoc.css" />
+ <style type="text/css">
+
+  .sec_hidden { display: none; }
+  .sec_shown {}
+ </style>
+</head><body>
+<div class="page"><div class="head"><div class="headlinks"><a href="Table_of_contents.html">Table of contents</a>
+ &nbsp; <a href="Introduction.html">Introduction</a>
+ &nbsp; <a href="Tutorial.html">Tutorial</a>
+ &nbsp; <a href="Main_classes.html">Main classes</a>
+</div><div class="navlinks"><a href="index.html" accesskey="t">Top</a> &nbsp; <a href="Math_Matrix_struct_full_member_list.html"  accesskey="p" id="nav_prev">Previous </a> &nbsp; <a href="API_documentation.html"  accesskey="u" id="nav_up"> Up </a> &nbsp; <a href="Math_Quaternion_class_full_member_list.html"  accesskey="n" id="nav_next"> Next</a></div>
+</div><div class="content"><div style="clear: both; height:20px;"></div>
+<h1>Math::Quaternion class reference<br /><span class="subtitle">
+[<a href="_Core_module_reference.html">Core</a> module]</span>
+</h1><div class="sec_content1">
+<div style="clear: both; height:20px;"></div>
+</div><h2>Declaration<a href="#_Declaration65" id="_Declaration65" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<div class="codebox"><code><span class="codedir">#include</span> &lt;Goptical/Math/Quaternion&gt;<br /><br /><span class="codekw">namespace</span> Goptical {<br />  <span class="codekw">namespace</span> Math {<br />    <span class="codekw">class</span> Quaternion;<br />  };<br />};<br /></code></div><p> This class is a member of the <span class="codedecl"><a href="Math_namespace_reference.html">Math</a></span> namespace.</p>
+</div><h2>Description<a href="#_Description77" id="_Description77" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<p>This class describe a quaternion object. Useful for 3d rotations.</p>
+</div><h2>Members<a href="#_Members77" id="_Members77" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<p> See also the <a href="Math_Quaternion_class_full_member_list.html">full member list</a> section for this class.</p>
+</div><h3>Functions<a href="#_Functions129" id="_Functions129" class="hover_link">&nbsp;&nbsp;</a></h3><div class="sec_content3">
+<ul><li><span class="listitem"><span class="codedecl"><span class="member_prefix"></span><span class="member_signature"><span class="member_name"><a href="Math_Quaternion_class_reference.html#__712">Quaternion</a></span>(<span class="member_params">)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix"></span><span class="member_signature"><span class="member_name"><a href="Math_Quaternion_class_reference.html#__713">Quaternion</a></span>(<span class="member_params"><span class="member_param">double x, </span><span class="member_param">double y, </span><span class="member_param">double z, </span><span class="member_param">double w</span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix"></span><span class="member_signature"><span class="member_name"><a href="Math_Quaternion_class_reference.html#__714">Quaternion</a></span>(<span class="member_params"><span class="member_param">const Vector3 &amp;a, </span><span class="member_param">const Vector3 &amp;b</span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">double </span><span class="member_signature"><span class="member_name"><a href="Math_Quaternion_class_reference.html#__717">norm</a></span>(<span class="member_params">) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">const Quaternion &amp; </span><span class="member_signature"><span class="member_name"><a href="Math_Quaternion_class_reference.html#__718">normalize</a></span>(<span class="member_params">)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">Quaternion </span><span class="member_signature"><span class="member_name"><a href="Math_Quaternion_class_reference.html#__719">operator*</a></span>(<span class="member_params"><span class="member_param">const Quaternion &amp;q</span>) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">double </span><span class="member_signature"><span class="member_name"><a href="Math_Quaternion_class_reference.html#__720">w</a></span>(<span class="member_params">) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">double &amp; </span><span class="member_signature"><span class="member_name"><a href="Math_Quaternion_class_reference.html#__721">w</a></span>(<span class="member_params">)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">double </span><span class="member_signature"><span class="member_name"><a href="Math_Quaternion_class_reference.html#__722">x</a></span>(<span class="member_params">) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">double &amp; </span><span class="member_signature"><span class="member_name"><a href="Math_Quaternion_class_reference.html#__723">x</a></span>(<span class="member_params">)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">double </span><span class="member_signature"><span class="member_name"><a href="Math_Quaternion_class_reference.html#__724">y</a></span>(<span class="member_params">) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">double &amp; </span><span class="member_signature"><span class="member_name"><a href="Math_Quaternion_class_reference.html#__725">y</a></span>(<span class="member_params">)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">double </span><span class="member_signature"><span class="member_name"><a href="Math_Quaternion_class_reference.html#__726">z</a></span>(<span class="member_params">) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">double &amp; </span><span class="member_signature"><span class="member_name"><a href="Math_Quaternion_class_reference.html#__727">z</a></span>(<span class="member_params">)</span></span></span></span></li>
+</ul>
+</div><h3>Static functions<a href="#_Static_functions4" id="_Static_functions4" class="hover_link">&nbsp;&nbsp;</a></h3><div class="sec_content3">
+<ul><li><span class="listitem"><span class="codedecl"><span class="member_prefix">static Quaternion </span><span class="member_signature"><span class="member_name"><a href="Math_Quaternion_class_reference.html#__715">angle</a></span>(<span class="member_params"><span class="member_param">const Vector3 &amp;v, </span><span class="member_param">double angle</span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">static Quaternion </span><span class="member_signature"><span class="member_name"><a href="Math_Quaternion_class_reference.html#__716">angle_rad</a></span>(<span class="member_params"><span class="member_param">const Vector3 &amp;v, </span><span class="member_param">double angle</span>)</span></span></span></span></li>
+</ul>
+</div><h2>Members detail<a href="#_Members_detail75" id="_Members_detail75" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix"></span><span class="member_signature"><span class="member_name">Quaternion</span>(<span class="member_params">)</span></span></span><a href="#__712" id="__712" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p><span class="nodoc">No documentation available</span></p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix"></span><span class="member_signature"><span class="member_name">Quaternion</span>(<span class="member_params"><span class="member_param">double x, </span><span class="member_param">double y, </span><span class="member_param">double z, </span><span class="member_param">double w</span>)</span></span></span><a href="#__713" id="__713" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Create a Quaternion from its real values</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix"></span><span class="member_signature"><span class="member_name">Quaternion</span>(<span class="member_params"><span class="member_param">const <a href="Math_namespace_reference.html#__656">Vector3</a> &amp;a, </span><span class="member_param">const <a href="Math_namespace_reference.html#__656">Vector3</a> &amp;b</span>)</span></span></span><a href="#__714" id="__714" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Create a Quaternion as rotation between two unit vectors</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">static <a href="Math_Quaternion_class_reference.html">Quaternion</a> </span><span class="member_signature"><span class="member_name">angle</span>(<span class="member_params"><span class="member_param">const <a href="Math_namespace_reference.html#__656">Vector3</a> &amp;v, </span><span class="member_param">double angle</span>)</span></span></span><a href="#__715" id="__715" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Create a Quaternion with given rotation angle along a 3d vector</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">static <a href="Math_Quaternion_class_reference.html">Quaternion</a> </span><span class="member_signature"><span class="member_name">angle_rad</span>(<span class="member_params"><span class="member_param">const <a href="Math_namespace_reference.html#__656">Vector3</a> &amp;v, </span><span class="member_param">double angle</span>)</span></span></span><a href="#__716" id="__716" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Create a Quaternion with given rotation angle in radian along a 3d vector</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">double </span><span class="member_signature"><span class="member_name">norm</span>(<span class="member_params">) const</span></span></span><a href="#__717" id="__717" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Adjust vector length</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">const <a href="Math_Quaternion_class_reference.html">Quaternion</a> &amp; </span><span class="member_signature"><span class="member_name">normalize</span>(<span class="member_params">)</span></span></span><a href="#__718" id="__718" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Normalize vector length</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix"><a href="Math_Quaternion_class_reference.html">Quaternion</a> </span><span class="member_signature"><span class="member_name">operator*</span>(<span class="member_params"><span class="member_param">const <a href="Math_Quaternion_class_reference.html">Quaternion</a> &amp;q</span>) const</span></span></span><a href="#__719" id="__719" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Multiply with an other quaternion</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">double </span><span class="member_signature"><span class="member_name">w</span>(<span class="member_params">) const</span></span></span><a href="#__720" id="__720" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Get quaterion w value</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">double &amp; </span><span class="member_signature"><span class="member_name">w</span>(<span class="member_params">)</span></span></span><a href="#__721" id="__721" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Get reference to quaterion w value</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">double </span><span class="member_signature"><span class="member_name">x</span>(<span class="member_params">) const</span></span></span><a href="#__722" id="__722" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Get quaterion x value</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">double &amp; </span><span class="member_signature"><span class="member_name">x</span>(<span class="member_params">)</span></span></span><a href="#__723" id="__723" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Get reference to quaterion x value</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">double </span><span class="member_signature"><span class="member_name">y</span>(<span class="member_params">) const</span></span></span><a href="#__724" id="__724" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Get quaterion y value</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">double &amp; </span><span class="member_signature"><span class="member_name">y</span>(<span class="member_params">)</span></span></span><a href="#__725" id="__725" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Get reference to quaterion y value</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">double </span><span class="member_signature"><span class="member_name">z</span>(<span class="member_params">) const</span></span></span><a href="#__726" id="__726" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Get quaterion z value</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">double &amp; </span><span class="member_signature"><span class="member_name">z</span>(<span class="member_params">)</span></span></span><a href="#__727" id="__727" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Get reference to quaterion z value</p>
+</div></div></div><div class="foot"><p class="generated"><a style="float: right;" href="http://validator.w3.org/check?uri=referer">Valid XHTML 1.0 Strict</a>Generated by diaxen on Sun Sep 11 20:21:35 2011 using <a href="http://www.nongnu.org/mkdoc/">MkDoc</a></p></div></body></html>

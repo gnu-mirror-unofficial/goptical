@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta name="Generator" content="MKDOC " />
+ <title>GNU Goptical manual </title>
+ <link rel="stylesheet" href="mkdoc.css" />
+ <style type="text/css">
+
+  .sec_hidden { display: none; }
+  .sec_shown {}
+ </style>
+</head><body>
+<div class="page"><div class="head"><div class="headlinks"><a href="Table_of_contents.html">Table of contents</a>
+ &nbsp; <a href="Introduction.html">Introduction</a>
+ &nbsp; <a href="Tutorial.html">Tutorial</a>
+ &nbsp; <a href="Main_classes.html">Main classes</a>
+</div><div class="navlinks"><a href="index.html" accesskey="t">Top</a> &nbsp; <a href="Math_VectorPairBase_3_internal_struct_members.html"  accesskey="p" id="nav_prev">Previous </a> &nbsp; <a href="API_documentation.html"  accesskey="u" id="nav_up"> Up </a> &nbsp; <a href="Math_TriangleBase_internal_struct_members.html"  accesskey="n" id="nav_next"> Next</a></div>
+</div><div class="content"><div style="clear: both; height:20px;"></div>
+<h1>Math::TransformBase internal class members</h1><div class="sec_content1">
+<div style="clear: both; height:20px;"></div>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix"></span><span class="member_signature"><span class="member_name">TransformBase</span>(<span class="member_params">)</span></span></span><a href="#__1002" id="__1002" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p><span class="nodoc">No documentation available</span></p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix">virtual </span><span class="member_signature"><span class="member_name">~TransformBase</span>(<span class="member_params">)</span></span></span><a href="#__1003" id="__1003" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p><span class="nodoc">No documentation available</span></p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix">TransformBase &amp; </span><span class="member_signature"><span class="member_name">affine_rotation</span>(<span class="member_params"><span class="member_param">unsigned int axis, </span><span class="member_param">double dangle</span>)</span></span></span><a href="#__1004" id="__1004" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>apply rotation to current transform (degree)</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix">TransformBase &amp; </span><span class="member_signature"><span class="member_name">affine_rotation_rad</span>(<span class="member_params"><span class="member_param">unsigned int axis, </span><span class="member_param">double rangle</span>)</span></span></span><a href="#__1005" id="__1005" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>apply rotation to current transform (radian)</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix">TransformBase &amp; </span><span class="member_signature"><span class="member_name">affine_scaling</span>(<span class="member_params"><span class="member_param">const <a href="Math_Vector_struct_reference.html">Vector</a>&lt;N&gt; &amp;v</span>)</span></span></span><a href="#__1006" id="__1006" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>apply scaling to current transform</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix">TransformBase &amp; </span><span class="member_signature"><span class="member_name">affine_scaling</span>(<span class="member_params"><span class="member_param">double s</span>)</span></span></span><a href="#__1007" id="__1007" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>apply scaling to current transform</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix">TransformBase &amp; </span><span class="member_signature"><span class="member_name">apply_translation</span>(<span class="member_params"><span class="member_param">const <a href="Math_Vector_struct_reference.html">Vector</a>&lt;N&gt; &amp;v</span>)</span></span></span><a href="#__1008" id="__1008" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>apply translation to current transform</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name">compose</span>(<span class="member_params"><span class="member_param">const TransformBase&lt;N&gt; &amp;t</span>)</span></span></span><a href="#__1009" id="__1009" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>compose with t. new transform is equivalent to applying t then this transform</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix">const <a href="Math_Matrix_struct_reference.html">Matrix</a>&lt;N&gt; &amp; </span><span class="member_signature"><span class="member_name">get_linear</span>(<span class="member_params">) const</span></span></span><a href="#__1010" id="__1010" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>get linear transform matrix</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix"><a href="Math_Matrix_struct_reference.html">Matrix</a>&lt;N&gt; &amp; </span><span class="member_signature"><span class="member_name">get_linear</span>(<span class="member_params">)</span></span></span><a href="#__1011" id="__1011" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>get linear transform matrix</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix">const <a href="Math_Vector_struct_reference.html">Vector</a>&lt;N&gt; &amp; </span><span class="member_signature"><span class="member_name">get_translation</span>(<span class="member_params">) const</span></span></span><a href="#__1012" id="__1012" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>get translation vector</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix"><a href="Math_Vector_struct_reference.html">Vector</a>&lt;N&gt; &amp; </span><span class="member_signature"><span class="member_name">get_translation</span>(<span class="member_params">)</span></span></span><a href="#__1013" id="__1013" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>get translation vector</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix">TransformBase </span><span class="member_signature"><span class="member_name">inverse</span>(<span class="member_params">) const</span></span></span><a href="#__1014" id="__1014" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>get inverse transformation</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name">linear_reset</span>(<span class="member_params">)</span></span></span><a href="#__1015" id="__1015" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>reset linear transform to identity</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix">TransformBase &amp; </span><span class="member_signature"><span class="member_name">linear_rotation</span>(<span class="member_params"><span class="member_param">unsigned int axis, </span><span class="member_param">double dangle</span>)</span></span></span><a href="#__1016" id="__1016" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>apply rotation to current transform (degree) (does not transform translation vector)</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix">TransformBase &amp; </span><span class="member_signature"><span class="member_name">linear_rotation_rad</span>(<span class="member_params"><span class="member_param">unsigned int axis, </span><span class="member_param">double rangle</span>)</span></span></span><a href="#__1017" id="__1017" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>apply rotation to current transform (radian) (does not transform translation vector)</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix">TransformBase &amp; </span><span class="member_signature"><span class="member_name">linear_scaling</span>(<span class="member_params"><span class="member_param">const <a href="Math_Vector_struct_reference.html">Vector</a>&lt;N&gt; &amp;v</span>)</span></span></span><a href="#__1018" id="__1018" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>apply linear scaling to current transform (does not transform translation vector)</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix">TransformBase &amp; </span><span class="member_signature"><span class="member_name">linear_scaling</span>(<span class="member_params"><span class="member_param">double s</span>)</span></span></span><a href="#__1019" id="__1019" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>apply scaling to current transform (does not transform translation vector)</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name">reset</span>(<span class="member_params">)</span></span></span><a href="#__1020" id="__1020" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>reset linear transform to identity and translation to zero</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name">set_translation</span>(<span class="member_params"><span class="member_param">const <a href="Math_Vector_struct_reference.html">Vector</a>&lt;N&gt; &amp;v</span>)</span></span></span><a href="#__1021" id="__1021" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>set current translation</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix"><a href="Math_Vector_struct_reference.html">Vector</a>&lt;N&gt; </span><span class="member_signature"><span class="member_name">transform</span>(<span class="member_params"><span class="member_param">const <a href="Math_Vector_struct_reference.html">Vector</a>&lt;N&gt; &amp;v</span>) const</span></span></span><a href="#__1022" id="__1022" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>apply affine transform (translation and linear) to vector</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix"><a href="Math_VectorPair_struct_reference.html">VectorPair</a>&lt;N&gt; </span><span class="member_signature"><span class="member_name">transform_line</span>(<span class="member_params"><span class="member_param">const <a href="Math_VectorPair_struct_reference.html">VectorPair</a>&lt;N&gt; &amp;v</span>) const</span></span></span><a href="#__1023" id="__1023" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>apply affine transform to line origin and linear to direction</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix"><a href="Math_Vector_struct_reference.html">Vector</a>&lt;N&gt; </span><span class="member_signature"><span class="member_name">transform_linear</span>(<span class="member_params"><span class="member_param">const <a href="Math_Vector_struct_reference.html">Vector</a>&lt;N&gt; &amp;v</span>) const</span></span></span><a href="#__1024" id="__1024" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>apply linear transform to vector</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix"><a href="Math_VectorPair_struct_reference.html">VectorPair</a>&lt;N&gt; </span><span class="member_signature"><span class="member_name">transform_pair</span>(<span class="member_params"><span class="member_param">const <a href="Math_VectorPair_struct_reference.html">VectorPair</a>&lt;N&gt; &amp;p</span>) const</span></span></span><a href="#__1025" id="__1025" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>apply affine transform to both vectors in pair</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix"><a href="Math_Vector_struct_reference.html">Vector</a>&lt;N&gt; </span><span class="member_signature"><span class="member_name">transform_translate</span>(<span class="member_params"><span class="member_param">const <a href="Math_Vector_struct_reference.html">Vector</a>&lt;N&gt; &amp;v</span>) const</span></span></span><a href="#__1026" id="__1026" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>apply translation to vector</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name">translation_reset</span>(<span class="member_params">)</span></span></span><a href="#__1027" id="__1027" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>reset translation to zero</p>
+</div></div></div><div class="foot"><p class="generated"><a style="float: right;" href="http://validator.w3.org/check?uri=referer">Valid XHTML 1.0 Strict</a>Generated by diaxen on Sun Sep 11 20:21:36 2011 using <a href="http://www.nongnu.org/mkdoc/">MkDoc</a></p></div></body></html>

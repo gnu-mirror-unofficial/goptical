@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta name="Generator" content="MKDOC " />
+ <title>GNU Goptical manual </title>
+ <link rel="stylesheet" href="mkdoc.css" />
+ <style type="text/css">
+
+  .sec_hidden { display: none; }
+  .sec_shown {}
+ </style>
+</head><body>
+<div class="page"><div class="head"><div class="headlinks"><a href="Table_of_contents.html">Table of contents</a>
+ &nbsp; <a href="Introduction.html">Introduction</a>
+ &nbsp; <a href="Tutorial.html">Tutorial</a>
+ &nbsp; <a href="Main_classes.html">Main classes</a>
+</div><div class="navlinks"><a href="index.html" accesskey="t">Top</a> &nbsp; <a href="Curve_Foucault_class_full_member_list.html"  accesskey="p" id="nav_prev">Previous </a> &nbsp; <a href="API_documentation.html"  accesskey="u" id="nav_up"> Up </a> &nbsp; <a href="Curve_Grid_class_full_member_list.html"  accesskey="n" id="nav_next"> Next</a></div>
+</div><div class="content"><div style="clear: both; height:20px;"></div>
+<h1>Curve::Grid class reference<br /><span class="subtitle">
+[<a href="_Core_module_reference.html">Core</a> module]</span>
+</h1><div class="sec_content1">
+<div style="clear: both; height:20px;"></div>
+</div><h2>Declaration<a href="#_Declaration10" id="_Declaration10" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<div class="codebox"><code><span class="codedir">#include</span> &lt;Goptical/Curve/Grid&gt;<br /><br /><span class="codekw">namespace</span> Goptical {<br />  <span class="codekw">namespace</span> Curve {<br />    <span class="codekw">class</span> Grid;<br />  };<br />};<br /></code></div><p> This class is a member of the <span class="codedecl"><a href="Curve_namespace_reference.html">Curve</a></span> namespace.</p>
+</div><h2>Inheritance<a href="#_Inheritance10" id="_Inheritance10" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<div class="tree_frame" style="width:190px;"><div class="tree_row"><div style="width:10px;" class="tree_pad"></div><div style="width:170px;" class="tree_public"><span class="codedecl"><span class="ext_link"><a href="http://diaxen.ssji.net/dpp/dpp_ref_base_class_reference.html">ref_base</a></span>&lt;<a href="Curve_Curve_class_reference.html">Curve</a>&gt;</span></div
+></div><br/><div style="width:95px;" class="tree_connect_1">&nbsp;</div
+><div style="width:95px;" class="tree_connect_4">&nbsp;</div><br/><div style="width:95px;" class="tree_connect_1">&nbsp;</div
+><div style="width:95px;" class="tree_connect_4">&nbsp;</div><br/><div class="tree_row"><div style="width:45px;" class="tree_pad"></div><div style="width:100px;" class="tree_public"><span class="codedecl"><a href="Curve_Curve_class_reference.html">Curve</a></span></div
+></div><br/><div style="width:95px;" class="tree_connect_1">&nbsp;</div
+><div style="width:95px;" class="tree_connect_4">&nbsp;</div><br/><div style="width:95px;" class="tree_connect_1">&nbsp;</div
+><div style="width:95px;" class="tree_connect_4">&nbsp;</div><br/><div class="tree_row"><div style="width:45px;" class="tree_pad"></div><div style="width:100px;" class="tree_this"><span class="codedecl"><a href="Curve_Grid_class_reference.html">Grid</a></span></div
+></div><br/></div>
+</div><h2>Description<a href="#_Description15" id="_Description15" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<p>This class use the <span class="codedecl">Data::<a href="Data_Grid_class_reference.html">Grid</a></span> 2d data set container to define a 3d non-symmetric curve. Several data interpolation algorithms are available allowing use of <span class="codedecl">Data::<a href="Data_namespace_reference.html#__149">Bicubic</a></span> spline interpolation with or without prescribed derivative/gradient data.  .</p>
+<p>The <span class="codedecl"><a href="Curve_Spline_class_reference.html">Spline</a></span> curve model is preferred when dealing with <a href="Curve_Rotational_class_reference.html">rotationally symmetric curves</a>.</p>
+<p>See also <span class="codedecl">Data::<a href="Data_Grid_class_reference.html">Grid</a></span> class.</p>
+</div><h2>Members<a href="#_Members15" id="_Members15" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<p> See also the <a href="Curve_Grid_class_full_member_list.html">full member list</a> section for this class.</p>
+</div><h3>Inherited members<a href="#_Inherited_members5" id="_Inherited_members5" class="hover_link">&nbsp;&nbsp;</a></h3><div class="sec_content3">
+<ul><li>6 members inherited from <span class="codedecl"><a href="Curve_Curve_class_reference.html">Curve</a></span></li>
+</ul>
+</div><h3>Functions<a href="#_Functions21" id="_Functions21" class="hover_link">&nbsp;&nbsp;</a></h3><div class="sec_content3">
+<ul><li><span class="listitem"><span class="codedecl"><span class="member_prefix"></span><span class="member_signature"><span class="member_name"><a href="Curve_Grid_class_reference.html#__84">Grid</a></span>(<span class="member_params"><span class="member_param">unsigned int n, </span><span class="member_param">double radius</span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix"></span><span class="member_signature"><span class="member_name"><a href="Curve_Grid_class_reference.html#__85">~Grid</a></span>(<span class="member_params">)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">virtual void </span><span class="member_signature"><span class="member_name"><a href="Curve_Grid_class_reference.html#__86">derivative</a></span>(<span class="member_params"><span class="member_param">const Math::Vector2 &amp;xy, </span><span class="member_param">Math::Vector2 &amp;dxdy</span>) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name"><a href="Curve_Grid_class_reference.html#__87">fit</a></span>(<span class="member_params"><span class="member_param">const Curve &amp;c</span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">const Data::Grid &amp; </span><span class="member_signature"><span class="member_name"><a href="Curve_Grid_class_reference.html#__88">get_data</a></span>(<span class="member_params">) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">Data::Grid &amp; </span><span class="member_signature"><span class="member_name"><a href="Curve_Grid_class_reference.html#__89">get_data</a></span>(<span class="member_params">)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">virtual double </span><span class="member_signature"><span class="member_name"><a href="Curve_Grid_class_reference.html#__90">sagitta</a></span>(<span class="member_params"><span class="member_param">const Math::Vector2 &amp;xy</span>) const</span></span></span></span></li>
+</ul>
+</div><h2>Members detail<a href="#_Members_detail13" id="_Members_detail13" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix"></span><span class="member_signature"><span class="member_name">Grid</span>(<span class="member_params"><span class="member_param">unsigned int n, </span><span class="member_param">double radius</span>)</span></span></span><a href="#__84" id="__84" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Creates a grid curve with n*n sample points defined over the given radius.</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix"></span><span class="member_signature"><span class="member_name">~Grid</span>(<span class="member_params">)</span></span></span><a href="#__85" id="__85" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p><span class="nodoc">No documentation available</span></p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">virtual void </span><span class="member_signature"><span class="member_name">derivative</span>(<span class="member_params"><span class="member_param">const Math::<a href="Math_namespace_reference.html#__655">Vector2</a> &amp;xy, </span><span class="member_param">Math::<a href="Math_namespace_reference.html#__655">Vector2</a> &amp;dxdy</span>) const</span></span></span><a href="#__86" id="__86" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>This virtual function overrides the <code><a href="Curve_Curve_class_reference.html#__56">derivative</a></code> virtual function defined in the <code><a href="Curve_Curve_class_reference.html">Curve</a></code> base abstract class.</p>
+<p><span class="nodoc">Documentation inherited from base class:</span></p>
+<p>Get curve x and y derivative (gradient) at specified point</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name">fit</span>(<span class="member_params"><span class="member_param">const <a href="Curve_Curve_class_reference.html">Curve</a> &amp;c</span>)</span></span></span><a href="#__87" id="__87" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Set grid values to best fit an other curve. Gradient data will be extracted only if the interpolation have been set to Data::BicubicDeriv previously</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">const Data::<a href="Data_Grid_class_reference.html">Grid</a> &amp; </span><span class="member_signature"><span class="member_name">get_data</span>(<span class="member_params">) const</span></span></span><a href="#__88" id="__88" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Get embedded sagitta/gradient data container</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">Data::<a href="Data_Grid_class_reference.html">Grid</a> &amp; </span><span class="member_signature"><span class="member_name">get_data</span>(<span class="member_params">)</span></span></span><a href="#__89" id="__89" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Get embedded sagitta/gradient data container</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">virtual double </span><span class="member_signature"><span class="member_name">sagitta</span>(<span class="member_params"><span class="member_param">const Math::<a href="Math_namespace_reference.html#__655">Vector2</a> &amp;xy</span>) const</span></span></span><a href="#__90" id="__90" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>This virtual function implements the <code><a href="Curve_Curve_class_reference.html#__59">sagitta</a></code> pure function declared in the <code><a href="Curve_Curve_class_reference.html">Curve</a></code> base abstract class.</p>
+<p><span class="nodoc">Documentation inherited from base class:</span></p>
+<p>Get curve sagitta at specified point</p>
+</div></div></div><div class="foot"><p class="generated"><a style="float: right;" href="http://validator.w3.org/check?uri=referer">Valid XHTML 1.0 Strict</a>Generated by diaxen on Sun Sep 11 20:21:29 2011 using <a href="http://www.nongnu.org/mkdoc/">MkDoc</a></p></div></body></html>

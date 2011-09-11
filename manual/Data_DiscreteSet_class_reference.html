@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta name="Generator" content="MKDOC " />
+ <title>GNU Goptical manual </title>
+ <link rel="stylesheet" href="mkdoc.css" />
+ <style type="text/css">
+
+  .sec_hidden { display: none; }
+  .sec_shown {}
+ </style>
+</head><body>
+<div class="page"><div class="head"><div class="headlinks"><a href="Table_of_contents.html">Table of contents</a>
+ &nbsp; <a href="Introduction.html">Introduction</a>
+ &nbsp; <a href="Tutorial.html">Tutorial</a>
+ &nbsp; <a href="Main_classes.html">Main classes</a>
+</div><div class="navlinks"><a href="index.html" accesskey="t">Top</a> &nbsp; <a href="Data_namespace_reference.html"  accesskey="p" id="nav_prev">Previous </a> &nbsp; <a href="API_documentation.html"  accesskey="u" id="nav_up"> Up </a> &nbsp; <a href="Data_DiscreteSet_class_full_member_list.html"  accesskey="n" id="nav_next"> Next</a></div>
+</div><div class="content"><div style="clear: both; height:20px;"></div>
+<h1>Data::DiscreteSet class reference<br /><span class="subtitle">
+[<a href="_Core_module_reference.html">Core</a> module]</span>
+</h1><div class="sec_content1">
+<div style="clear: both; height:20px;"></div>
+</div><h2>Declaration<a href="#_Declaration19" id="_Declaration19" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<div class="codebox"><code><span class="codedir">#include</span> &lt;Goptical/Data/DiscreteSet&gt;<br /><br /><span class="codekw">namespace</span> Goptical {<br />  <span class="codekw">namespace</span> Data {<br />    <span class="codekw">class</span> DiscreteSet;<br />  };<br />};<br /></code></div><p> This class is a member of the <span class="codedecl"><a href="Data_namespace_reference.html">Data</a></span> namespace.</p>
+</div><h2>Inheritance<a href="#_Inheritance19" id="_Inheritance19" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<div class="tree_frame" style="width:170px;"><div class="tree_row"><div style="width:10px;" class="tree_pad"></div><div style="width:150px;" class="tree_public"><span class="codedecl"><span class="ext_link"><a href="http://diaxen.ssji.net/dpp/dpp_ref_base_class_reference.html">ref_base</a></span>&lt;<a href="Data_Set_class_reference.html">Set</a>&gt;</span></div
+></div><br/><div style="width:85px;" class="tree_connect_1">&nbsp;</div
+><div style="width:85px;" class="tree_connect_4">&nbsp;</div><br/><div style="width:85px;" class="tree_connect_1">&nbsp;</div
+><div style="width:85px;" class="tree_connect_4">&nbsp;</div><br/><div class="tree_row"><div style="width:35px;" class="tree_pad"></div><div style="width:100px;" class="tree_public"><span class="codedecl"><a href="Data_Set_class_reference.html">Set</a></span></div
+></div><br/><div style="width:85px;" class="tree_connect_1">&nbsp;</div
+><div style="width:85px;" class="tree_connect_4">&nbsp;</div><br/><div style="width:85px;" class="tree_connect_1">&nbsp;</div
+><div style="width:85px;" class="tree_connect_4">&nbsp;</div><br/><div class="tree_row"><div style="width:35px;" class="tree_pad"></div><div style="width:100px;" class="tree_public"><span class="codedecl"><a href="Data_Set1d_class_reference.html">Set1d</a></span></div
+></div><br/><div style="width:85px;" class="tree_connect_1">&nbsp;</div
+><div style="width:85px;" class="tree_connect_4">&nbsp;</div><br/><div style="width:85px;" class="tree_connect_1">&nbsp;</div
+><div style="width:85px;" class="tree_connect_4">&nbsp;</div><br/><div class="tree_row"><div style="width:20px;" class="tree_pad"></div><div style="width:130px;" class="tree_this"><span class="codedecl"><a href="Data_DiscreteSet_class_reference.html">DiscreteSet</a></span></div
+></div><br/></div>
+</div><h2>Description<a href="#_Description25" id="_Description25" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<p>This class provides a numerical data container where value pairs can be defined at arbitrary positions (x, y).</p>
+<p>Severals interpolation algorithms are available to guess values between defined knots, see <span class="codedecl"><a href="Data_namespace_reference.html#__149">Interpolation</a></span>.</p>
+<p>See also <span class="codedecl"><a href="Data_SampleSet_class_reference.html">SampleSet</a></span> class.</p>
+</div><h2>Members<a href="#_Members25" id="_Members25" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<p> See also the <a href="Data_DiscreteSet_class_full_member_list.html">full member list</a> section for this class.</p>
+</div><h3>Inherited members<a href="#_Inherited_members13" id="_Inherited_members13" class="hover_link">&nbsp;&nbsp;</a></h3><div class="sec_content3">
+<ul><li>19 members inherited from <span class="codedecl"><a href="Data_Set1d_class_reference.html">Set1d</a></span></li>
+</ul>
+</div><h3>Functions<a href="#_Functions40" id="_Functions40" class="hover_link">&nbsp;&nbsp;</a></h3><div class="sec_content3">
+<ul><li><span class="listitem"><span class="codedecl"><span class="member_prefix"></span><span class="member_signature"><span class="member_name"><a href="Data_DiscreteSet_class_reference.html#__155">DiscreteSet</a></span>(<span class="member_params">)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name"><a href="Data_DiscreteSetBase_internal_class_members.html#__254">add_data</a></span>(<span class="member_params"><span class="member_param">double x, </span><span class="member_param">double y, </span><span class="member_param">double yp = <em>[...]</em></span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name"><a href="Data_DiscreteSetBase_internal_class_members.html#__255">clear</a></span>(<span class="member_params">)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">virtual unsigned int </span><span class="member_signature"><span class="member_name"><a href="Data_DiscreteSetBase_internal_class_members.html#__256">get_count</a></span>(<span class="member_params">) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">double </span><span class="member_signature"><span class="member_name"><a href="Data_DiscreteSetBase_internal_class_members.html#__257">get_d_value</a></span>(<span class="member_params"><span class="member_param">unsigned int x</span>) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">double &amp; </span><span class="member_signature"><span class="member_name"><a href="Data_DiscreteSetBase_internal_class_members.html#__258">get_d_value</a></span>(<span class="member_params"><span class="member_param">unsigned int x</span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">virtual Math::range_t </span><span class="member_signature"><span class="member_name"><a href="Data_DiscreteSetBase_internal_class_members.html#__259">get_x_range</a></span>(<span class="member_params">) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">virtual double </span><span class="member_signature"><span class="member_name"><a href="Data_DiscreteSetBase_internal_class_members.html#__260">get_x_value</a></span>(<span class="member_params"><span class="member_param">unsigned int x</span>) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">virtual double </span><span class="member_signature"><span class="member_name"><a href="Data_DiscreteSetBase_internal_class_members.html#__261">get_y_value</a></span>(<span class="member_params"><span class="member_param">unsigned int x</span>) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">virtual double &amp; </span><span class="member_signature"><span class="member_name"><a href="Data_DiscreteSetBase_internal_class_members.html#__262">get_y_value</a></span>(<span class="member_params"><span class="member_param">unsigned int x</span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">virtual double </span><span class="member_signature"><span class="member_name"><a href="Data_Interpolate1d_Data_DiscreteSetBase_internal_class_members.html#__216">interpolate</a></span>(<span class="member_params"><span class="member_param">const double x</span>) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">virtual double </span><span class="member_signature"><span class="member_name"><a href="Data_Interpolate1d_Data_DiscreteSetBase_internal_class_members.html#__217">interpolate</a></span>(<span class="member_params"><span class="member_param">const double x, </span><span class="member_param">unsigned int deriv</span>) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name"><a href="Data_DiscreteSetBase_internal_class_members.html#__263">reserve</a></span>(<span class="member_params"><span class="member_param">size_t n</span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">virtual void </span><span class="member_signature"><span class="member_name"><a href="Data_Interpolate1d_Data_DiscreteSetBase_internal_class_members.html#__218">set_interpolation</a></span>(<span class="member_params"><span class="member_param">Interpolation i</span>)</span></span></span></span></li>
+</ul>
+</div><h2>Members detail<a href="#_Members_detail23" id="_Members_detail23" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix"></span><span class="member_signature"><span class="member_name">DiscreteSet</span>(<span class="member_params">)</span></span></span><a href="#__155" id="__155" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p><span class="nodoc">No documentation available</span></p>
+</div></div></div><div class="foot"><p class="generated"><a style="float: right;" href="http://validator.w3.org/check?uri=referer">Valid XHTML 1.0 Strict</a>Generated by diaxen on Sun Sep 11 20:21:29 2011 using <a href="http://www.nongnu.org/mkdoc/">MkDoc</a></p></div></body></html>

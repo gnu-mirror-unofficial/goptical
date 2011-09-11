@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta name="Generator" content="MKDOC " />
+ <title>GNU Goptical manual </title>
+ <link rel="stylesheet" href="mkdoc.css" />
+ <style type="text/css">
+
+  .sec_hidden { display: none; }
+  .sec_shown {}
+ </style>
+</head><body>
+<div class="page"><div class="head"><div class="headlinks"><a href="Table_of_contents.html">Table of contents</a>
+ &nbsp; <a href="Introduction.html">Introduction</a>
+ &nbsp; <a href="Tutorial.html">Tutorial</a>
+ &nbsp; <a href="Main_classes.html">Main classes</a>
+</div><div class="navlinks"><a href="index.html" accesskey="t">Top</a> &nbsp; <a href="Math_VectorBase_2_T_internal_struct_members.html"  accesskey="p" id="nav_prev">Previous </a> &nbsp; <a href="API_documentation.html"  accesskey="u" id="nav_up"> Up </a> &nbsp; <a href="Math_VectorPair_struct_reference.html"  accesskey="n" id="nav_next"> Next</a></div>
+</div><div class="content"><div style="clear: both; height:20px;"></div>
+<h1>Math::VectorBase&lt;3,T&gt; internal struct members</h1><div class="sec_content1">
+<div style="clear: both; height:20px;"></div>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix">bool </span><span class="member_signature"><span class="member_name">close_to</span>(<span class="member_params"><span class="member_param">const VectorBase&lt;3, T&gt; &amp;m, </span><span class="member_param">T error = 1 e-8</span>)</span></span></span><a href="#__891" id="__891" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>compare two almost equal vectors</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix">T </span><span class="member_signature"><span class="member_name">len</span>(<span class="member_params">) const</span></span></span><a href="#__892" id="__892" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>Compute vector length</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix">VectorBase&lt;3, T&gt; </span><span class="member_signature"><span class="member_name">magnitude</span>(<span class="member_params"><span class="member_param">T newlen</span>) const</span></span></span><a href="#__893" id="__893" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>Adjust vector length</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix">VectorBase&lt;3, T&gt; </span><span class="member_signature"><span class="member_name">mul</span>(<span class="member_params"><span class="member_param">const VectorBase&lt;3, T&gt; &amp;v</span>) const</span></span></span><a href="#__894" id="__894" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>Vector values multiply</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix">VectorBase&lt;3, T&gt; &amp; </span><span class="member_signature"><span class="member_name">neg</span>(<span class="member_params">)</span></span></span><a href="#__895" id="__895" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>Negate vector</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix">const VectorBase&lt;3, T&gt; &amp; </span><span class="member_signature"><span class="member_name">normalize</span>(<span class="member_params">)</span></span></span><a href="#__896" id="__896" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>Normalize vector length </p>
+<p>See also <span class="codedecl"><a href="Math_VectorBase_internal_struct_members.html#__1039">normalized</a></span> function.</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix">VectorBase&lt;3, T&gt; </span><span class="member_signature"><span class="member_name">normalized</span>(<span class="member_params">) const</span></span></span><a href="#__897" id="__897" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>Get normalized vector </p>
+<p>See also <span class="codedecl"><a href="Math_VectorBase_internal_struct_members.html#__1038">normalize</a></span> function.</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix">T </span><span class="member_signature"><span class="member_name">operator*</span>(<span class="member_params"><span class="member_param">const VectorBase&lt;3, T&gt; &amp;v</span>) const</span></span></span><a href="#__898" id="__898" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>Vector dot product</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix">VectorBase&lt;3, T&gt; </span><span class="member_signature"><span class="member_name">operator*</span>(<span class="member_params"><span class="member_param">T scale</span>) const</span></span></span><a href="#__899" id="__899" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>Scale vector</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix">VectorBase&lt;3, T&gt; </span><span class="member_signature"><span class="member_name">operator*</span>(<span class="member_params"><span class="member_param">const <a href="Math_Matrix_struct_reference.html">Matrix</a>&lt;N&gt; &amp;m</span>)</span></span></span><a href="#__900" id="__900" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>Multiply vector with matrix. See Vector class for matrix/vector multiplication.</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix">const VectorBase&lt;3, T&gt; &amp; </span><span class="member_signature"><span class="member_name">operator*=</span>(<span class="member_params"><span class="member_param">T scale</span>)</span></span></span><a href="#__901" id="__901" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>Multiply by a vector</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix">VectorBase&lt;3, T&gt; </span><span class="member_signature"><span class="member_name">operator+</span>(<span class="member_params"><span class="member_param">const VectorBase&lt;3, T&gt; &amp;v</span>) const</span></span></span><a href="#__902" id="__902" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>Add two vectors</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix">const VectorBase&lt;3, T&gt; &amp; </span><span class="member_signature"><span class="member_name">operator+=</span>(<span class="member_params"><span class="member_param">const VectorBase&lt;3, T&gt; &amp;v</span>)</span></span></span><a href="#__903" id="__903" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>Add a vector</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix">VectorBase&lt;3, T&gt; </span><span class="member_signature"><span class="member_name">operator-</span>(<span class="member_params"><span class="member_param">const VectorBase&lt;3, T&gt; &amp;v</span>) const</span></span></span><a href="#__904" id="__904" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>Subtract two vectors</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix">VectorBase&lt;3, T&gt; </span><span class="member_signature"><span class="member_name">operator-</span>(<span class="member_params">) const</span></span></span><a href="#__905" id="__905" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>Get negated vector</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix">const VectorBase&lt;3, T&gt; &amp; </span><span class="member_signature"><span class="member_name">operator-=</span>(<span class="member_params"><span class="member_param">const VectorBase&lt;3, T&gt; &amp;v</span>)</span></span></span><a href="#__906" id="__906" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>Sutract a vector</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix">VectorBase&lt;3, T&gt; </span><span class="member_signature"><span class="member_name">operator/</span>(<span class="member_params"><span class="member_param">T scale</span>) const</span></span></span><a href="#__907" id="__907" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>Scale vector</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix">VectorBase&lt;3, T&gt; </span><span class="member_signature"><span class="member_name">operator/</span>(<span class="member_params"><span class="member_param">const VectorBase&lt;3, T&gt; &amp;v</span>) const</span></span></span><a href="#__908" id="__908" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>Vector division</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix">const VectorBase&lt;3, T&gt; &amp; </span><span class="member_signature"><span class="member_name">operator/=</span>(<span class="member_params"><span class="member_param">T scale</span>)</span></span></span><a href="#__909" id="__909" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>Divide by a vector</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix">bool </span><span class="member_signature"><span class="member_name">operator==</span>(<span class="member_params"><span class="member_param">const VectorBase&lt;3, T&gt; &amp;m</span>) const</span></span></span><a href="#__910" id="__910" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>compare two vectors for equality</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix">T </span><span class="member_signature"><span class="member_name">operator[]</span>(<span class="member_params"><span class="member_param">int n</span>) const</span></span></span><a href="#__911" id="__911" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>Get value at specified index</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix">T &amp; </span><span class="member_signature"><span class="member_name">operator[]</span>(<span class="member_params"><span class="member_param">int n</span>)</span></span></span><a href="#__912" id="__912" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>Get reference to value at specified index</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix">template &lt;int M&gt; VectorBase&lt;M, T&gt; </span><span class="member_signature"><span class="member_name">select</span>(<span class="member_params"><span class="member_param">unsigned int bitmask, </span><span class="member_param">const VectorBase&lt;M, T&gt; &amp;v = Vector&lt;M,T&gt;(0.)</span>) const</span></span></span><a href="#__913" id="__913" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>Select components from two vectors. Components which have their corresponding bit set in the mask are extracted from this vector and other components are taken from passed vector.</p>
+</div><div class="divmember public_member"><h2><span class="codedecl"><span class="member_prefix">void </span><span class="member_signature"><span class="member_name">set</span>(<span class="member_params"><span class="member_param">T value</span>)</span></span></span><a href="#__914" id="__914" class="hover_link">&nbsp;&nbsp;</a></h2></div><div class="sec_content2">
+<p>Set the whole vector to the specified value</p>
+</div></div></div><div class="foot"><p class="generated"><a style="float: right;" href="http://validator.w3.org/check?uri=referer">Valid XHTML 1.0 Strict</a>Generated by diaxen on Sun Sep 11 20:21:36 2011 using <a href="http://www.nongnu.org/mkdoc/">MkDoc</a></p></div></body></html>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta name="Generator" content="MKDOC " />
+ <title>GNU Goptical manual </title>
+ <link rel="stylesheet" href="mkdoc.css" />
+ <style type="text/css">
+
+  .sec_hidden { display: none; }
+  .sec_shown {}
+ </style>
+</head><body>
+<div class="page"><div class="head"><div class="headlinks"><a href="Table_of_contents.html">Table of contents</a>
+ &nbsp; <a href="Introduction.html">Introduction</a>
+ &nbsp; <a href="Tutorial.html">Tutorial</a>
+ &nbsp; <a href="Main_classes.html">Main classes</a>
+</div><div class="navlinks"><a href="index.html" accesskey="t">Top</a> &nbsp; <a href="Table_of_contents.html"  accesskey="p" id="nav_prev">Previous </a> &nbsp; <a href="index.html#_index"  accesskey="u" id="nav_up"> Up </a> &nbsp; <a href="Conventions.html"  accesskey="n" id="nav_next"> Next</a></div>
+</div><div class="content"><div style="clear: both; height:20px;"></div>
+<h1>1 Introduction</h1><div class="sec_content1">
+<div style="clear: both; height:20px;"></div>
+<p> Goptical is a C++ optical design and simulation library. Goptical is free software and is part of the <span class="ext_link"><a href="http://www.gnu.org/">GNU project</a></span>.</p>
+<p>It provides model classes for optical components, surfaces and materials. It enables building optical systems by creating and placing various optical components in a 3d space and simulates light propagation through the system. Classical optical design analysis tools can be used on optical systems.</p>
+<p>It takes advantages of the C++ object model to allow building complex optical systems with a few classes instanciations as optical components are represented by language objects.</p>
+</div><h2>1.1 Features list<a href="#_Features_list" id="_Features_list" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<ul><li><p>Goptical relies on an object oriented optical design approach. This allows designing optical component models and reuse them nested in other designs. Components are stored in herarchical form and live in a three-dimentional space with <a href="Sys_Group_class_reference.html">group</a> local coordinates.</p>
+</li>
+<li><p>Support for sequential and non-sequential ray-tracing.</p>
+</li>
+<li><p>Available components include:</p>
+<ul><li><p>Single <a href="Sys_OpticalSurface_class_reference.html">optical surfaces</a></p>
+</li>
+<li><p><a href="Sys_Lens_class_reference.html">Lenses</a></p>
+</li>
+<li><p><a href="Sys_Mirror_class_reference.html">Mirrors</a>,</p>
+</li>
+<li><p><a href="Sys_SourcePoint_class_reference.html">Point sources</a> and</p>
+</li>
+<li><p><a href="Sys_Image_class_reference.html">Image</a> planes.</p>
+</li>
+</ul>
+<p>Surface curve and material used by optical components are described using dedicated models.</p>
+</li>
+<li><p>Several surface curvature models are available:</p>
+<ul><li><p><a href="Curve_Conic_class_reference.html">Conic</a> curves.</p>
+</li>
+<li><p><a href="Curve_Polynomial_class_reference.html">Polynomial</a> curves.</p>
+</li>
+<li><p><a href="Curve_Spline_class_reference.html">Rotationally symmetric</a> splines and <a href="Curve_Grid_class_reference.html">Grid</a> splines.</p>
+</li>
+<li><p><a href="Curve_Zernike_class_reference.html">Zernike polynomials</a>.</p>
+</li>
+<li><p><a href="Curve_Foucault_class_reference.html">Foucault test</a> curves.</p>
+</li>
+<li><p><a href="Curve_Composer_class_reference.html">Composition</a> of other curve models.</p>
+</li>
+<li><p><a href="Curve_Array_class_reference.html">Array</a> of other curve models.</p>
+</li>
+<li><p><a href="A_custom_surface_curve_model.html">User defined</a> curve models.</p>
+</li>
+</ul>
+<p>Most curve models can be described using model specific parameters or by best fitting any curve object.</p>
+</li>
+<li><p>Several glass material models are available:</p>
+<ul><li><p><a href="Material_DispersionTable_class_reference.html">Interpolated dispersion</a> glass model</p>
+</li>
+<li><p><a href="Material_Abbe_class_reference.html">Abbe number</a> and <a href="Material_Mil_class_reference.html">mil number</a> model glass model.</p>
+</li>
+<li><p><a href="Material_Sellmeier_class_reference.html">Sellmeier</a> glass model.</p>
+</li>
+<li><p><a href="Material_Schott_class_reference.html">Schott</a> glass model.</p>
+</li>
+<li><p><a href="Material_Conrady_class_reference.html">Conrady</a> glass model.</p>
+</li>
+<li><p><a href="Material_Herzberger_class_reference.html">Herzberger</a> glass model.</p>
+</li>
+<li><p>A simple reflective surfaces <a href="Material_Mirror_class_reference.html">mirror</a> model.</p>
+</li>
+<li><p>A more accurate <a href="Material_Metal_class_reference.html">metal</a> material model.</p>
+</li>
+<li><p><a href="Material_Air_class_reference.html">Air</a> and <a href="Material_Vacuum_class_reference.html">vaccum</a> models.</p>
+</li>
+</ul>
+</li>
+<li><p>Surfaces outline shapes are described by a set of model classes too:</p>
+<ul><li><p><a href="Shape_Disk_class_reference.html">Disk</a> shapes model.</p>
+</li>
+<li><p><a href="Shape_Ring_class_reference.html">Ring</a> shapes model.</p>
+</li>
+<li><p><a href="Shape_Ellipse_class_reference.html">Ellipse</a> shapes model.</p>
+</li>
+<li><p><a href="Shape_Rectangle_class_reference.html">Rectangle</a> shapes model.</p>
+</li>
+<li><p><a href="Shape_RegularPolygon_class_reference.html">Regular polygon</a> and <a href="Shape_Polygon_class_reference.html">User defined polygon</a> shapes models.</p>
+</li>
+</ul>
+</li>
+<li><p>Optical system analysis tools include:</p>
+<ul><li><p>Layout and rays rendering in 2d and 3d,</p>
+</li>
+<li><p><a href="Analysis_Focus_class_reference.html">Best point of focus</a> finding.</p>
+</li>
+<li><p>Various <a href="Analysis_RayFan_class_reference.html">ray fan</a> plots.</p>
+</li>
+<li><p><a href="Analysis_Spot_class_reference.html">Spot diagram</a> plots.</p>
+</li>
+</ul>
+</li>
+<li><p>Several graphical output driver are available to render optical layouts and plots:</p>
+<ul><li><p>output in <a href="Io_RendererSvg_class_reference.html">Svg</a> vector format.</p>
+</li>
+<li><p>output in bitmap format using the <a href="Io_RendererGd_class_reference.html">Gd</a> library.</p>
+</li>
+<li><p>output in <a href="Io_RendererDxf_class_reference.html">Dxf</a> CAD format.</p>
+</li>
+<li><p>output in various formats via the <a href="Io_RendererPlplot_class_reference.html">PlPlot</a> library.</p>
+</li>
+<li><p><a href="Io_RendererX11_class_reference.html">X11</a> display on UNIX boxes.</p>
+</li>
+<li><p>3d display using the <a href="Io_RendererOpengl_class_reference.html">OpenGL</a> library.</p>
+</li>
+<li><p>output in <a href="Io_RendererX3d_class_reference.html">X3D</a>, a standard 3d format.</p>
+</li>
+</ul>
+</li>
+<li><p>Various optical design file formats can be read:</p>
+<ul><li><p>Oslo glass catalog</p>
+</li>
+<li><p>Zemax glass catalog and optical designs</p>
+</li>
+</ul>
+</li>
+</ul>
+</div></div></div><div class="foot"><p class="generated"><a style="float: right;" href="http://validator.w3.org/check?uri=referer">Valid XHTML 1.0 Strict</a>Generated by diaxen on Sun Sep 11 20:21:28 2011 using <a href="http://www.nongnu.org/mkdoc/">MkDoc</a></p></div></body></html>

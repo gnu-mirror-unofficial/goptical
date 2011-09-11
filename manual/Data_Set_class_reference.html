@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta name="Generator" content="MKDOC " />
+ <title>GNU Goptical manual </title>
+ <link rel="stylesheet" href="mkdoc.css" />
+ <style type="text/css">
+
+  .sec_hidden { display: none; }
+  .sec_shown {}
+ </style>
+</head><body>
+<div class="page"><div class="head"><div class="headlinks"><a href="Table_of_contents.html">Table of contents</a>
+ &nbsp; <a href="Introduction.html">Introduction</a>
+ &nbsp; <a href="Tutorial.html">Tutorial</a>
+ &nbsp; <a href="Main_classes.html">Main classes</a>
+</div><div class="navlinks"><a href="index.html" accesskey="t">Top</a> &nbsp; <a href="Data_Interpolate1d_Data_SampleSetBase_internal_class_members.html"  accesskey="p" id="nav_prev">Previous </a> &nbsp; <a href="API_documentation.html"  accesskey="u" id="nav_up"> Up </a> &nbsp; <a href="Data_Set_class_full_member_list.html"  accesskey="n" id="nav_next"> Next</a></div>
+</div><div class="content"><div style="clear: both; height:20px;"></div>
+<h1>Data::Set class reference<br /><span class="subtitle">
+[<a href="_Core_module_reference.html">Core</a> module]</span>
+</h1><div class="sec_content1">
+<div style="clear: both; height:20px;"></div>
+</div><h2>Declaration<a href="#_Declaration24" id="_Declaration24" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<div class="codebox"><code><span class="codedir">#include</span> &lt;Goptical/Data/Set&gt;<br /><br /><span class="codekw">namespace</span> Goptical {<br />  <span class="codekw">namespace</span> Data {<br />    <span class="codekw">class</span> Set;<br />  };<br />};<br /></code></div><p> This class is a member of the <span class="codedecl"><a href="Data_namespace_reference.html">Data</a></span> namespace.</p>
+<p>This abstract class contains pure virtuals.</p>
+</div><h2>Inheritance<a href="#_Inheritance24" id="_Inheritance24" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<div class="tree_frame" style="width:330px;"><div class="tree_row"><div style="width:90px;" class="tree_pad"></div><div style="width:150px;" class="tree_public"><span class="codedecl"><span class="ext_link"><a href="http://diaxen.ssji.net/dpp/dpp_ref_base_class_reference.html">ref_base</a></span>&lt;<a href="Data_Set_class_reference.html">Set</a>&gt;</span></div
+></div><br/><div style="width:165px;" class="tree_connect_1">&nbsp;</div
+><div style="width:165px;" class="tree_connect_4">&nbsp;</div><br/><div style="width:165px;" class="tree_connect_1">&nbsp;</div
+><div style="width:165px;" class="tree_connect_4">&nbsp;</div><br/><div class="tree_row"><div style="width:115px;" class="tree_pad"></div><div style="width:100px;" class="tree_this"><span class="codedecl"><a href="Data_Set_class_reference.html">Set</a></span></div
+></div><br/><div style="width:165px;" class="tree_connect_1">&nbsp;</div
+><div style="width:165px;" class="tree_connect_4">&nbsp;</div><br/><div style="width:60px;" class="tree_connect_1">&nbsp;</div
+><div style="width:120px;" class="tree_connect_2">&nbsp;</div
+><div style="width:150px;" class="tree_connect_4">&nbsp;</div><br/><div class="tree_row"><div style="width:10px;" class="tree_pad"></div><div style="width:100px;" class="tree_derived"><span class="codedecl"><a href="Data_Grid_class_reference.html">Grid</a></span></div
+><div style="width:20px;" class="tree_pad"></div><div style="width:100px;" class="tree_derived"><span class="codedecl"><a href="Data_Set1d_class_reference.html">Set1d</a></span></div
+></div><br/><div style="width:180px;" class="tree_connect_1">&nbsp;</div
+><div style="width:150px;" class="tree_connect_4">&nbsp;</div><br/><div style="width:115px;" class="tree_connect_1">&nbsp;</div
+><div style="width:140px;" class="tree_connect_2">&nbsp;</div
+><div style="width:75px;" class="tree_connect_4">&nbsp;</div><br/><div class="tree_row"><div style="width:50px;" class="tree_pad"></div><div style="width:130px;" class="tree_derived"><span class="codedecl"><a href="Data_DiscreteSet_class_reference.html">DiscreteSet</a></span></div
+><div style="width:20px;" class="tree_pad"></div><div style="width:110px;" class="tree_derived"><span class="codedecl"><a href="Data_SampleSet_class_reference.html">SampleSet</a></span></div
+></div><br/></div>
+</div><h2>Description<a href="#_Description30" id="_Description30" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<p>This class is a base class for all numerical data sets implementations. It defines an interface to access data in a way independent from data storage and dimensions count.</p>
+<p>Each data set implementation may define a alternative specific interface to access their data.</p>
+<p>Here x is seen as value used to access the container. Containers with more than one dimension will require x0, x1, ..., xn known parameters to access the stored y value.</p>
+</div><h2>Members<a href="#_Members30" id="_Members30" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<p> See also the <a href="Data_Set_class_full_member_list.html">full member list</a> section for this class.</p>
+</div><h3>Functions<a href="#_Functions50" id="_Functions50" class="hover_link">&nbsp;&nbsp;</a></h3><div class="sec_content3">
+<ul><li><span class="listitem"><span class="codedecl"><span class="member_prefix">virtual </span><span class="member_signature"><span class="member_name"><a href="Data_Set_class_reference.html#__225">~Set</a></span>(<span class="member_params">)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">virtual unsigned int </span><span class="member_signature"><span class="member_name"><a href="Data_Set_class_reference.html#__226">get_count</a></span>(<span class="member_params"><span class="member_param">unsigned int dim = <em>[...]</em></span>) const = 0;</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">virtual unsigned int </span><span class="member_signature"><span class="member_name"><a href="Data_Set_class_reference.html#__227">get_dimensions</a></span>(<span class="member_params">) const = 0;</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">Interpolation </span><span class="member_signature"><span class="member_name"><a href="Data_Set_class_reference.html#__228">get_interpolation</a></span>(<span class="member_params">)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">unsigned int </span><span class="member_signature"><span class="member_name"><a href="Data_Set_class_reference.html#__229">get_version</a></span>(<span class="member_params">) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">virtual Math::range_t </span><span class="member_signature"><span class="member_name"><a href="Data_Set_class_reference.html#__230">get_x_range</a></span>(<span class="member_params"><span class="member_param">unsigned int dim = <em>[...]</em></span>) const = 0;</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">virtual double </span><span class="member_signature"><span class="member_name"><a href="Data_Set_class_reference.html#__231">get_x_value</a></span>(<span class="member_params"><span class="member_param">unsigned int n, </span><span class="member_param">unsigned int dim = <em>[...]</em></span>) const = 0;</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">virtual Math::range_t </span><span class="member_signature"><span class="member_name"><a href="Data_Set_class_reference.html#__232">get_y_range</a></span>(<span class="member_params">) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">virtual double </span><span class="member_signature"><span class="member_name"><a href="Data_Set_class_reference.html#__233">get_y_value</a></span>(<span class="member_params"><span class="member_param">const unsigned int x[]</span>) const = 0;</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">virtual double </span><span class="member_signature"><span class="member_name"><a href="Data_Set_class_reference.html#__234">interpolate</a></span>(<span class="member_params"><span class="member_param">const double x[]</span>) const = 0;</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">virtual double </span><span class="member_signature"><span class="member_name"><a href="Data_Set_class_reference.html#__235">interpolate</a></span>(<span class="member_params"><span class="member_param">const double x[], </span><span class="member_param">unsigned int deriv, </span><span class="member_param">unsigned int dim</span>) const = 0;</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">virtual void </span><span class="member_signature"><span class="member_name"><a href="Data_Set_class_reference.html#__236">set_interpolation</a></span>(<span class="member_params"><span class="member_param">Interpolation i</span>) = 0;</span></span></span></span></li>
+</ul>
+</div><h2>Members detail<a href="#_Members_detail28" id="_Members_detail28" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">virtual </span><span class="member_signature"><span class="member_name">~Set</span>(<span class="member_params">)</span></span></span><a href="#__225" id="__225" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p><span class="nodoc">No documentation available</span></p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">virtual unsigned int </span><span class="member_signature"><span class="member_name">get_count</span>(<span class="member_params"><span class="member_param">unsigned int dim = 0</span>) const = 0;</span></span></span><a href="#__226" id="__226" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Get total number of data stored for dimension n in data set</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">virtual unsigned int </span><span class="member_signature"><span class="member_name">get_dimensions</span>(<span class="member_params">) const = 0;</span></span></span><a href="#__227" id="__227" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Get total number of dimensions</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix"><a href="Data_namespace_reference.html#__149">Interpolation</a> </span><span class="member_signature"><span class="member_name">get_interpolation</span>(<span class="member_params">)</span></span></span><a href="#__228" id="__228" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Get current interpolation method</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">unsigned int </span><span class="member_signature"><span class="member_name">get_version</span>(<span class="member_params">) const</span></span></span><a href="#__229" id="__229" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Return version number which is incremented on each data set change/clear</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">virtual Math::<a href="Math_namespace_reference.html#__674">range_t</a> </span><span class="member_signature"><span class="member_name">get_x_range</span>(<span class="member_params"><span class="member_param">unsigned int dim = 0</span>) const = 0;</span></span></span><a href="#__230" id="__230" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Get minimal and maximal x values on dimension n found in data set</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">virtual double </span><span class="member_signature"><span class="member_name">get_x_value</span>(<span class="member_params"><span class="member_param">unsigned int n, </span><span class="member_param">unsigned int dim = 0</span>) const = 0;</span></span></span><a href="#__231" id="__231" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Get data stored at position n on dimension dim in data set</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">virtual Math::<a href="Math_namespace_reference.html#__674">range_t</a> </span><span class="member_signature"><span class="member_name">get_y_range</span>(<span class="member_params">) const</span></span></span><a href="#__232" id="__232" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Get minimal and maximal y values found in data set</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">virtual double </span><span class="member_signature"><span class="member_name">get_y_value</span>(<span class="member_params"><span class="member_param">const unsigned int x[]</span>) const = 0;</span></span></span><a href="#__233" id="__233" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Get y data stored at position (x0, x1, ...) in data set</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">virtual double </span><span class="member_signature"><span class="member_name">interpolate</span>(<span class="member_params"><span class="member_param">const double x[]</span>) const = 0;</span></span></span><a href="#__234" id="__234" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Interpolate y value corresponding to given x value(s) in data set.</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">virtual double </span><span class="member_signature"><span class="member_name">interpolate</span>(<span class="member_params"><span class="member_param">const double x[], </span><span class="member_param">unsigned int deriv, </span><span class="member_param">unsigned int dim</span>) const = 0;</span></span></span><a href="#__235" id="__235" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Interpolate y value corresponding to given x value in data set. Data may be differentiated several times along the requested dimension. </p>
+<ul><li><span class="codedecl">deriv</span>: Differentiation count, 0 means y value, 1 means 1st derivative... </li>
+<li><span class="codedecl">dim</span>: Differentiation dimension</li>
+</ul>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">virtual void </span><span class="member_signature"><span class="member_name">set_interpolation</span>(<span class="member_params"><span class="member_param"><a href="Data_namespace_reference.html#__149">Interpolation</a> i</span>) = 0;</span></span></span><a href="#__236" id="__236" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Select interpolation method</p>
+</div></div></div><div class="foot"><p class="generated"><a style="float: right;" href="http://validator.w3.org/check?uri=referer">Valid XHTML 1.0 Strict</a>Generated by diaxen on Sun Sep 11 20:21:29 2011 using <a href="http://www.nongnu.org/mkdoc/">MkDoc</a></p></div></body></html>

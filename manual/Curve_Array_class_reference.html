@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta name="Generator" content="MKDOC " />
+ <title>GNU Goptical manual </title>
+ <link rel="stylesheet" href="mkdoc.css" />
+ <style type="text/css">
+
+  .sec_hidden { display: none; }
+  .sec_shown {}
+ </style>
+</head><body>
+<div class="page"><div class="head"><div class="headlinks"><a href="Table_of_contents.html">Table of contents</a>
+ &nbsp; <a href="Introduction.html">Introduction</a>
+ &nbsp; <a href="Tutorial.html">Tutorial</a>
+ &nbsp; <a href="Main_classes.html">Main classes</a>
+</div><div class="navlinks"><a href="index.html" accesskey="t">Top</a> &nbsp; <a href="Curve_namespace_reference.html"  accesskey="p" id="nav_prev">Previous </a> &nbsp; <a href="API_documentation.html"  accesskey="u" id="nav_up"> Up </a> &nbsp; <a href="Curve_Array_class_full_member_list.html"  accesskey="n" id="nav_next"> Next</a></div>
+</div><div class="content"><div style="clear: both; height:20px;"></div>
+<h1>Curve::Array class reference<br /><span class="subtitle">
+[<a href="_Core_module_reference.html">Core</a> module]</span>
+</h1><div class="sec_content1">
+<div style="clear: both; height:20px;"></div>
+</div><h2>Declaration<a href="#_Declaration3" id="_Declaration3" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<div class="codebox"><code><span class="codedir">#include</span> &lt;Goptical/Curve/Array&gt;<br /><br /><span class="codekw">namespace</span> Goptical {<br />  <span class="codekw">namespace</span> Curve {<br />    <span class="codekw">class</span> Array;<br />  };<br />};<br /></code></div><p> This class is a member of the <span class="codedecl"><a href="Curve_namespace_reference.html">Curve</a></span> namespace.</p>
+</div><h2>Inheritance<a href="#_Inheritance3" id="_Inheritance3" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<div class="tree_frame" style="width:190px;"><div class="tree_row"><div style="width:10px;" class="tree_pad"></div><div style="width:170px;" class="tree_public"><span class="codedecl"><span class="ext_link"><a href="http://diaxen.ssji.net/dpp/dpp_ref_base_class_reference.html">ref_base</a></span>&lt;<a href="Curve_Curve_class_reference.html">Curve</a>&gt;</span></div
+></div><br/><div style="width:95px;" class="tree_connect_1">&nbsp;</div
+><div style="width:95px;" class="tree_connect_4">&nbsp;</div><br/><div style="width:95px;" class="tree_connect_1">&nbsp;</div
+><div style="width:95px;" class="tree_connect_4">&nbsp;</div><br/><div class="tree_row"><div style="width:45px;" class="tree_pad"></div><div style="width:100px;" class="tree_public"><span class="codedecl"><a href="Curve_Curve_class_reference.html">Curve</a></span></div
+></div><br/><div style="width:95px;" class="tree_connect_1">&nbsp;</div
+><div style="width:95px;" class="tree_connect_4">&nbsp;</div><br/><div style="width:95px;" class="tree_connect_1">&nbsp;</div
+><div style="width:95px;" class="tree_connect_4">&nbsp;</div><br/><div class="tree_row"><div style="width:45px;" class="tree_pad"></div><div style="width:100px;" class="tree_this"><span class="codedecl"><a href="Curve_Array_class_reference.html">Array</a></span></div
+></div><br/></div>
+</div><h2>Description<a href="#_Description8" id="_Description8" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<p>This class provides a way to build an array of an other curve. It can be used to design lenses array.</p>
+</div><h2>Members<a href="#_Members8" id="_Members8" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+<p> See also the <a href="Curve_Array_class_full_member_list.html">full member list</a> section for this class.</p>
+</div><h3>Inherited members<a href="#_Inherited_members" id="_Inherited_members" class="hover_link">&nbsp;&nbsp;</a></h3><div class="sec_content3">
+<ul><li>6 members inherited from <span class="codedecl"><a href="Curve_Curve_class_reference.html">Curve</a></span></li>
+</ul>
+</div><h3>Type<a href="#_Type1" id="_Type1" class="hover_link">&nbsp;&nbsp;</a></h3><div class="sec_content3">
+<ul><li><span class="listitem"><span class="codedecl"><span class="member_prefix">enum </span><span class="member_signature"><span class="member_name"><a href="Curve_Array_class_reference.html#__36">pattern_e</a></span></span></span></span></li>
+</ul>
+</div><h3>Functions<a href="#_Functions7" id="_Functions7" class="hover_link">&nbsp;&nbsp;</a></h3><div class="sec_content3">
+<ul><li><span class="listitem"><span class="codedecl"><span class="member_prefix"></span><span class="member_signature"><span class="member_name"><a href="Curve_Array_class_reference.html#__34">Array</a></span>(<span class="member_params"><span class="member_param">const const_ref&lt;Curve&gt; &amp;curve, </span><span class="member_param">double pitch, </span><span class="member_param">pattern_e p = <em>[...]</em></span>)</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">virtual void </span><span class="member_signature"><span class="member_name"><a href="Curve_Array_class_reference.html#__35">derivative</a></span>(<span class="member_params"><span class="member_param">const Math::Vector2 &amp;xy, </span><span class="member_param">Math::Vector2 &amp;dxdy</span>) const</span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">virtual double </span><span class="member_signature"><span class="member_name"><a href="Curve_Array_class_reference.html#__37">sagitta</a></span>(<span class="member_params"><span class="member_param">const Math::Vector2 &amp;xy</span>) const</span></span></span></span></li>
+</ul>
+</div><h2>Members detail<a href="#_Members_detail6" id="_Members_detail6" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix"></span><span class="member_signature"><span class="member_name">Array</span>(<span class="member_params"><span class="member_param">const <span class="ext_link"><a href="http://diaxen.ssji.net/dpp/dpp_const_ref_class_reference.html">const_ref</a></span>&lt;<a href="Curve_Curve_class_reference.html">Curve</a>&gt; &amp;curve, </span><span class="member_param">double pitch, </span><span class="member_param"><a href="Curve_Array_class_reference.html#__36">pattern_e</a> p = Square</span>)</span></span></span><a href="#__34" id="__34" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p><span class="nodoc">No documentation available</span></p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">virtual void </span><span class="member_signature"><span class="member_name">derivative</span>(<span class="member_params"><span class="member_param">const Math::<a href="Math_namespace_reference.html#__655">Vector2</a> &amp;xy, </span><span class="member_param">Math::<a href="Math_namespace_reference.html#__655">Vector2</a> &amp;dxdy</span>) const</span></span></span><a href="#__35" id="__35" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>This virtual function overrides the <code><a href="Curve_Curve_class_reference.html#__56">derivative</a></code> virtual function defined in the <code><a href="Curve_Curve_class_reference.html">Curve</a></code> base abstract class.</p>
+<p><span class="nodoc">Documentation inherited from base class:</span></p>
+<p>Get curve x and y derivative (gradient) at specified point</p>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">enum </span><span class="member_signature"><span class="member_name">pattern_e</span></span></span><a href="#__36" id="__36" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>Specify tessellation pattern used by <span class="codedecl"><a href="Curve_Array_class_reference.html">Array</a></span> class</p>
+<div class="table_frame"><table class="table"><tr class="tr_head"><th style="width:30%;">Identifier</th><th style="width:70%;">Description</th></tr>
+<tr class="tr1"><td>Square</td><td></td></tr>
+<tr class="tr0"><td>SquareCenter</td><td></td></tr>
+<tr class="tr1 tr_last"><td>Hexagonal</td><td></td></tr></table></div>
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">virtual double </span><span class="member_signature"><span class="member_name">sagitta</span>(<span class="member_params"><span class="member_param">const Math::<a href="Math_namespace_reference.html#__655">Vector2</a> &amp;xy</span>) const</span></span></span><a href="#__37" id="__37" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+<p>This virtual function implements the <code><a href="Curve_Curve_class_reference.html#__59">sagitta</a></code> pure function declared in the <code><a href="Curve_Curve_class_reference.html">Curve</a></code> base abstract class.</p>
+<p><span class="nodoc">Documentation inherited from base class:</span></p>
+<p>Get curve sagitta at specified point</p>
+</div></div></div><div class="foot"><p class="generated"><a style="float: right;" href="http://validator.w3.org/check?uri=referer">Valid XHTML 1.0 Strict</a>Generated by diaxen on Sun Sep 11 20:21:29 2011 using <a href="http://www.nongnu.org/mkdoc/">MkDoc</a></p></div></body></html>
