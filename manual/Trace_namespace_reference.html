@@ -29,16 +29,16 @@ Ray tracer and light propagation</div><h2>Members<a href="#_Members114" id="_Mem
 <li><span class="listitem"><span class="codedecl"><span class="member_prefix">class </span><span class="member_signature"><span class="member_name"><a href="Trace_Result_class_reference.html">Result</a></span></span></span></span></li>
 <li><span class="listitem"><span class="codedecl"><span class="member_prefix">class </span><span class="member_signature"><span class="member_name"><a href="Trace_Sequence_class_reference.html">Sequence</a></span></span></span></span></li>
 <li><span class="listitem"><span class="codedecl"><span class="member_prefix">class </span><span class="member_signature"><span class="member_name"><a href="Trace_Tracer_class_reference.html">Tracer</a></span></span></span></span></li>
-<li><span class="listitem"><span class="codedecl"><span class="member_prefix">enum </span><span class="member_signature"><span class="member_name"><a href="Trace_namespace_reference.html#__1356">IntensityMode</a></span></span></span></span></li>
-<li><span class="listitem"><span class="codedecl"><span class="member_prefix">enum </span><span class="member_signature"><span class="member_name"><a href="Trace_namespace_reference.html#__1357">Pattern</a></span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">enum </span><span class="member_signature"><span class="member_name"><a href="Trace_namespace_reference.html#__1353">IntensityMode</a></span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">enum </span><span class="member_signature"><span class="member_name"><a href="Trace_namespace_reference.html#__1354">Pattern</a></span></span></span></span></li>
 <li><span class="listitem"><span class="codedecl"><span class="member_prefix">class </span><span class="member_signature"><span class="member_name"><a href="Trace_Ray_class_reference.html">Ray</a></span></span></span></span></li>
-<li><span class="listitem"><span class="codedecl"><span class="member_prefix">typedef <em> [...] </em> </span><span class="member_signature"><span class="member_name"><a href="Trace_namespace_reference.html#__1359">rays_queue_t</a></span></span></span></span></li>
+<li><span class="listitem"><span class="codedecl"><span class="member_prefix">typedef <em> [...] </em> </span><span class="member_signature"><span class="member_name"><a href="Trace_namespace_reference.html#__1356">rays_queue_t</a></span></span></span></span></li>
 </ul>
 </div><h3>Function<a href="#_Function3" id="_Function3" class="hover_link">&nbsp;&nbsp;</a></h3><div class="sec_content3">
-<ul><li><span class="listitem"><span class="codedecl"><span class="member_prefix">std::ostream &amp; </span><span class="member_signature"><span class="member_name"><a href="Trace_namespace_reference.html#__1358">operator&lt;&lt;</a></span>(<span class="member_params"><span class="member_param">std::ostream &amp;o, </span><span class="member_param">const Sequence &amp;s</span>)</span></span></span></span></li>
+<ul><li><span class="listitem"><span class="codedecl"><span class="member_prefix">std::ostream &amp; </span><span class="member_signature"><span class="member_name"><a href="Trace_namespace_reference.html#__1355">operator&lt;&lt;</a></span>(<span class="member_params"><span class="member_param">std::ostream &amp;o, </span><span class="member_param">const Sequence &amp;s</span>)</span></span></span></span></li>
 </ul>
 </div><h2>Members detail<a href="#_Members_detail112" id="_Members_detail112" class="hover_link">&nbsp;&nbsp;</a></h2><div class="sec_content2">
-</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">enum </span><span class="member_signature"><span class="member_name">IntensityMode</span></span></span><a href="#__1356" id="__1356" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">enum </span><span class="member_signature"><span class="member_name">IntensityMode</span></span></span><a href="#__1353" id="__1353" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
 <p>Specifies light intensity calculation mode to use by light propagation algorithms.</p>
 <div class="table_frame"><table class="table"><tr class="tr_head"><th style="width:30%;">Identifier</th><th style="width:70%;">Description</th></tr>
 <tr class="tr1"><td>SimpleTrace</td><td>No Intensity calculation is performed<br />
@@ -47,7 +47,7 @@ Ray tracer and light propagation</div><h2>Members<a href="#_Members114" id="_Mem
 </td></tr>
 <tr class="tr1 tr_last"><td>PolarizedTrace</td><td> Light intensity with polarization computation is performed (not supported yet)<br />
 </td></tr></table></div>
-</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">enum </span><span class="member_signature"><span class="member_name">Pattern</span></span></span><a href="#__1357" id="__1357" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">enum </span><span class="member_signature"><span class="member_name">Pattern</span></span></span><a href="#__1354" id="__1354" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
 <p>Specifies point distribution patterns over a shape delimited surface.</p>
 <div class="img_frame"><img src="dist_patterns.png" alt="Different patterns rendered on a disk with default density" /><div class="img_caption">Different patterns rendered on a disk with default density</div>
 </div><div class="table_frame"><table class="table"><tr class="tr_head"><th style="width:30%;">Identifier</th><th style="width:70%;">Description</th></tr>
@@ -57,7 +57,7 @@ Ray tracer and light propagation</div><h2>Members<a href="#_Members114" id="_Mem
 </td></tr>
 <tr class="tr1"><td>MeridionalDist</td><td>Meridional plane distribution (along the Y axis, Y/Z plane)<br />
 </td></tr>
-<tr class="tr0"><td>TangentialDist</td><td>Tangential plane distribution, same as <span class="codedecl"><a href="Trace_namespace_reference.html#__1357">MeridionalDist</a></span><br />
+<tr class="tr0"><td>TangentialDist</td><td>Tangential plane distribution, same as <span class="codedecl"><a href="Trace_namespace_reference.html#__1354">MeridionalDist</a></span><br />
 </td></tr>
 <tr class="tr1"><td>CrossDist</td><td>Sagittal and Meridional distribution combined<br />
 </td></tr>
@@ -70,8 +70,8 @@ Ray tracer and light propagation</div><h2>Members<a href="#_Members114" id="_Mem
 <tr class="tr1 tr_last"><td>RandomDist</td><td>Random distribution<br />
 </td></tr></table></div>
 <p>See also <span class="codedecl"><a href="Trace_Distribution_class_reference.html">Distribution</a></span> class.</p>
-</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">std::<span class="ext_link"><a href="http://gcc.gnu.org/onlinedocs/libstdc++/libstdc++-html-USERS-4.3/a01708.html#ge83348f0f14ec5bf401ed2b962cb6491">ostream</a></span> &amp; </span><span class="member_signature"><span class="member_name">operator&lt;&lt;</span>(<span class="member_params"><span class="member_param">std::<span class="ext_link"><a href="http://gcc.gnu.org/onlinedocs/libstdc++/libstdc++-html-USERS-4.3/a01708.html#ge83348f0f14ec5bf401ed2b962cb6491">ostream</a></span> &amp;o, </span><span class="member_param">const <a href="Trace_Sequence_class_reference.html">Sequence</a> &amp;s</span>)</span></span></span><a href="#__1358" id="__1358" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">std::<span class="ext_link"><a href="http://gcc.gnu.org/onlinedocs/libstdc++/libstdc++-html-USERS-4.3/a01708.html#ge83348f0f14ec5bf401ed2b962cb6491">ostream</a></span> &amp; </span><span class="member_signature"><span class="member_name">operator&lt;&lt;</span>(<span class="member_params"><span class="member_param">std::<span class="ext_link"><a href="http://gcc.gnu.org/onlinedocs/libstdc++/libstdc++-html-USERS-4.3/a01708.html#ge83348f0f14ec5bf401ed2b962cb6491">ostream</a></span> &amp;o, </span><span class="member_param">const <a href="Trace_Sequence_class_reference.html">Sequence</a> &amp;s</span>)</span></span></span><a href="#__1355" id="__1355" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
 <p><span class="nodoc">No documentation available</span></p>
-</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">typedef std::<span class="ext_link"><a href="http://gcc.gnu.org/onlinedocs/libstdc++/libstdc++-html-USERS-4.3/a00918.html">deque</a></span>&lt;Ray*&gt; </span><span class="member_signature"><span class="member_name">rays_queue_t</span></span></span><a href="#__1359" id="__1359" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
+</div><div class="divmember public_member"><h3><span class="codedecl"><span class="member_prefix">typedef std::<span class="ext_link"><a href="http://gcc.gnu.org/onlinedocs/libstdc++/libstdc++-html-USERS-4.3/a00918.html">deque</a></span>&lt;Ray*&gt; </span><span class="member_signature"><span class="member_name">rays_queue_t</span></span></span><a href="#__1356" id="__1356" class="hover_link">&nbsp;&nbsp;</a></h3></div><div class="sec_content3">
 <p><span class="nodoc">No documentation available</span></p>
-</div></div></div><div class="foot"><p class="generated"><a style="float: right;" href="http://validator.w3.org/check?uri=referer">Valid XHTML 1.0 Strict</a>Generated by diaxen on Thu Oct  6 00:35:06 2011 using <a href="http://www.nongnu.org/mkdoc/">MkDoc</a></p></div></body></html>
+</div></div></div><div class="foot"><p class="generated"><a style="float: right;" href="http://validator.w3.org/check?uri=referer">Valid XHTML 1.0 Strict</a>Generated by diaxen on Wed Nov  2 21:06:47 2011 using <a href="http://www.nongnu.org/mkdoc/">MkDoc</a></p></div></body></html>
